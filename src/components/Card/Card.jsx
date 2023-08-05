@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { nanoid } from 'nanoid'
 import Tilt from 'react-parallax-tilt'
-import FlipCard from 'flip-card-react'
+import ReactCardFlip from 'react-card-flip'
 import {
 	CardOutline,
 	CardWrapper,
@@ -41,53 +41,49 @@ const Card = ({
 		return `../../src/assets/dragons/${formattedName.join('')}.png`
 	}
 
-	const front = (
-		<CardOutline
-			classes={getCardOutline(classes)}
-			onClick={() => setFlipped((x) => !x)}
-		>
-			<CardWrapper>
-				<CardHeader>
-					<SizeIcon type={size.type} number={size.number} />
-					<DragonName>{name}</DragonName>
-					<ClassIconsMini classes={classes} />
-				</CardHeader>
-
-				<DragonPicture src={getDragonPicture(name)} />
-
-				<CardInner>
-					<Salvo>
-						<SalvoIcon src="../../src/assets/icons/salvo.svg" />
-						<SalvoType>{fireType}</SalvoType>
-					</Salvo>
-
-					<Abilities>
-						{abilities.map((ability) => (
-							<AbilityIcon key={nanoid()} ability={ability} />
-						))}
-					</Abilities>
-				</CardInner>
-
-				<DragonDescription>{description}</DragonDescription>
-			</CardWrapper>
-		</CardOutline>
-	)
-
-	const back = (
-		<CardOutline
-			classes={getCardOutline(classes)}
-			onClick={() => setFlipped((x) => !x)}
-			style={{ transform: 'scaleX(-1)' }}
-		>
-			<CardBackWrapper>
-				<ClassIcon classes={classes} countClasses={classes.length} />
-			</CardBackWrapper>
-		</CardOutline>
-	)
-
 	return (
 		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
-			<FlipCard isFlipped={isFlipped} front={front} back={back} speed={0.6} />
+			<ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+				<CardOutline
+					classes={getCardOutline(classes)}
+					onClick={() => setFlipped((x) => !x)}
+				>
+					<CardWrapper>
+						<CardHeader>
+							<SizeIcon type={size.type} number={size.number} />
+							<DragonName>{name}</DragonName>
+							<ClassIconsMini classes={classes} />
+						</CardHeader>
+
+						<DragonPicture src={getDragonPicture(name)} />
+
+						<CardInner>
+							<Salvo>
+								<SalvoIcon src="../../src/assets/icons/salvo.svg" />
+								<SalvoType>{fireType}</SalvoType>
+							</Salvo>
+
+							<Abilities>
+								{abilities.map((ability) => (
+									<AbilityIcon key={nanoid()} ability={ability} />
+								))}
+							</Abilities>
+						</CardInner>
+
+						<DragonDescription>{description}</DragonDescription>
+					</CardWrapper>
+				</CardOutline>
+
+				<CardOutline
+					classes={getCardOutline(classes)}
+					onClick={() => setFlipped((x) => !x)}
+					style={{ transform: 'scaleX(-1)' }}
+				>
+					<CardBackWrapper>
+						<ClassIcon classes={classes} countClasses={classes.length} />
+					</CardBackWrapper>
+				</CardOutline>
+			</ReactCardFlip>
 		</Tilt>
 	)
 }
