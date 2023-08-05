@@ -1,13 +1,9 @@
-import { useState } from 'react'
+import CardList from './CardList'
+import dragons from '../data/dragons.json'
 import './App.scss'
 
 function App() {
-
-  return (
-    <>
-      
-    </>
-  )
+	return <CardList dragons={dragons} />
 }
 
 export default App

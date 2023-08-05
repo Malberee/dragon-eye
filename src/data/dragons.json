@@ -1,0 +1,374 @@
+[
+	{
+		"name": "Night Fury",
+		"classes": ["strike"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Plasma blasts",
+		"abilities": ["fire", "electric", "speed", "stealth", "supersense"],
+		"picture": "",
+		"description": "The unholy offspring of lightning and death itself. Never engage this dragon. Your only chance: Hide and pray it does not find you."
+	},
+	{
+		"name": "Light Fury",
+		"classes": ["strike"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Plasma blasts",
+		"abilities": ["fire", "speed", "stealth"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Snow Wraith",
+		"classes": ["strike"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Frost barrage",
+		"abilities": ["ice", "speed", "stealth", "supersense", "burrow"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Triple Stryke",
+		"classes": ["strike"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Blinding fire",
+		"abilities": ["fire", "armed", "venom", "speed"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Skrill",
+		"classes": ["strike"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Lighting beams",
+		"abilities": ["electric", "electric", "speed", "stealth"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Deathgripper",
+		"classes": ["strike"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Flamable acid",
+		"abilities": ["fire", "acid", "armed", "venom"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Monstrous Nightmare",
+		"classes": ["stoker"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Flaming gel",
+		"abilities": ["fire", "fire", "substance"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Terrible Terror",
+		"classes": ["stoker"],
+		"size": {
+			"type": "land",
+			"number": 1
+		},
+		"fireType": "Pinpoint fire",
+		"abilities": ["fire", "sound"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Hobblegrunt",
+		"classes": ["stoker"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Fluid based fire",
+		"abilities": ["fire", "chromatic", "supersense"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Red Death",
+		"classes": ["stoker"],
+		"size": {
+			"type": "sky/sea",
+			"number": 6
+		},
+		"fireType": "Billowing blaze",
+		"abilities": ["fire", "supersense", "armed", "alpha"],
+		"picture": "",
+		"description": "Enormous dragon queen able to bend other dragons to its will. Crushing jaws and clubbed tail. Lives in volcanoes where it awaits food from its subjects."
+	},
+	{
+		"name": "Crimson Goregutter",
+		"classes": ["boulder"],
+		"size": {
+			"type": "land",
+			"number": 4
+		},
+		"fireType": "Molten spew",
+		"abilities": ["fire", "armed", "sound"],
+		"picture": "",
+		"description": "Although Goregutters have impressive sets of antlers and axe-shaped tails, they are gentler than they appear and like to be left in peace. In battle, however, they have the ability to spew molten lava onto their antlers before ramming opponents with fiery force."
+	},
+	{
+		"name": "Gronckle",
+		"classes": ["boulder"],
+		"size": {
+			"type": "land",
+			"number": 2
+		},
+		"fireType": "Lava blasts",
+		"abilities": ["fire", "substance", "armed"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Eruptodon",
+		"classes": ["boulder"],
+		"size": {
+			"type": "land",
+			"number": 4
+		},
+		"fireType": "Lava volley",
+		"abilities": ["fire", "armed", "armed"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Hotburple",
+		"classes": ["boulder"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Lava blasts",
+		"abilities": ["fire", "substance", "armed"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Whispering Death",
+		"classes": ["boulder"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Rings of fire",
+		"abilities": ["fire", "spines", "burrow"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Rumblehorn",
+		"classes": ["tracker"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Flaming rocks",
+		"abilities": ["fire", "armed", "supersense"],
+		"picture": "",
+		"description": "Rumblehorns shoot long-ranged fire missiles which explode on impact. They can find anything on scent for miles away, even with just a weak scent from a helmet."
+	},
+	{
+		"name": "Deadly Nadder",
+		"classes": ["tracker"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Magnesium fire",
+		"abilities": ["fire", "spines", "supersense", "speed"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Stormcutter",
+		"classes": ["sharp"],
+		"size": {
+			"type": "sky/sea",
+			"number": 4
+		},
+		"fireType": "Flaming torus",
+		"abilities": ["fire", "armed", "speed"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Raincutter",
+		"classes": ["sharp"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Waterproof fire",
+		"abilities": ["fire", "water"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Razorwhip",
+		"classes": ["sharp"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Bright blue fire",
+		"abilities": ["fire", "armed", "spines", "venom"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Timberjack",
+		"classes": ["sharp"],
+		"size": {
+			"type": "sky/sea",
+			"number": 4
+		},
+		"fireType": "Oil based fire",
+		"abilities": ["fire", "armed", "substance"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Bewilderbeast",
+		"classes": ["tidal"],
+		"size": {
+			"type": "sea",
+			"number": 6
+		},
+		"fireType": "Ice blasts",
+		"abilities": ["ice", "water", "armed", "supersense", "alpha"],
+		"picture": "",
+		"description": "Colossal leviathan known as the king of the dragons. Spews water that freezes into ice spikes. Huge help spar with other individuals for alpha status."
+	},
+	{
+		"name": "Seashocker",
+		"classes": ["tidal"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Electric charges",
+		"abilities": ["electric", "water", "armed"],
+		"picture": "",
+		"description": "The Seashocker is capable of emitting underwater sonar, and these dragons travel in schools or pods, similar to fish and dolphins."
+	},
+	{
+		"name": "Scauldron",
+		"classes": ["tidal"],
+		"size": {
+			"type": "sky/sea",
+			"number": 4
+		},
+		"fireType": "Boiling water",
+		"abilities": ["water", "water", "venom"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Thunderdrum",
+		"classes": ["tidal"],
+		"size": {
+			"type": "sky/sea",
+			"number": 3
+		},
+		"fireType": "Sonic blasts",
+		"abilities": ["sound", "sound", "water"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Death Song",
+		"classes": ["mystery"],
+		"size": {
+			"type": "land",
+			"number": 4
+		},
+		"fireType": "Molten resin",
+		"abilities": ["substance", "sound", "sound"],
+		"picture": "",
+		"description": "This Dragon uses his melodic call to lure his targets into the dense jungles of Melody Island. There, he can watch as they search for the source of the song."
+	},
+	{
+		"name": "Cavern Crasher",
+		"classes": ["mystery"],
+		"size": {
+			"type": "land",
+			"number": 4
+		},
+		"fireType": "Bright green fire",
+		"abilities": ["fire", "substance", "burrow", "stealth"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Hobgobbler",
+		"classes": ["mystery", "stoker"],
+		"size": {
+			"type": "land",
+			"number": 1
+		},
+		"fireType": "Incendiary slobber",
+		"abilities": ["fire", "substance"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Hideous Zippleback",
+		"classes": ["mystery"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Gas and spark",
+		"abilities": ["fire", "substance", "supersense"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Snaptrapper",
+		"classes": ["mystery"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Odorous mist, acid",
+		"abilities": ["substance", "stealth", "venom", "acid"],
+		"picture": "",
+		"description": ""
+	},
+	{
+		"name": "Changewing",
+		"classes": ["mystery"],
+		"size": {
+			"type": "land",
+			"number": 3
+		},
+		"fireType": "Corrosive acid",
+		"abilities": ["acid", "chromatic", "stealth"],
+		"picture": "",
+		"description": ""
+	}
+]
