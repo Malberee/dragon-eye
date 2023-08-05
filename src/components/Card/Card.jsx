@@ -38,7 +38,7 @@ const Card = ({
 		const formattedName = name.split(' ')
 		formattedName[0] = formattedName[0].toLowerCase()
 
-		return `../../src/assets/dragons/${formattedName.join('')}.png`
+		return `./src/images/dragons/${formattedName.join('')}.png`
 	}
 
 	return (
@@ -59,7 +59,7 @@ const Card = ({
 
 						<CardInner>
 							<Salvo>
-								<SalvoIcon src="../../src/assets/icons/salvo.svg" />
+								<SalvoIcon src="./src/images/icons/salvo.svg" />
 								<SalvoType>{fireType}</SalvoType>
 							</Salvo>
 
