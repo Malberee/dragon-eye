@@ -17,7 +17,7 @@ const SizeIcon = ({ type, number }) => {
 	}
 
 	return (
-		<Icon src={`./src/images/icons/sizes/${getSizeIcon(type, number)}.png`} />
+		<Icon src={`/src/images/icons/sizes/${getSizeIcon(type, number)}.png`} />
 	)
 }
 

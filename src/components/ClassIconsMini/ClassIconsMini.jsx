@@ -8,7 +8,7 @@ const ClassIconsMini = ({ classes }) => {
 			{classes.map((dragonClass) => (
 				<Icon
 					key={nanoid()}
-					src={`./src/images/icons/classesMini/${dragonClass}.png`}
+					src={`/src/images/icons/classesMini/${dragonClass}.png`}
 					countClasses={classes.length}
 				/>
 			))}
