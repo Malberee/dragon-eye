@@ -1,8 +1,8 @@
 import React from 'react'
 import { nanoid } from 'nanoid'
-import { IconsWrapper, Icon } from './ClassIcons.styled'
+import { IconsWrapper, Icon } from './ClassIconsMini.styled'
 
-const ClassIcons = ({ classes }) => {
+const ClassIconsMini = ({ classes }) => {
 	return (
 		<IconsWrapper>
 			{classes.map((dragonClass) => (
@@ -16,4 +16,4 @@ const ClassIcons = ({ classes }) => {
 	)
 }
 
-export default ClassIcons
+export default ClassIconsMini

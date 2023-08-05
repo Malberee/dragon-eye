@@ -1,8 +1,11 @@
-import React from 'react'
+import { useState } from 'react'
 import { nanoid } from 'nanoid'
+import Tilt from 'react-parallax-tilt'
+import FlipCard from 'flip-card-react'
 import {
 	CardOutline,
 	CardWrapper,
+	CardBackWrapper,
 	CardHeader,
 	DragonName,
 	DragonPicture,
@@ -14,12 +17,15 @@ import {
 	DragonDescription,
 } from './Card.styled'
 import SizeIcon from '../SizeIcon'
-import ClassIcons from '../ClassIcons'
+import ClassIconsMini from '../ClassIconsMini'
 import AbilityIcon from '../AbilityIcon'
+import ClassIcon from '../ClassIcon'
 
 const Card = ({
 	dragon: { name, classes, size, fireType, abilities, picture, description },
 }) => {
+	const [isFlipped, setFlipped] = useState(false)
+
 	const getCardOutline = (classes) => {
 		if (classes.length > 1) {
 			return `${classes[0]}_${classes[1]}`
@@ -35,13 +41,16 @@ const Card = ({
 		return `../../src/assets/dragons/${formattedName.join('')}.png`
 	}
 
-	return (
-		<CardOutline classes={getCardOutline(classes)}>
+	const front = (
+		<CardOutline
+			classes={getCardOutline(classes)}
+			onClick={() => setFlipped((x) => !x)}
+		>
 			<CardWrapper>
 				<CardHeader>
 					<SizeIcon type={size.type} number={size.number} />
 					<DragonName>{name}</DragonName>
-					<ClassIcons classes={classes} />
+					<ClassIconsMini classes={classes} />
 				</CardHeader>
 
 				<DragonPicture src={getDragonPicture(name)} />
@@ -62,6 +71,24 @@ const Card = ({
 				<DragonDescription>{description}</DragonDescription>
 			</CardWrapper>
 		</CardOutline>
+	)
+
+	const back = (
+		<CardOutline
+			classes={getCardOutline(classes)}
+			onClick={() => setFlipped((x) => !x)}
+			style={{ transform: 'scaleX(-1)' }}
+		>
+			<CardBackWrapper>
+				<ClassIcon classes={classes} countClasses={classes.length} />
+			</CardBackWrapper>
+		</CardOutline>
+	)
+
+	return (
+		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
+			<FlipCard isFlipped={isFlipped} front={front} back={back} speed={0.6} />
+		</Tilt>
 	)
 }
 

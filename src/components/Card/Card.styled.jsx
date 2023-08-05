@@ -21,6 +21,21 @@ export const CardWrapper = styled.div`
 	background-repeat: no-repeat;
 `
 
+export const CardBackWrapper = styled.div`
+	width: 518px;
+	height: 718px;
+	padding: 20px 18px 17px 19px;
+	border-radius: 68px;
+
+	background-image: url('./src/assets/overlays/backside_overlay.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`
+
 export const CardHeader = styled.div`
 	width: 100%;
 	height: 70px;
@@ -67,7 +82,7 @@ export const SalvoIcon = styled.img`
 `
 
 export const SalvoType = styled.p`
-	font-size: 26px;
+	font-size: 24px;
 `
 
 export const Abilities = styled.div`
