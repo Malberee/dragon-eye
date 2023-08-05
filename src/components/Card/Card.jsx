@@ -28,6 +28,13 @@ const Card = ({
 		return classes
 	}
 
+	const getDragonPicture = (name) => {
+		const formattedName = name.split(' ')
+		formattedName[0] = formattedName[0].toLowerCase()
+
+		return `../../src/assets/dragons/${formattedName.join('')}.png`
+	}
+
 	return (
 		<CardOutline classes={getCardOutline(classes)}>
 			<CardWrapper>
@@ -37,7 +44,7 @@ const Card = ({
 					<ClassIcons classes={classes} />
 				</CardHeader>
 
-				<DragonPicture src="../../src/assets/dragons/nftp.png" />
+				<DragonPicture src={getDragonPicture(name)} />
 
 				<CardInner>
 					<Salvo>
