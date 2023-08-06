@@ -147,3 +147,7 @@ export const DragonDescription = styled.p`
 
 	font-size: 14px;
 `
+
+export const TooltipLink = styled.a`
+	cursor: pointer;
+`

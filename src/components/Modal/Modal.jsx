@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { nanoid } from 'nanoid'
 import Tilt from 'react-parallax-tilt'
 import ReactCardFlip from 'react-card-flip'
+import { Tooltip } from 'react-tooltip'
 import {
 	CardOutline,
 	CardWrapper,
@@ -16,6 +17,7 @@ import {
 	Abilities,
 	DragonDescription,
 	CardBackIconsWrapper,
+	TooltipLink,
 } from '../Card/Card.styled'
 import { ModalOverlay, ModalWrapper } from './Modal.styled'
 import SizeIcon from '../SizeIcon'
@@ -65,9 +67,28 @@ const Modal = ({ dragon, toggleModal }) => {
 						>
 							<CardWrapper>
 								<CardHeader>
-									<SizeIcon type={size.type} number={size.number} />
-									<DragonName>{name}</DragonName>
-									<ClassIconsMini classes={classes} />
+									<TooltipLink
+										data-tooltip-id="my-tooltip"
+										data-tooltip-content={`Type: ${size.type}\n\t Size: ${size.number}`}
+									>
+										<SizeIcon type={size.type} number={size.number} />
+									</TooltipLink>
+									<TooltipLink
+										data-tooltip-id="my-tooltip"
+										data-tooltip-content={name}
+									>
+										<DragonName>{name}</DragonName>
+									</TooltipLink>
+									<TooltipLink
+										data-tooltip-id="my-tooltip"
+										data-tooltip-content={
+											classes.length > 1
+												? `Classes: ${classes.join(' and ')}`
+												: `Class: ${classes[0]}`
+										}
+									>
+										<ClassIconsMini classes={classes} />
+									</TooltipLink>
 								</CardHeader>
 
 								<DragonPicture src={getDragonPicture(name)} />
@@ -75,17 +96,32 @@ const Modal = ({ dragon, toggleModal }) => {
 								<CardInner>
 									<Salvo>
 										<SalvoIcon src="/src/images/icons/salvo.svg" />
-										<SalvoType>{fireType}</SalvoType>
+										<TooltipLink
+											data-tooltip-id="my-tooltip"
+											data-tooltip-content={fireType}
+										>
+											<SalvoType>{fireType}</SalvoType>
+										</TooltipLink>
 									</Salvo>
 
 									<Abilities>
 										{abilities.map((ability) => (
-											<AbilityIcon key={nanoid()} ability={ability} />
+											<TooltipLink
+												data-tooltip-id="my-tooltip"
+												data-tooltip-content={ability}
+											>
+												<AbilityIcon key={nanoid()} ability={ability} />
+											</TooltipLink>
 										))}
 									</Abilities>
 								</CardInner>
 
-								<DragonDescription>{description}</DragonDescription>
+								<TooltipLink
+									data-tooltip-id="my-tooltip"
+									data-tooltip-content={description}
+								>
+									<DragonDescription>{description}</DragonDescription>
+								</TooltipLink>
 							</CardWrapper>
 						</CardOutline>
 
@@ -119,6 +155,17 @@ const Modal = ({ dragon, toggleModal }) => {
 					</ReactCardFlip>
 				</Tilt>
 			</ModalWrapper>
+			<Tooltip
+				id="my-tooltip"
+				style={{
+					fontFamily: 'Roboto',
+					textTransform: 'none',
+					height: 'auto',
+					maxWidth: '400px',
+					whiteSpace: 'pre-line',
+					textAlign: 'left'
+				}}
+			/>
 		</ModalOverlay>
 	)
 }
