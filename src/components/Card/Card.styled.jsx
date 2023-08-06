@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { IconsWrapper } from '../ClassIconsMini/ClassIconsMini.styled'
 
 export const CardOutline = styled.div`
 	border-radius: 41px;
@@ -6,6 +7,7 @@ export const CardOutline = styled.div`
 
 	background-image: url(${(props) =>
 		`./src/images/overlays/${props.classes}.png`});
+	background-color: #902831;
 	background-size: cover;
 	background-repeat: no-repeat;
 `
@@ -17,23 +19,61 @@ export const CardWrapper = styled.div`
 	border-radius: 68px;
 
 	background-image: url('./src/images/overlays/overlay.png');
+	background-color: #d2a970;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 `
 
 export const CardBackWrapper = styled.div`
+	position: relative;
+
 	width: 518px;
 	height: 718px;
 	padding: 20px 18px 17px 19px;
 	border-radius: 68px;
 
 	background-image: url('./src/images/overlays/backside_overlay.png');
+	background-color: #d2a970;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
+`
+
+export const CardBackIconsWrapper = styled.div`
+	display: flex;
+
+	${IconsWrapper} {
+		position: absolute;
+
+		width: 50px;
+
+		filter: saturate(0) brightness(0);
+		opacity: 30%;
+
+		:nth-child(1) {
+			border-color: green;
+			top: 70px;
+			left: 70px;
+		}
+		:nth-child(2) {
+			border-color: red;
+			top: 70px;
+			right: 70px;
+		}
+		:nth-child(3) {
+			border-color: yellow;
+			bottom: 70px;
+			left: 70px;
+		}
+		:nth-child(4) {
+			border-color: pink;
+			bottom: 70px;
+			right: 70px;
+		}
+	}
 `
 
 export const CardHeader = styled.div`

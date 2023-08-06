@@ -15,6 +15,7 @@ import {
 	SalvoType,
 	Abilities,
 	DragonDescription,
+	CardBackIconsWrapper,
 } from './Card.styled'
 import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'
@@ -81,6 +82,12 @@ const Card = ({
 				>
 					<CardBackWrapper>
 						<ClassIcon classes={classes} countClasses={classes.length} />
+						<CardBackIconsWrapper>
+							<ClassIconsMini classes={classes} countClasses={classes.length} />
+							<ClassIconsMini classes={classes} countClasses={classes.length} />
+							<ClassIconsMini classes={classes} countClasses={classes.length} />
+							<ClassIconsMini classes={classes} countClasses={classes.length} />
+						</CardBackIconsWrapper>
 					</CardBackWrapper>
 				</CardOutline>
 			</ReactCardFlip>
