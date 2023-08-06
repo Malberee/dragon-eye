@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import { nanoid } from 'nanoid'
-import Tilt from 'react-parallax-tilt'
-import ReactCardFlip from 'react-card-flip'
 import {
+	CardLink,
 	CardOutline,
 	CardWrapper,
-	CardBackWrapper,
 	CardHeader,
 	DragonName,
 	DragonPicture,
@@ -23,10 +21,10 @@ import AbilityIcon from '../AbilityIcon'
 import ClassIcon from '../ClassIcon'
 
 const Card = ({
-	dragon: { name, classes, size, fireType, abilities, picture, description },
+	dragon,
+	toggleModal,
+	setDragon,
 }) => {
-	const [isFlipped, setFlipped] = useState(false)
-
 	const getCardOutline = (classes) => {
 		if (classes.length > 1) {
 			return `${classes[0]}_${classes[1]}`
@@ -42,12 +40,17 @@ const Card = ({
 		return `/src/images/dragons/${formattedName.join('')}.png`
 	}
 
+	const { name, classes, size, fireType, abilities, picture, description } = dragon
+
 	return (
-		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
-			<ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+		<CardLink
+			onClick={() => {
+				toggleModal()
+				setDragon(dragon)
+			}}
+		>
 				<CardOutline
 					classes={getCardOutline(classes)}
-					onClick={() => setFlipped((x) => !x)}
 				>
 					<CardWrapper>
 						<CardHeader>
@@ -74,24 +77,7 @@ const Card = ({
 						<DragonDescription>{description}</DragonDescription>
 					</CardWrapper>
 				</CardOutline>
-
-				<CardOutline
-					classes={getCardOutline(classes)}
-					onClick={() => setFlipped((x) => !x)}
-					style={{ transform: 'scaleX(-1)' }}
-				>
-					<CardBackWrapper>
-						<ClassIcon classes={classes} countClasses={classes.length} />
-						<CardBackIconsWrapper>
-							<ClassIconsMini classes={classes} countClasses={classes.length} />
-							<ClassIconsMini classes={classes} countClasses={classes.length} />
-							<ClassIconsMini classes={classes} countClasses={classes.length} />
-							<ClassIconsMini classes={classes} countClasses={classes.length} />
-						</CardBackIconsWrapper>
-					</CardBackWrapper>
-				</CardOutline>
-			</ReactCardFlip>
-		</Tilt>
+		</CardLink>
 	)
 }
 

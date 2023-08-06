@@ -3,8 +3,8 @@ import styled, { css } from 'styled-components'
 export const IconsWrapper = styled.div`
 	position: relative;
 
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	display: flex;
 	flex-direction: column;
 `
@@ -25,9 +25,9 @@ export const Icon = styled.img`
 						transform: translate(-25%, -25%);
 					}
 
-					width: 45px;
+					width: 25px;
 			  `
 			: css`
-					width: 60px;
+					width: 40px;
 			  `}
 `

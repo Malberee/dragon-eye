@@ -1,5 +1,13 @@
 @import-normalize;
 
+@font-face {
+	font-family: 'Runic';
+	src: url('./fonts/Runic-Regular.woff2') format('woff2'),
+		url('./fonts/Runic-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 :root {
 	background-color: #242424;
 }
@@ -10,6 +18,7 @@ body {
 	place-items: center;
 	min-width: 320px;
 	min-height: 100vh;
+	text-transform: uppercase;
 }
 
 p,
