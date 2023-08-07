@@ -1,44 +1,11 @@
 import styled from 'styled-components'
 import { IconsWrapper } from '../ClassIconsMini/ClassIconsMini.styled'
 
-export const CardLink = styled.a`
-	cursor: pointer;
-
-	:hover {
-		transform: scale(1.02);
-	}
-
-	transition: transform cubic-bezier(0.17, 0.67, 0.83, 0.67) 150ms;
-`
-
-export const CardOutline = styled.div`
-	display: inline-block;
-	border-radius: 30px;
-	padding: 13px;
-
-	background-image: url(${(props) =>
-		`./src/images/overlays/${props.classes}.png`});
-	background-color: #d7ae73;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-`
-
-export const CardWrapper = styled.div`
-	width: 301px;
-	height: 418px;
-	padding: 10px 8px 7px 9px;
-	border-radius: 37px;
-
-	background-image: url('./src/images/overlays/overlay.png');
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-`
-
 export const CardBackWrapper = styled.div`
 	position: relative;
 
-	width: 301px;
-	height: 418px;
+	width: 518px;
+	height: 718px;
 	border-radius: 37px;
 
 	background-image: url('./src/images/overlays/backside_overlay.png');
@@ -59,33 +26,55 @@ export const CardBackIconsWrapper = styled.div`
 		transform: scaleX(-1);
 
 		:nth-child(1) {
-			border-color: green;
-			top: 40px;
-			left: 40px;
+			top: 70px;
+			left: 70px;
 		}
 		:nth-child(2) {
-			border-color: red;
-			top: 40px;
-			right: 40px;
+			top: 70px;
+			right: 70px;
 		}
 		:nth-child(3) {
-			border-color: yellow;
-			bottom: 40px;
-			left: 40px;
+			bottom: 70px;
+			left: 70px;
 		}
 		:nth-child(4) {
-			border-color: pink;
-			bottom: 40px;
-			right: 40px;
+			bottom: 70px;
+			right: 70px;
 		}
 	}
 `
 
+export const CardOutline = styled.div`
+	border-radius: 41px;
+	padding: 20px;
+
+	display: inline-block;
+
+	background-image: url(${(props) =>
+		`./src/images/overlays/${props.classes}.png`});
+	background-color: #d7ae73;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+`
+
+export const CardWrapper = styled.div`
+	/* width: 301px;
+	height: 418px; */
+	padding: 20px 18px 17px 19px;
+	border-radius: 63px;
+
+	background-image: url('./src/images/overlays/overlay.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+`
+
 export const CardHeader = styled.div`
 	width: 100%;
-	height: 42px;
+	height: 69px;
 	padding: 0px 4px;
-	margin-bottom: 8px;
+	margin-bottom: 15px;
 
 	display: flex;
 	justify-content: space-between;
@@ -93,29 +82,28 @@ export const CardHeader = styled.div`
 `
 
 export const DragonName = styled.h2`
-	padding: 5px;
+	padding: 10px;
 
-	font-size: 24px;
+	font-size: 42px;
 	text-align: center;
 `
 
 export const DragonPicture = styled.img`
 	width: 100%;
-	padding: 7.5px 0px;
+	padding: 15px 0px;
 `
 
 export const CardInner = styled.div`
-	height: 39px;
-	padding: 10px 0;
+	padding: 19px 0;
 
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 20px;
 `
 
 export const Salvo = styled.div`
 	width: 100%;
-	padding: 0px 2px;
+	padding: 0px 5px;
 
 	display: flex;
 	align-items: center;
@@ -123,29 +111,30 @@ export const Salvo = styled.div`
 `
 
 export const SalvoIcon = styled.img`
-	width: 10px;
-	margin-left: 2px;
+	width: 20px;
+	/* margin-right: 2px; */
 `
 
 export const SalvoType = styled.p`
-	font-size: 12px;
+	font-size: 24px;
 `
 
 export const Abilities = styled.div`
 	width: 100%;
-	padding: 0px 2px;
+	padding: 0px 5px;
 
 	display: flex;
 	align-items: center;
-	gap: 2px;
+	gap: 5px;
 `
 
 export const DragonDescription = styled.p`
 	max-height: 100px;
-	padding: 4px;
+	padding: 10px;
 	border-radius: 0 0 27px 27px;
 
-	font-size: 14px;
+	font-size: 28px;
+	text-align: center;
 `
 
 export const TooltipLink = styled.a`

@@ -20,5 +20,3 @@ export const ModalOverlay = styled.div`
 
 	transform: scale(1.5);
 `
-
-export const ModalWrapper = styled.div``
