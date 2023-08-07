@@ -17,6 +17,7 @@ import {
 	DragonDescription,
 	CardBackWrapper,
 	CardBackIconsWrapper,
+	CardBackClassIconWrapper,
 	TooltipLink,
 } from '../Card/Card.styled'
 import SizeIcon from '../SizeIcon'
@@ -124,8 +125,12 @@ const CardModal = ({ dragon }) => {
 					onClick={() => setIsFlipped((x) => !x)}
 					style={{ transform: 'scaleX(-1)' }}
 				>
-					<CardBackWrapper>
-						<ClassIcon classes={classes} countClasses={classes.length} />
+					<CardBackWrapper countClasses={classes.length}>
+						<CardBackClassIconWrapper>
+							{classes.map((dragonClass) => (
+								<ClassIcon dragonClass={dragonClass} countClasses={classes.length} />
+							))}
+						</CardBackClassIconWrapper>
 						<CardBackIconsWrapper>
 							<ClassIconsMini classes={classes} countClasses={classes.length} />
 							<ClassIconsMini classes={classes} countClasses={classes.length} />

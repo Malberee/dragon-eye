@@ -10,6 +10,7 @@
 		"component": "generate-react component"
 	},
 	"dependencies": {
+		"framer-motion": "^10.15.1",
 		"modern-normalize": "^1.1.0",
 		"nanoid": "^4.0.2",
 		"prop-types": "^15.8.1",

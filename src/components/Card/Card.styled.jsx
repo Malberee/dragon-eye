@@ -41,13 +41,21 @@ export const CardBackWrapper = styled.div`
 	height: 418px;
 	border-radius: 37px;
 
-	background-image: url('./src/images/overlays/backside_overlay.png');
+	background-image: url(${(props) =>
+		props.countClasses < 2
+			? './src/images/overlays/overlayBacksideOneClass.png'
+			: './src/images/overlays/overlayBacksideTwoClasses.png'});
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+`
 
+export const CardBackClassIconWrapper = styled.div`
+	height: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 23px;
 `
 
 export const CardBackIconsWrapper = styled.div`

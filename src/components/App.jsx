@@ -12,12 +12,15 @@ function App() {
 	const [query, setQuery] = useState('')
 
 	const toggleModal = () => {
-		setModalIsOpen(!modalIsOpen)
+		if (modalIsOpen) {
+			setModalIsOpen(false)
+			document.body.style.overflow = 'unset'
+		}
+		if (!modalIsOpen) {
+			setModalIsOpen(true)
+			document.body.style.overflow = 'hidden'
+		}
 	}
-
-	console.log(
-		dragons.filter((dragon) => dragon.name.toLowerCase().includes(query))
-	)
 
 	return (
 		<>
@@ -31,7 +34,7 @@ function App() {
 					setDragon={setDragon}
 				/>
 			</Container>
-			{modalIsOpen && <Modal dragon={dragon} toggleModal={toggleModal} />}
+			<Modal isOpen={modalIsOpen} dragon={dragon} toggleModal={toggleModal} />
 		</>
 	)
 }
