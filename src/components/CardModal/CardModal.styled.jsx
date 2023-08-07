@@ -8,7 +8,7 @@ export const CardBackWrapper = styled.div`
 	height: 718px;
 	border-radius: 37px;
 
-	background-image: url('./src/images/overlays/backside_overlay.png');
+	background-image: url('../images/images/overlays/backside_overlay.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 
@@ -51,7 +51,7 @@ export const CardOutline = styled.div`
 	display: inline-block;
 
 	background-image: url(${(props) =>
-		`./src/images/overlays/${props.classes}.png`});
+		`../images/images/overlays/${props.classes}.png`});
 	background-color: #d7ae73;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -65,7 +65,7 @@ export const CardWrapper = styled.div`
 	padding: 20px 18px 17px 19px;
 	border-radius: 63px;
 
-	background-image: url('./src/images/overlays/overlay.png');
+	background-image: url('../images/images/overlays/overlay.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 `

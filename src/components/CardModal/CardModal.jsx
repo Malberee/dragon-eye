@@ -40,7 +40,7 @@ const CardModal = ({ dragon }) => {
 		const formattedName = name.split(' ')
 		formattedName[0] = formattedName[0].toLowerCase()
 
-		return `/src/images/dragons/${formattedName.join('')}.png`
+		return `./images/dragons/${formattedName.join('')}.png`
 	}
 
 	const { name, classes, size, fireType, abilities, picture, description } =
@@ -91,7 +91,7 @@ const CardModal = ({ dragon }) => {
 
 						<CardInner>
 							<Salvo>
-								<SalvoIcon src="/src/images/icons/salvo.svg" />
+								<SalvoIcon src="./images/icons/salvo.svg" />
 								<TooltipLink
 									data-tooltip-id="my-tooltip"
 									data-tooltip-content={fireType}

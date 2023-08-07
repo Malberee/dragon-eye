@@ -18,7 +18,7 @@ const Modal = ({ isOpen, dragon, toggleModal }) => {
 		const formattedName = name.split(' ')
 		formattedName[0] = formattedName[0].toLowerCase()
 
-		return `/src/images/dragons/${formattedName.join('')}.png`
+		return `./images/images/dragons/${formattedName.join('')}.png`
 	}
 
 	return (
