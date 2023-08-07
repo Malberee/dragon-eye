@@ -24,24 +24,11 @@ import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'
 import AbilityIcon from '../AbilityIcon'
 import ClassIcon from '../ClassIcon'
+import { getDragonPicture } from '../../helpers/getDragonPicture'
+import {getCardOutline} from '../../helpers/getCardOutline'
 
 const CardModal = ({ dragon }) => {
 	const [isFlipped, setIsFlipped] = useState(false)
-
-	const getCardOutline = (classes) => {
-		if (classes.length > 1) {
-			return `${classes[0]}_${classes[1]}`
-		}
-
-		return classes
-	}
-
-	const getDragonPicture = (name) => {
-		const formattedName = name.split(' ')
-		formattedName[0] = formattedName[0].toLowerCase()
-
-		return `./images/dragons/${formattedName.join('')}.png`
-	}
 
 	const { name, classes, size, fireType, abilities, picture, description } =
 		dragon
