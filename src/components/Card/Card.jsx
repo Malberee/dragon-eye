@@ -12,7 +12,6 @@ import {
 	SalvoType,
 	Abilities,
 	DragonDescription,
-	CardBackIconsWrapper,
 } from './Card.styled'
 import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'

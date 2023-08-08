@@ -5,6 +5,7 @@ import { HeaderWrapper } from './Header.styled'
 const Header = ({ setQuery }) => (
 	<HeaderWrapper>
 		<Searchbar setQuery={setQuery} />
+		
 	</HeaderWrapper>
 )
 

@@ -4,17 +4,25 @@ import { IconsWrapper } from '../ClassIconsMini/ClassIconsMini.styled'
 export const CardBackWrapper = styled.div`
 	position: relative;
 
-	width: 518px;
-	height: 718px;
+	width: 301px;
+	height: 418px;
 	border-radius: 37px;
 
-	background-image: url('../images/images/overlays/backside_overlay.png');
+	background-image: url(${(props) =>
+		props.countClasses < 2
+			? './images/overlays/overlayBacksideOneClass.png'
+			: './images/overlays/overlayBacksideTwoClasses.png'});
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+`
 
+export const CardBackClassIconWrapper = styled.div`
+	height: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 28px;
 `
 
 export const CardBackIconsWrapper = styled.div`
@@ -26,20 +34,24 @@ export const CardBackIconsWrapper = styled.div`
 		transform: scaleX(-1);
 
 		:nth-child(1) {
-			top: 70px;
-			left: 70px;
+			border-color: green;
+			top: 40px;
+			left: 40px;
 		}
 		:nth-child(2) {
-			top: 70px;
-			right: 70px;
+			border-color: red;
+			top: 40px;
+			right: 40px;
 		}
 		:nth-child(3) {
-			bottom: 70px;
-			left: 70px;
+			border-color: yellow;
+			bottom: 40px;
+			left: 40px;
 		}
 		:nth-child(4) {
-			bottom: 70px;
-			right: 70px;
+			border-color: pink;
+			bottom: 40px;
+			right: 40px;
 		}
 	}
 `

@@ -15,17 +15,19 @@ import {
 	SalvoType,
 	Abilities,
 	DragonDescription,
+	TooltipLink,
+} from '../Card/Card.styled'
+import {
 	CardBackWrapper,
 	CardBackIconsWrapper,
 	CardBackClassIconWrapper,
-	TooltipLink,
-} from '../Card/Card.styled'
+} from './CardModal.styled'
 import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'
 import AbilityIcon from '../AbilityIcon'
 import ClassIcon from '../ClassIcon'
 import { getDragonPicture } from '../../helpers/getDragonPicture'
-import {getCardOutline} from '../../helpers/getCardOutline'
+import { getCardOutline } from '../../helpers/getCardOutline'
 
 const CardModal = ({ dragon }) => {
 	const [isFlipped, setIsFlipped] = useState(false)
