@@ -10,8 +10,8 @@ export const CardBackWrapper = styled.div`
 
 	background-image: url(${(props) =>
 		props.countClasses < 2
-			? './images/overlays/overlayBacksideOneClass.png'
-			: './images/overlays/overlayBacksideTwoClasses.png'});
+			? './images/overlays/backOverlay.png'
+			: './images/overlays/backOverlayHybrid.png'});
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 `
@@ -61,6 +61,7 @@ export const CardOutline = styled.div`
 	padding: 20px;
 
 	display: inline-block;
+	transition: transform 200ms linear;
 
 	background-image: url(${(props) =>
 		`../images/images/overlays/${props.classes}.png`});

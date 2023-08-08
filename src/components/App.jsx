@@ -32,9 +32,13 @@ function App() {
 					)}
 					toggleModal={toggleModal}
 					setDragon={setDragon}
+					modalIsOpen={modalIsOpen}
+					dragon={dragon}
 				/>
 			</Container>
-			<Modal isOpen={modalIsOpen} dragon={dragon} toggleModal={toggleModal} />
+			{modalIsOpen && (
+				<Modal isOpen={modalIsOpen} dragon={dragon} toggleModal={toggleModal} />
+			)}
 		</>
 	)
 }

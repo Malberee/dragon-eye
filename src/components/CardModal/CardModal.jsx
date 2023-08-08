@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { nanoid } from 'nanoid'
 import { Tooltip } from 'react-tooltip'
+import { motion } from 'framer-motion'
 import Tilt from 'react-parallax-tilt'
 import ReactCardFlip from 'react-card-flip'
 import {
@@ -92,6 +93,7 @@ const CardModal = ({ dragon }) => {
 							<Abilities>
 								{abilities.map((ability) => (
 									<TooltipLink
+										key={nanoid()}
 										data-tooltip-id="my-tooltip"
 										data-tooltip-content={ability}
 									>
@@ -117,7 +119,7 @@ const CardModal = ({ dragon }) => {
 					<CardBackWrapper countClasses={classes.length}>
 						<CardBackClassIconWrapper>
 							{classes.map((dragonClass) => (
-								<ClassIcon dragonClass={dragonClass} countClasses={classes.length} />
+								<ClassIcon key={nanoid()} dragonClass={dragonClass} countClasses={classes.length} />
 							))}
 						</CardBackClassIconWrapper>
 						<CardBackIconsWrapper>
