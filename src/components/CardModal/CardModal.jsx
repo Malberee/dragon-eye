@@ -15,12 +15,12 @@ import {
 	SalvoType,
 	Abilities,
 	DragonDescription,
-	TooltipLink,
 } from '../Card/Card.styled'
 import {
 	CardBackWrapper,
 	CardBackIconsWrapper,
 	CardBackClassIconWrapper,
+	TooltipLink
 } from './CardModal.styled'
 import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'

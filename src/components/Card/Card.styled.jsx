@@ -1,11 +1,4 @@
 import styled from 'styled-components'
-import { IconsWrapper } from '../ClassIconsMini/ClassIconsMini.styled'
-
-export const CardLink = styled.a`
-	cursor: pointer;
-
-	transition: transform cubic-bezier(0.17, 0.67, 0.83, 0.67) 150ms;
-`
 
 export const CardOutline = styled.div`
 	display: inline-block;
