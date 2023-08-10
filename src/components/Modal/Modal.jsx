@@ -12,10 +12,14 @@ const Modal = ({ dragon, toggleModal }) => {
 	let screenWidth = window.innerWidth
 
 	const handleClick = () => {
-		childRef.current.isFlipped(false)
-		setTimeout(() => {
+		if (childRef.current.isFlipped) {
+			childRef.current.setIsFlipped(false)
+			setTimeout(() => {
+				toggleModal()
+			}, 300)
+		} else {
 			toggleModal()
-		}, 300)
+		}
 	}
 
 	return createPortal(

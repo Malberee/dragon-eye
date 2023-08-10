@@ -33,7 +33,8 @@ const CardModal = ({ dragon }, ref) => {
 	const [isFlipped, setIsFlipped] = useState(false)
 
 	useImperativeHandle(ref, () => ({
-		isFlipped: (value) => setIsFlipped(value),
+		setIsFlipped: (value) => setIsFlipped(value),
+		isFlipped
 	}))
 
 	const { name, classes, size, fireType, abilities, picture, description } =
