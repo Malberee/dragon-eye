@@ -25,7 +25,15 @@ const Card = ({ dragon, toggleModal, setDragon, modal }) => {
 		dragon
 
 	return (
-		<motion.div layoutId={name}>
+		<motion.div
+			layoutId={name}
+			whileHover={{
+				scale: 1.03,
+			}}
+			whileTap={{
+				scale: 0.97,
+			}}
+		>
 			<CardLink
 				onClick={() => {
 					toggleModal()
