@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import Header from './Header'
 import Container from './Container'
 import Modal from './Modal'
@@ -33,12 +34,13 @@ function App() {
 					toggleModal={toggleModal}
 					setDragon={setDragon}
 					modalIsOpen={modalIsOpen}
-					dragon={dragon}
 				/>
 			</Container>
-			{modalIsOpen && (
-				<Modal isOpen={modalIsOpen} dragon={dragon} toggleModal={toggleModal} />
-			)}
+			<AnimatePresence>
+				{modalIsOpen && (
+					<Modal dragon={dragon} toggleModal={toggleModal} />
+				)}
+			</AnimatePresence>
 		</>
 	)
 }

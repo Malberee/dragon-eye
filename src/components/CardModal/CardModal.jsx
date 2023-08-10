@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React, { forwardRef, useState, useImperativeHandle } from 'react'
 import { nanoid } from 'nanoid'
 import { Tooltip } from 'react-tooltip'
-import { motion } from 'framer-motion'
 import Tilt from 'react-parallax-tilt'
 import ReactCardFlip from 'react-card-flip'
 import {
@@ -30,8 +29,12 @@ import ClassIcon from '../ClassIcon'
 import { getDragonPicture } from '../../helpers/getDragonPicture'
 import { getCardOutline } from '../../helpers/getCardOutline'
 
-const CardModal = ({ dragon }) => {
+const CardModal = ({ dragon }, ref) => {
 	const [isFlipped, setIsFlipped] = useState(false)
+
+	useImperativeHandle(ref, () => ({
+		isFlipped: (value) => setIsFlipped(value),
+	}))
 
 	const { name, classes, size, fireType, abilities, picture, description } =
 		dragon
@@ -62,7 +65,10 @@ const CardModal = ({ dragon }) => {
 							>
 								<SizeIcon type={size.type} number={size.number} />
 							</TooltipLink>
-							<TooltipLink data-tooltip-id="my-tooltip" data-tooltip-content={name}>
+							<TooltipLink
+								data-tooltip-id="my-tooltip"
+								data-tooltip-content={name}
+							>
 								<DragonName>{name}</DragonName>
 							</TooltipLink>
 							<TooltipLink
@@ -119,7 +125,11 @@ const CardModal = ({ dragon }) => {
 					<CardBackWrapper countClasses={classes.length}>
 						<CardBackClassIconWrapper>
 							{classes.map((dragonClass) => (
-								<ClassIcon key={nanoid()} dragonClass={dragonClass} countClasses={classes.length} />
+								<ClassIcon
+									key={nanoid()}
+									dragonClass={dragonClass}
+									countClasses={classes.length}
+								/>
 							))}
 						</CardBackClassIconWrapper>
 						<CardBackIconsWrapper>
@@ -146,4 +156,4 @@ const CardModal = ({ dragon }) => {
 	)
 }
 
-export default CardModal
+export default forwardRef(CardModal)

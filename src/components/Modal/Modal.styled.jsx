@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-export const ModalOverlay = styled.div`
+export const ModalOverlay = styled(motion.div)`
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,14 +15,4 @@ export const ModalOverlay = styled.div`
 	align-items: center;
 
 	background-color: #00000060;
-
-	/* transform: scale(1.5);
-
-	@media screen and (max-width: 720px) {
-		transform: scale(1.1);
-	} */
-`
-
-export const ModalWrapper = styled(motion.div)`
-	/* transform: scale(1.5); */
 `
