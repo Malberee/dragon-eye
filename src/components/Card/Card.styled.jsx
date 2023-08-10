@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+export const CardLink = styled.a`
+	cursor: pointer;
+`
+
 export const CardOutline = styled.div`
 	display: inline-block;
 	border-radius: 30px;
