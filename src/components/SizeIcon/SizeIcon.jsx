@@ -3,8 +3,8 @@ import { Icon } from './SizeIcon.styled'
 
 const SizeIcon = ({ type, number }) => {
 	const getSizeIcon = (type, number) => {
-		if (number === 6) {
-			return number
+		if (type === 'sea') {
+			return `Land${number}`
 		}
 
 		if (type === 'sky/sea') {

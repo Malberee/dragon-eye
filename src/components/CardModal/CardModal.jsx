@@ -137,17 +137,29 @@ const CardModal = ({ dragon }, ref) => {
 					</CardBackWrapper>
 				</CardOutline>
 			</ReactCardFlip>
-			<Tooltip
-				id="my-tooltip"
-				style={{
-					fontFamily: 'Roboto',
-					textTransform: 'none',
-					height: 'auto',
-					maxWidth: '400px',
-					whiteSpace: 'pre-line',
-					textAlign: 'left',
+			<motion.div
+				initial={{
+					opacity: 0,
 				}}
-			/>
+				animate={{
+					opacity: 1,
+				}}
+				transition={{
+					duration: 20,
+				}}
+			>
+				<Tooltip
+					id="my-tooltip"
+					style={{
+						fontFamily: 'Roboto',
+						textTransform: 'none',
+						height: 'auto',
+						maxWidth: '400px',
+						whiteSpace: 'pre-line',
+						textAlign: 'left',
+					}}
+				/>
+			</motion.div>
 		</Tilt>
 	)
 }
