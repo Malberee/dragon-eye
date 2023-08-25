@@ -23,7 +23,7 @@
 		"fireType": "Plasma blasts",
 		"abilities": ["fire", "speed", "stealth"],
 		"picture": "",
-		"description": ""
+		"description": "Temporarily transforms each scale into a reflective surface that mirrors the Light Fury’s surroundings, essentially rendering her invisible."
 	},
 	{
 		"name": "Snow Wraith",
@@ -36,7 +36,7 @@
 		"fireType": "Frost barrage",
 		"abilities": ["ice", "speed", "stealth", "supersense", "burrow"],
 		"picture": "",
-		"description": ""
+		"description": "This dragon has notoriously poor eyesight and uses thermal sensors to locate its prey. It camouflages itself in the snow because if it can't see you, it doesn't want you to see it!"
 	},
 	{
 		"name": "Triple Stryke",
@@ -49,7 +49,7 @@
 		"fireType": "Blinding fire",
 		"abilities": ["fire", "armed", "venom", "speed"],
 		"picture": "",
-		"description": ""
+		"description": "Vicious. Aggressive. Belligerent. These are only three of the words that describe the Triple Stryke in battle and the incredible fury it unleashes with its trio of braided tails."
 	},
 	{
 		"name": "Skrill",
@@ -62,7 +62,7 @@
 		"fireType": "Lighting beams",
 		"abilities": ["electric", "electric", "speed", "stealth"],
 		"picture": "",
-		"description": ""
+		"description": "This elusive creature is highly secretive and is known to ride lightning bolts. Found only during electrical storms, it can shoot bursts of white fire."
 	},
 	{
 		"name": "Deathgripper",
@@ -75,7 +75,7 @@
 		"fireType": "Flamable acid",
 		"abilities": ["fire", "acid", "armed", "venom"],
 		"picture": "",
-		"description": ""
+		"description": "Deathgrippers are a monstrous species with their protruding tusks, foreclaw pincers, and poisonous clubbed tails. Traveling in packs like wild dogs, Deathgrippers enjoy hunting for prey and should be avoided at all costs."
 	},
 	{
 		"name": "Monstrous Nightmare",
@@ -88,7 +88,7 @@
 		"fireType": "Flaming gel",
 		"abilities": ["fire", "fire", "substance"],
 		"picture": "",
-		"description": ""
+		"description": "Monstrous Nightmares are known for setting their entire body on fire. These dragons are incredibly fearsome and can also fly at a high speed."
 	},
 	{
 		"name": "Terrible Terror",
@@ -101,7 +101,7 @@
 		"fireType": "Pinpoint fire",
 		"abilities": ["fire", "sound"],
 		"picture": "",
-		"description": ""
+		"description": "The Terrible Terror. Smallest of the dragons, but no less ferocious. You know it's about to breathe fire when you hear a small hissing sound. By taming it start with a shiny object."
 	},
 	{
 		"name": "Hobblegrunt",
@@ -114,7 +114,7 @@
 		"fireType": "Fluid based fire",
 		"abilities": ["fire", "chromatic", "supersense"],
 		"picture": "",
-		"description": ""
+		"description": "Hobblegrunts are considered lucky dragons and that they can predict certain things, both good and bad, a split second before they actually happen, and their skin changes color depending on their mood."
 	},
 	{
 		"name": "Red Death",
@@ -153,7 +153,7 @@
 		"fireType": "Lava blasts",
 		"abilities": ["fire", "substance", "armed"],
 		"picture": "",
-		"description": ""
+		"description": "This Boulder-class dragon lacks speed, but it can fly like a hummingbird and shoot lava rocks. Gronckle's tough hide can take more hits than almost any other dragon."
 	},
 	{
 		"name": "Eruptodon",
@@ -166,7 +166,7 @@
 		"fireType": "Lava volley",
 		"abilities": ["fire", "armed", "armed"],
 		"picture": "",
-		"description": ""
+		"description": "Insatiable dragon that feeds off lava in active volcanoes. Covered in impenatrable igneous rock armor and has heat resitant eye lenses."
 	},
 	{
 		"name": "Hotburple",
@@ -179,7 +179,7 @@
 		"fireType": "Lava blasts",
 		"abilities": ["fire", "substance", "armed"],
 		"picture": "",
-		"description": ""
+		"description": "The Hotburple can be a hot mess. Literally! A louder, fussier and lazier Boulder Class cousin to the Gronckle. A nap is never too far away."
 	},
 	{
 		"name": "Whispering Death",
@@ -192,7 +192,7 @@
 		"fireType": "Rings of fire",
 		"abilities": ["fire", "spines", "burrow"],
 		"picture": "",
-		"description": ""
+		"description": "Using its grinding teeth, this deadly Boulder Class Dragon burrows underground to attack from below. Very intelligent, with a long memory."
 	},
 	{
 		"name": "Rumblehorn",
@@ -218,7 +218,7 @@
 		"fireType": "Magnesium fire",
 		"abilities": ["fire", "spines", "supersense", "speed"],
 		"picture": "",
-		"description": ""
+		"description": "A vain and aggressive, spine-shooting Pathfinder-class dragon. A keen sense of smell compensates for the blind spot in front of its nose. Deadly Nadder attacks from afar, always staying at a distance"
 	},
 	{
 		"name": "Stormcutter",
@@ -231,7 +231,7 @@
 		"fireType": "Flaming torus",
 		"abilities": ["fire", "armed", "speed"],
 		"picture": "",
-		"description": ""
+		"description": "The four-winged Sharp-class flier can turn its head as far as it can see behind it. Flying on four wings, the Stormcutter carves spirals in the sky and unleashes fiery arcs of destruction at enemies."
 	},
 	{
 		"name": "Raincutter",
@@ -244,7 +244,7 @@
 		"fireType": "Waterproof fire",
 		"abilities": ["fire", "water"],
 		"picture": "",
-		"description": ""
+		"description": "The Raincutter can breathe fire, and its flames are capable of staying alive in wet and damp air during a rain or a storm."
 	},
 	{
 		"name": "Razorwhip",
@@ -257,7 +257,7 @@
 		"fireType": "Bright blue fire",
 		"abilities": ["fire", "armed", "spines", "venom"],
 		"picture": "",
-		"description": ""
+		"description": "Long, spiny, barbed tail. Very aggressive. Very dangerous. It can use its tail to wrap around a victim and literally squeeze the life out of them. Unless it's in a hurry. Then it just slices you in half."
 	},
 	{
 		"name": "Timberjack",
@@ -270,7 +270,7 @@
 		"fireType": "Oil based fire",
 		"abilities": ["fire", "armed", "substance"],
 		"picture": "",
-		"description": ""
+		"description": "This sleek glider from the sharp class can pierce huge trees with its wide and sharp wings. Timberjack's wings can take a huge load as he prepares for a fire nova attack!"
 	},
 	{
 		"name": "Bewilderbeast",
@@ -309,7 +309,7 @@
 		"fireType": "Boiling water",
 		"abilities": ["water", "water", "venom"],
 		"picture": "",
-		"description": ""
+		"description": "This huge underwater dragon is a speedy and silent swimmer. Instead of breathing fire, Scauldron spits scalding hot water at its prey."
 	},
 	{
 		"name": "Thunderdrum",
@@ -322,7 +322,7 @@
 		"fireType": "Sonic blasts",
 		"abilities": ["sound", "sound", "water"],
 		"picture": "",
-		"description": ""
+		"description": "Instead of breathing fire, the Thunderdrum produces a strong, concussive sound that can kill a human at close range. The blast is so powerful that the dragon is said to get its power from Thor himself"
 	},
 	{
 		"name": "Death Song",
@@ -348,7 +348,7 @@
 		"fireType": "Bright green fire",
 		"abilities": ["fire", "substance", "burrow", "stealth"],
 		"picture": "",
-		"description": ""
+		"description": "With their flammable ooze and collapsible skeleton, the Cavern Crasher will push any rival Dragon out of their home and take it over."
 	},
 	{
 		"name": "Hobgobbler",
@@ -361,7 +361,7 @@
 		"fireType": "Incendiary slobber",
 		"abilities": ["fire", "substance"],
 		"picture": "",
-		"description": ""
+		"description": "Hobgobblers will literally eat anything. When they team up in a pack, they can tear through warships, Viking houses, Gobber, and anything else that crosses their path."
 	},
 	{
 		"name": "Hideous Zippleback",
@@ -374,7 +374,7 @@
 		"fireType": "Gas and spark",
 		"abilities": ["fire", "substance", "supersense"],
 		"picture": "",
-		"description": ""
+		"description": "With two heads, the Zippleback is twice the trouble of other dragons. One head releases a flammable gas while the other head lights it on fire."
 	},
 	{
 		"name": "Snaptrapper",
@@ -387,7 +387,7 @@
 		"fireType": "Odorous mist, acid",
 		"abilities": ["substance", "stealth", "venom", "acid"],
 		"picture": "",
-		"description": ""
+		"description": "With triple jaws on each of its four heads, this dragon looks like a Venusian flycatcher. Only not as friendly. Snappers smell sweet, but their acid attacks have a powerful sting that can melt metal!"
 	},
 	{
 		"name": "Changewing",
@@ -400,6 +400,6 @@
 		"fireType": "Corrosive acid",
 		"abilities": ["acid", "chromatic", "stealth"],
 		"picture": "",
-		"description": ""
+		"description": "Unlike other dragons the Changewing spits acid instead of fire. Even newly-hatched Changewings have the ability to spit acid onto any potential threat. They got their name from the changing color of their scales which they use as camouflage."
 	}
 ]
