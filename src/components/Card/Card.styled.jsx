@@ -9,8 +9,7 @@ export const CardOutline = styled.div`
 	border-radius: 30px;
 	padding: 13px;
 
-	background-image: url(${(props) =>
-		`./images/overlays/${props.classes}.png`});
+	background-image: url(${(props) => `./images/overlays/${props.classes}.png`});
 	background-color: #d7ae73;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -86,13 +85,19 @@ export const Abilities = styled.div`
 	gap: 2px;
 `
 
-export const DragonDescription = styled.p`
+export const DragonDescriptionWrapper = styled.div`
+	display: table-cell;
+
 	height: 70px;
 	padding: 4px;
 	border-radius: 0 0 27px 27px;
 
-	font-size: 14px;
 	text-align: center;
+	vertical-align: middle;
+`
+
+export const DragonDescription = styled.p`
+	font-size: 14px;
 `
 
 export const TooltipLink = styled.a`

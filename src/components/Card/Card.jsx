@@ -12,6 +12,7 @@ import {
 	SalvoIcon,
 	SalvoType,
 	Abilities,
+	DragonDescriptionWrapper,
 	DragonDescription,
 } from './Card.styled'
 import SizeIcon from '../SizeIcon'
@@ -63,7 +64,9 @@ const Card = ({ dragon, toggleModal, setDragon, modal }) => {
 							</Abilities>
 						</CardInner>
 
-						<DragonDescription>{description}</DragonDescription>
+						<DragonDescriptionWrapper>
+							<DragonDescription>{description}</DragonDescription>
+						</DragonDescriptionWrapper>
 					</CardWrapper>
 				</CardOutline>
 			</CardLink>

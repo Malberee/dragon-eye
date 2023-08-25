@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid'
 import { Tooltip } from 'react-tooltip'
 import Tilt from 'react-parallax-tilt'
 import ReactCardFlip from 'react-card-flip'
+import { motion } from 'framer-motion'
 import {
 	CardOutline,
 	CardWrapper,
@@ -15,6 +16,7 @@ import {
 	SalvoType,
 	Abilities,
 	DragonDescription,
+	DragonDescriptionWrapper,
 } from '../Card/Card.styled'
 import {
 	CardBackWrapper,
@@ -113,7 +115,9 @@ const CardModal = ({ dragon }, ref) => {
 							data-tooltip-id="my-tooltip"
 							data-tooltip-content={description}
 						>
-							<DragonDescription>{description}</DragonDescription>
+							<DragonDescriptionWrapper>
+								<DragonDescription>{description}</DragonDescription>
+							</DragonDescriptionWrapper>
 						</TooltipLink>
 					</CardWrapper>
 				</CardOutline>
