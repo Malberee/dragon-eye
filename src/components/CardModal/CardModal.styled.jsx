@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { IconsWrapper } from '../ClassIconsMiniBack/ClassIconsMiniBack.styled'
 
 export const CardBackWrapper = styled.div`
 	position: relative;

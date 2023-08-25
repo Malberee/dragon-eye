@@ -87,11 +87,12 @@ export const Abilities = styled.div`
 `
 
 export const DragonDescription = styled.p`
-	max-height: 100px;
+	height: 70px;
 	padding: 4px;
 	border-radius: 0 0 27px 27px;
 
 	font-size: 14px;
+	text-align: center;
 `
 
 export const TooltipLink = styled.a`
