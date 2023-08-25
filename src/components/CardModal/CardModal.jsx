@@ -141,17 +141,6 @@ const CardModal = ({ dragon }, ref) => {
 					</CardBackWrapper>
 				</CardOutline>
 			</ReactCardFlip>
-			<motion.div
-				initial={{
-					opacity: 0,
-				}}
-				animate={{
-					opacity: 1,
-				}}
-				transition={{
-					duration: 20,
-				}}
-			>
 				<Tooltip
 					id="my-tooltip"
 					style={{
@@ -163,7 +152,6 @@ const CardModal = ({ dragon }, ref) => {
 						textAlign: 'left',
 					}}
 				/>
-			</motion.div>
 		</Tilt>
 	)
 }
