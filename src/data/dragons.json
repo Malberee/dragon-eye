@@ -2,6 +2,7 @@
 	{
 		"name": "Night Fury",
 		"classes": ["strike"],
+		"rarity": "unique",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -14,6 +15,7 @@
 	{
 		"name": "Light Fury",
 		"classes": ["strike"],
+		"rarity": "godly",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -26,6 +28,7 @@
 	{
 		"name": "Snow Wraith",
 		"classes": ["strike"],
+		"rarity": "epic",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -38,6 +41,7 @@
 	{
 		"name": "Triple Stryke",
 		"classes": ["strike"],
+		"rarity": "omega",
 		"size": {
 			"type": "land",
 			"number": 3
@@ -50,6 +54,7 @@
 	{
 		"name": "Skrill",
 		"classes": ["strike"],
+		"rarity": "mythical",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -62,6 +67,7 @@
 	{
 		"name": "Deathgripper",
 		"classes": ["strike"],
+		"rarity": "mythical",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -73,6 +79,7 @@
 	},
 	{
 		"name": "Monstrous Nightmare",
+		"rarity": "common",
 		"classes": ["stoker"],
 		"size": {
 			"type": "land",
@@ -86,6 +93,7 @@
 	{
 		"name": "Terrible Terror",
 		"classes": ["stoker"],
+		"rarity": "simple",
 		"size": {
 			"type": "land",
 			"number": 1
@@ -98,6 +106,7 @@
 	{
 		"name": "Hobblegrunt",
 		"classes": ["stoker"],
+		"rarity": "rare",
 		"size": {
 			"type": "land",
 			"number": 3
@@ -109,6 +118,7 @@
 	},
 	{
 		"name": "Red Death",
+		"rarity": "godly",
 		"classes": ["stoker"],
 		"size": {
 			"type": "sky/sea",
@@ -121,6 +131,7 @@
 	},
 	{
 		"name": "Crimson Goregutter",
+		"rarity": "legendary",
 		"classes": ["boulder"],
 		"size": {
 			"type": "land",
@@ -133,6 +144,7 @@
 	},
 	{
 		"name": "Gronckle",
+		"rarity": "simple",
 		"classes": ["boulder"],
 		"size": {
 			"type": "land",
@@ -146,6 +158,7 @@
 	{
 		"name": "Eruptodon",
 		"classes": ["boulder"],
+		"rarity": "mythical",
 		"size": {
 			"type": "land",
 			"number": 4
@@ -158,6 +171,7 @@
 	{
 		"name": "Hotburple",
 		"classes": ["boulder"],
+		"rarity": "common",
 		"size": {
 			"type": "land",
 			"number": 3
@@ -170,6 +184,7 @@
 	{
 		"name": "Whispering Death",
 		"classes": ["boulder"],
+		"rarity": "legendary",
 		"size": {
 			"type": "land",
 			"number": 3
@@ -182,6 +197,7 @@
 	{
 		"name": "Rumblehorn",
 		"classes": ["tracker"],
+		"rarity": "rare",
 		"size": {
 			"type": "land",
 			"number": 3
@@ -194,6 +210,7 @@
 	{
 		"name": "Deadly Nadder",
 		"classes": ["tracker"],
+		"rarity": "simple",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -206,6 +223,7 @@
 	{
 		"name": "Stormcutter",
 		"classes": ["sharp"],
+		"rarity": "legendary",
 		"size": {
 			"type": "sky/sea",
 			"number": 4
@@ -218,6 +236,7 @@
 	{
 		"name": "Raincutter",
 		"classes": ["sharp"],
+		"rarity": "rare",
 		"size": {
 			"type": "land",
 			"number": 3
@@ -230,6 +249,7 @@
 	{
 		"name": "Razorwhip",
 		"classes": ["sharp"],
+		"rarity": "legendary",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -242,6 +262,7 @@
 	{
 		"name": "Timberjack",
 		"classes": ["sharp"],
+		"rarity": "rare",
 		"size": {
 			"type": "sky/sea",
 			"number": 4
@@ -254,6 +275,7 @@
 	{
 		"name": "Bewilderbeast",
 		"classes": ["tidal"],
+		"rarity": "godly",
 		"size": {
 			"type": "sea",
 			"number": 6
@@ -266,6 +288,7 @@
 	{
 		"name": "Seashocker",
 		"classes": ["tidal"],
+		"rarity": "epic",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -278,6 +301,7 @@
 	{
 		"name": "Scauldron",
 		"classes": ["tidal"],
+		"rarity": "epic",
 		"size": {
 			"type": "sky/sea",
 			"number": 4
@@ -290,6 +314,7 @@
 	{
 		"name": "Thunderdrum",
 		"classes": ["tidal"],
+		"rarity": "rare",
 		"size": {
 			"type": "sky/sea",
 			"number": 3
@@ -301,6 +326,7 @@
 	},
 	{
 		"name": "Death Song",
+		"rarity": "legendary",
 		"classes": ["mystery"],
 		"size": {
 			"type": "land",
@@ -314,6 +340,7 @@
 	{
 		"name": "Cavern Crasher",
 		"classes": ["mystery"],
+		"rarity": "omega",
 		"size": {
 			"type": "land",
 			"number": 4
@@ -326,6 +353,7 @@
 	{
 		"name": "Hobgobbler",
 		"classes": ["mystery", "stoker"],
+		"rarity": "rare",
 		"size": {
 			"type": "land",
 			"number": 1
@@ -338,6 +366,7 @@
 	{
 		"name": "Hideous Zippleback",
 		"classes": ["mystery"],
+		"rarity": "simple",
 		"size": {
 			"type": "land",
 			"number": 3
@@ -350,6 +379,7 @@
 	{
 		"name": "Snaptrapper",
 		"classes": ["mystery"],
+		"rarity": "epic",
 		"size": {
 			"type": "land",
 			"number": 3
@@ -362,6 +392,7 @@
 	{
 		"name": "Changewing",
 		"classes": ["mystery"],
+		"rarity": "omega",
 		"size": {
 			"type": "land",
 			"number": 3
