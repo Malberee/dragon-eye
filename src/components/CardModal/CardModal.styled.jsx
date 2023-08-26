@@ -26,4 +26,9 @@ export const CardBackClassIconWrapper = styled.div`
 
 export const TooltipLink = styled.a`
 	cursor: pointer;
+
+	&.sticker {
+		width: 50px;
+		height: 30px;
+	}
 `

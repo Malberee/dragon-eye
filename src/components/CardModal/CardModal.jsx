@@ -3,7 +3,6 @@ import { nanoid } from 'nanoid'
 import { Tooltip } from 'react-tooltip'
 import Tilt from 'react-parallax-tilt'
 import ReactCardFlip from 'react-card-flip'
-import { motion } from 'framer-motion'
 import {
 	CardOutline,
 	CardWrapper,
@@ -23,6 +22,7 @@ import {
 	CardBackClassIconWrapper,
 	TooltipLink,
 } from './CardModal.styled'
+import RaritySticker from '../RaritySticker'
 import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'
 import AbilityIcon from '../AbilityIcon'
@@ -39,8 +39,16 @@ const CardModal = ({ dragon }, ref) => {
 		isFlipped,
 	}))
 
-	const { name, classes, size, fireType, abilities, picture, description } =
-		dragon
+	const {
+		name,
+		classes,
+		size,
+		fireType,
+		abilities,
+		picture,
+		description,
+		rarity,
+	} = dragon
 
 	return (
 		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
@@ -119,6 +127,13 @@ const CardModal = ({ dragon }, ref) => {
 								<DragonDescription>{description}</DragonDescription>
 							</DragonDescriptionWrapper>
 						</TooltipLink>
+						<TooltipLink
+							data-tooltip-id="my-tooltip"
+							data-tooltip-content={`Rarity: ${rarity}`}
+							className='sticker'
+						>
+							<RaritySticker rarity={rarity} />
+						</TooltipLink>
 					</CardWrapper>
 				</CardOutline>
 
@@ -141,17 +156,17 @@ const CardModal = ({ dragon }, ref) => {
 					</CardBackWrapper>
 				</CardOutline>
 			</ReactCardFlip>
-				<Tooltip
-					id="my-tooltip"
-					style={{
-						fontFamily: 'Roboto',
-						textTransform: 'none',
-						height: 'auto',
-						maxWidth: '400px',
-						whiteSpace: 'pre-line',
-						textAlign: 'left',
-					}}
-				/>
+			<Tooltip
+				id="my-tooltip"
+				style={{
+					fontFamily: 'Roboto',
+					textTransform: 'none',
+					height: 'auto',
+					maxWidth: '400px',
+					whiteSpace: 'pre-line',
+					textAlign: 'left',
+				}}
+			/>
 		</Tilt>
 	)
 }

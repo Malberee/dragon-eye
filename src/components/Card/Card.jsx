@@ -15,6 +15,7 @@ import {
 	DragonDescriptionWrapper,
 	DragonDescription,
 } from './Card.styled'
+import RaritySticker from '../RaritySticker'
 import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'
 import AbilityIcon from '../AbilityIcon'
@@ -22,7 +23,7 @@ import { getDragonPicture } from '../../helpers/getDragonPicture'
 import { getCardOutline } from '../../helpers/getCardOutline'
 
 const Card = ({ dragon, toggleModal, setDragon, modal }) => {
-	const { name, classes, size, fireType, abilities, picture, description } =
+	const { name, classes, size, fireType, abilities, picture, description, rarity } =
 		dragon
 
 	return (
@@ -67,6 +68,8 @@ const Card = ({ dragon, toggleModal, setDragon, modal }) => {
 						<DragonDescriptionWrapper>
 							<DragonDescription>{description}</DragonDescription>
 						</DragonDescriptionWrapper>
+
+						<RaritySticker rarity={rarity} />
 					</CardWrapper>
 				</CardOutline>
 			</CardLink>

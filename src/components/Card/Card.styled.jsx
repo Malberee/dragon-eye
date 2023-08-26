@@ -16,6 +16,8 @@ export const CardOutline = styled.div`
 `
 
 export const CardWrapper = styled.div`
+	position: relative;
+	
 	width: 301px;
 	height: 418px;
 	padding: 10px 8px 7px 9px;

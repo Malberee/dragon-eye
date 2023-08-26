@@ -1,405 +1,312 @@
 [
 	{
-		"name": "Night Fury",
-		"classes": ["strike"],
-		"rarity": "unique",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
-		"fireType": "Plasma blasts",
-		"abilities": ["fire", "electric", "speed", "stealth", "supersense"],
-		"picture": "",
-		"description": "The unholy offspring of lightning and death itself. Never engage this dragon. Your only chance: Hide and pray it does not find you."
-	},
-	{
-		"name": "Light Fury",
-		"classes": ["strike"],
-		"rarity": "godly",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
-		"fireType": "Plasma blasts",
-		"abilities": ["fire", "speed", "stealth"],
-		"picture": "",
-		"description": "Temporarily transforms each scale into a reflective surface that mirrors the Light Fury’s surroundings, essentially rendering her invisible."
-	},
-	{
-		"name": "Snow Wraith",
-		"classes": ["strike"],
-		"rarity": "epic",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
-		"fireType": "Frost barrage",
-		"abilities": ["ice", "speed", "stealth", "supersense", "burrow"],
-		"picture": "",
-		"description": "This dragon has notoriously poor eyesight and uses thermal sensors to locate its prey. It camouflages itself in the snow because if it can't see you, it doesn't want you to see it!"
-	},
-	{
-		"name": "Triple Stryke",
-		"classes": ["strike"],
-		"rarity": "omega",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
-		"fireType": "Blinding fire",
-		"abilities": ["fire", "armed", "venom", "speed"],
-		"picture": "",
-		"description": "Vicious. Aggressive. Belligerent. These are only three of the words that describe the Triple Stryke in battle and the incredible fury it unleashes with its trio of braided tails."
-	},
-	{
 		"name": "Skrill",
 		"classes": ["strike"],
-		"rarity": "mythical",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
+		"rarity": "legendary",
+		"size": { "type": "sky/sea", "number": 3 },
 		"fireType": "Lighting beams",
 		"abilities": ["electric", "electric", "speed", "stealth"],
 		"picture": "",
 		"description": "This elusive creature is highly secretive and is known to ride lightning bolts. Found only during electrical storms, it can shoot bursts of white fire."
 	},
 	{
-		"name": "Deathgripper",
-		"classes": ["strike"],
-		"rarity": "mythical",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
-		"fireType": "Flamable acid",
-		"abilities": ["fire", "acid", "armed", "venom"],
-		"picture": "",
-		"description": "Deathgrippers are a monstrous species with their protruding tusks, foreclaw pincers, and poisonous clubbed tails. Traveling in packs like wild dogs, Deathgrippers enjoy hunting for prey and should be avoided at all costs."
-	},
-	{
-		"name": "Monstrous Nightmare",
-		"rarity": "common",
-		"classes": ["stoker"],
-		"size": {
-			"type": "land",
-			"number": 3
-		},
-		"fireType": "Flaming gel",
-		"abilities": ["fire", "fire", "substance"],
-		"picture": "",
-		"description": "Monstrous Nightmares are known for setting their entire body on fire. These dragons are incredibly fearsome and can also fly at a high speed."
-	},
-	{
-		"name": "Terrible Terror",
-		"classes": ["stoker"],
-		"rarity": "simple",
-		"size": {
-			"type": "land",
-			"number": 1
-		},
-		"fireType": "Pinpoint fire",
-		"abilities": ["fire", "sound"],
-		"picture": "",
-		"description": "The Terrible Terror. Smallest of the dragons, but no less ferocious. You know it's about to breathe fire when you hear a small hissing sound. By taming it start with a shiny object."
-	},
-	{
-		"name": "Hobblegrunt",
-		"classes": ["stoker"],
-		"rarity": "rare",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
-		"fireType": "Fluid based fire",
-		"abilities": ["fire", "chromatic", "supersense"],
-		"picture": "",
-		"description": "Hobblegrunts are considered lucky dragons and that they can predict certain things, both good and bad, a split second before they actually happen, and their skin changes color depending on their mood."
-	},
-	{
-		"name": "Red Death",
-		"rarity": "godly",
-		"classes": ["stoker"],
-		"size": {
-			"type": "sky/sea",
-			"number": 6
-		},
-		"fireType": "Billowing blaze",
-		"abilities": ["fire", "supersense", "armed", "alpha"],
-		"picture": "",
-		"description": "Enormous dragon queen able to bend other dragons to its will. Crushing jaws and clubbed tail. Lives in volcanoes where it awaits food from its subjects."
-	},
-	{
-		"name": "Crimson Goregutter",
-		"rarity": "legendary",
-		"classes": ["boulder"],
-		"size": {
-			"type": "land",
-			"number": 4
-		},
-		"fireType": "Molten spew",
-		"abilities": ["fire", "armed", "sound"],
-		"picture": "",
-		"description": "Despite their imposing horns and axe-shaped tails, goreguthers are softer than they appear. In battle, however, they can spew molten lava onto their horns and then ram their foes with fiery force."
-	},
-	{
-		"name": "Gronckle",
-		"rarity": "simple",
-		"classes": ["boulder"],
-		"size": {
-			"type": "land",
-			"number": 2
-		},
-		"fireType": "Lava blasts",
-		"abilities": ["fire", "substance", "armed"],
-		"picture": "",
-		"description": "This Boulder-class dragon lacks speed, but it can fly like a hummingbird and shoot lava rocks. Gronckle's tough hide can take more hits than almost any other dragon."
-	},
-	{
-		"name": "Eruptodon",
-		"classes": ["boulder"],
-		"rarity": "mythical",
-		"size": {
-			"type": "land",
-			"number": 4
-		},
-		"fireType": "Lava volley",
-		"abilities": ["fire", "armed", "armed"],
-		"picture": "",
-		"description": "Insatiable dragon that feeds off lava in active volcanoes. Covered in impenatrable igneous rock armor and has heat resitant eye lenses."
-	},
-	{
-		"name": "Hotburple",
-		"classes": ["boulder"],
-		"rarity": "common",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
-		"fireType": "Lava blasts",
-		"abilities": ["fire", "substance", "armed"],
-		"picture": "",
-		"description": "The Hotburple can be a hot mess. Literally! A louder, fussier and lazier Boulder Class cousin to the Gronckle. A nap is never too far away."
-	},
-	{
-		"name": "Whispering Death",
-		"classes": ["boulder"],
-		"rarity": "legendary",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
-		"fireType": "Rings of fire",
-		"abilities": ["fire", "spines", "burrow"],
-		"picture": "",
-		"description": "Using its grinding teeth, this deadly Boulder Class Dragon burrows underground to attack from below. Very intelligent, with a long memory."
-	},
-	{
-		"name": "Rumblehorn",
-		"classes": ["tracker"],
-		"rarity": "rare",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
-		"fireType": "Flaming rocks",
-		"abilities": ["fire", "armed", "supersense"],
-		"picture": "",
-		"description": "Rumblehorns shoot long-ranged fire missiles which explode on impact. They can find anything on scent for miles away, even with just a weak scent from a helmet."
-	},
-	{
-		"name": "Deadly Nadder",
-		"classes": ["tracker"],
-		"rarity": "simple",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
-		"fireType": "Magnesium fire",
-		"abilities": ["fire", "spines", "supersense", "speed"],
-		"picture": "",
-		"description": "A vain and aggressive, spine-shooting Pathfinder-class dragon. A keen sense of smell compensates for the blind spot in front of its nose. Deadly Nadder attacks from afar, always staying at a distance"
-	},
-	{
-		"name": "Stormcutter",
-		"classes": ["sharp"],
-		"rarity": "legendary",
-		"size": {
-			"type": "sky/sea",
-			"number": 4
-		},
-		"fireType": "Flaming torus",
-		"abilities": ["fire", "armed", "speed"],
-		"picture": "",
-		"description": "The four-winged Sharp-class flier can turn its head as far as it can see behind it. Flying on four wings, the Stormcutter carves spirals in the sky and unleashes fiery arcs of destruction at enemies."
-	},
-	{
 		"name": "Raincutter",
 		"classes": ["sharp"],
 		"rarity": "rare",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
+		"size": { "type": "land", "number": 3 },
 		"fireType": "Waterproof fire",
 		"abilities": ["fire", "water"],
 		"picture": "",
 		"description": "The Raincutter can breathe fire, and its flames are capable of staying alive in wet and damp air during a rain or a storm."
 	},
 	{
-		"name": "Razorwhip",
-		"classes": ["sharp"],
-		"rarity": "legendary",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
-		"fireType": "Bright blue fire",
-		"abilities": ["fire", "armed", "spines", "venom"],
-		"picture": "",
-		"description": "Long, spiny, barbed tail. Very aggressive. Very dangerous. It can use its tail to wrap around a victim and literally squeeze the life out of them. Unless it's in a hurry. Then it just slices you in half."
-	},
-	{
-		"name": "Timberjack",
-		"classes": ["sharp"],
-		"rarity": "rare",
-		"size": {
-			"type": "sky/sea",
-			"number": 4
-		},
-		"fireType": "Oil based fire",
-		"abilities": ["fire", "armed", "substance"],
-		"picture": "",
-		"description": "This sleek glider from the sharp class can pierce huge trees with its wide and sharp wings. Timberjack's wings can take a huge load as he prepares for a fire nova attack!"
-	},
-	{
 		"name": "Bewilderbeast",
 		"classes": ["tidal"],
 		"rarity": "godly",
-		"size": {
-			"type": "sea",
-			"number": 6
-		},
+		"size": { "type": "sea", "number": 6 },
 		"fireType": "Ice blasts",
 		"abilities": ["ice", "water", "armed", "supersense", "alpha"],
 		"picture": "",
 		"description": "Colossal leviathan known as the king of the dragons. Spews water that freezes into ice spikes. Huge help spar with other individuals for alpha status."
 	},
 	{
-		"name": "Seashocker",
-		"classes": ["tidal"],
-		"rarity": "epic",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
-		"fireType": "Electric charges",
-		"abilities": ["electric", "water", "armed"],
-		"picture": "",
-		"description": "The Seashocker is capable of emitting underwater sonar, and these dragons travel in schools or pods, similar to fish and dolphins."
-	},
-	{
-		"name": "Scauldron",
-		"classes": ["tidal"],
-		"rarity": "epic",
-		"size": {
-			"type": "sky/sea",
-			"number": 4
-		},
-		"fireType": "Boiling water",
-		"abilities": ["water", "water", "venom"],
-		"picture": "",
-		"description": "This huge underwater dragon is a speedy and silent swimmer. Instead of breathing fire, Scauldron spits scalding hot water at its prey."
-	},
-	{
-		"name": "Thunderdrum",
-		"classes": ["tidal"],
-		"rarity": "rare",
-		"size": {
-			"type": "sky/sea",
-			"number": 3
-		},
-		"fireType": "Sonic blasts",
-		"abilities": ["sound", "sound", "water"],
-		"picture": "",
-		"description": "Instead of breathing fire, the Thunderdrum produces a strong, concussive sound that can kill a human at close range. The blast is so powerful that the dragon is said to get its power from Thor himself"
-	},
-	{
-		"name": "Death Song",
-		"rarity": "legendary",
-		"classes": ["mystery"],
-		"size": {
-			"type": "land",
-			"number": 4
-		},
-		"fireType": "Molten resin",
-		"abilities": ["substance", "sound", "sound"],
-		"picture": "",
-		"description": "This Dragon uses his melodic call to lure his targets into the dense jungles of Melody Island. There, he can watch as they search for the source of the song."
-	},
-	{
-		"name": "Cavern Crasher",
-		"classes": ["mystery"],
-		"rarity": "omega",
-		"size": {
-			"type": "land",
-			"number": 4
-		},
-		"fireType": "Bright green fire",
-		"abilities": ["fire", "substance", "burrow", "stealth"],
-		"picture": "",
-		"description": "With their flammable ooze and collapsible skeleton, the Cavern Crasher will push any rival Dragon out of their home and take it over."
-	},
-	{
-		"name": "Hobgobbler",
-		"classes": ["mystery", "stoker"],
-		"rarity": "rare",
-		"size": {
-			"type": "land",
-			"number": 1
-		},
-		"fireType": "Incendiary slobber",
-		"abilities": ["fire", "substance"],
-		"picture": "",
-		"description": "Hobgobblers will literally eat anything. When they team up in a pack, they can tear through warships, Viking houses, Gobber, and anything else that crosses their path."
-	},
-	{
 		"name": "Hideous Zippleback",
 		"classes": ["mystery"],
-		"rarity": "simple",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
+		"rarity": "common",
+		"size": { "type": "land", "number": 3 },
 		"fireType": "Gas and spark",
 		"abilities": ["fire", "substance", "supersense"],
 		"picture": "",
 		"description": "With two heads, the Zippleback is twice the trouble of other dragons. One head releases a flammable gas while the other head lights it on fire."
 	},
 	{
+		"name": "Red Death",
+		"rarity": "godly",
+		"classes": ["stoker"],
+		"size": { "type": "sky/sea", "number": 6 },
+		"fireType": "Billowing blaze",
+		"abilities": ["fire", "supersense", "armed", "alpha"],
+		"picture": "",
+		"description": "Enormous dragon queen able to bend other dragons to its will. Crushing jaws and clubbed tail. Lives in volcanoes where it awaits food from its subjects."
+	},
+	{
+		"name": "Thunderdrum",
+		"classes": ["tidal"],
+		"rarity": "rare",
+		"size": { "type": "sky/sea", "number": 3 },
+		"fireType": "Sonic blasts",
+		"abilities": ["sound", "sound", "water"],
+		"picture": "",
+		"description": "Instead of breathing fire, the Thunderdrum produces a strong, concussive sound that can kill a human at close range. The blast is so powerful that the dragon is said to get its power from Thor himself"
+	},
+	{
 		"name": "Snaptrapper",
 		"classes": ["mystery"],
 		"rarity": "epic",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
+		"size": { "type": "land", "number": 3 },
 		"fireType": "Odorous mist, acid",
 		"abilities": ["substance", "stealth", "venom", "acid"],
 		"picture": "",
 		"description": "With triple jaws on each of its four heads, this dragon looks like a Venusian flycatcher. Only not as friendly. Snappers smell sweet, but their acid attacks have a powerful sting that can melt metal!"
 	},
 	{
+		"name": "Rumblehorn",
+		"classes": ["tracker"],
+		"rarity": "epic",
+		"size": { "type": "land", "number": 3 },
+		"fireType": "Flaming rocks",
+		"abilities": ["fire", "armed", "supersense"],
+		"picture": "",
+		"description": "Rumblehorns shoot long-ranged fire missiles which explode on impact. They can find anything on scent for miles away, even with just a weak scent from a helmet."
+	},
+	{
+		"name": "Death Song",
+		"rarity": "mythical",
+		"classes": ["mystery"],
+		"size": { "type": "land", "number": 4 },
+		"fireType": "Molten resin",
+		"abilities": ["substance", "sound", "sound"],
+		"picture": "",
+		"description": "This Dragon uses his melodic call to lure his targets into the dense jungles of Melody Island. There, he can watch as they search for the source of the song."
+	},
+	{
+		"name": "Deathgripper",
+		"classes": ["strike"],
+		"rarity": "legendary",
+		"size": { "type": "sky/sea", "number": 3 },
+		"fireType": "Flamable acid",
+		"abilities": ["fire", "acid", "armed", "venom"],
+		"picture": "",
+		"description": "Deathgrippers are a monstrous species with their protruding tusks, foreclaw pincers, and poisonous clubbed tails. Traveling in packs like wild dogs, Deathgrippers enjoy hunting for prey and should be avoided at all costs."
+	},
+	{
+		"name": "Hotburple",
+		"classes": ["boulder"],
+		"rarity": "common",
+		"size": { "type": "land", "number": 3 },
+		"fireType": "Lava blasts",
+		"abilities": ["fire", "substance", "armed"],
+		"picture": "",
+		"description": "The Hotburple can be a hot mess. Literally! A louder, fussier and lazier Boulder Class cousin to the Gronckle. A nap is never too far away."
+	},
+	{
+		"name": "Snow Wraith",
+		"classes": ["strike"],
+		"rarity": "legendary",
+		"size": { "type": "sky/sea", "number": 3 },
+		"fireType": "Frost barrage",
+		"abilities": ["ice", "speed", "stealth", "supersense", "burrow"],
+		"picture": "",
+		"description": "This dragon has notoriously poor eyesight and uses thermal sensors to locate its prey. It camouflages itself in the snow because if it can't see you, it doesn't want you to see it!"
+	},
+	{
+		"name": "Whispering Death",
+		"classes": ["boulder"],
+		"rarity": "epic",
+		"size": { "type": "land", "number": 3 },
+		"fireType": "Rings of fire",
+		"abilities": ["fire", "spines", "burrow"],
+		"picture": "",
+		"description": "Using its grinding teeth, this deadly Boulder Class Dragon burrows underground to attack from below. Very intelligent, with a long memory."
+	},
+	{
+		"name": "Terrible Terror",
+		"classes": ["stoker"],
+		"rarity": "common",
+		"size": { "type": "land", "number": 1 },
+		"fireType": "Pinpoint fire",
+		"abilities": ["fire", "sound"],
+		"picture": "",
+		"description": "The Terrible Terror. Smallest of the dragons, but no less ferocious. You know it's about to breathe fire when you hear a small hissing sound. By taming it start with a shiny object."
+	},
+	{
+		"name": "Night Fury",
+		"classes": ["strike"],
+		"rarity": "unique",
+		"size": { "type": "sky/sea", "number": 3 },
+		"fireType": "Plasma blasts",
+		"abilities": ["fire", "electric", "speed", "stealth", "supersense"],
+		"picture": "",
+		"description": "The unholy offspring of lightning and death itself. Never engage this dragon. Your only chance: Hide and pray it does not find you."
+	},
+	{
+		"name": "Eruptodon",
+		"classes": ["boulder"],
+		"rarity": "legendary",
+		"size": { "type": "land", "number": 4 },
+		"fireType": "Lava volley",
+		"abilities": ["fire", "armed", "armed"],
+		"picture": "",
+		"description": "Insatiable dragon that feeds off lava in active volcanoes. Covered in impenatrable igneous rock armor and has heat resitant eye lenses."
+	},
+	{
+		"name": "Monstrous Nightmare",
+		"rarity": "common",
+		"classes": ["stoker"],
+		"size": { "type": "land", "number": 3 },
+		"fireType": "Flaming gel",
+		"abilities": ["fire", "fire", "substance"],
+		"picture": "",
+		"description": "Monstrous Nightmares are known for setting their entire body on fire. These dragons are incredibly fearsome and can also fly at a high speed."
+	},
+	{
+		"name": "Stormcutter",
+		"classes": ["sharp"],
+		"rarity": "legendary",
+		"size": { "type": "sky/sea", "number": 4 },
+		"fireType": "Flaming torus",
+		"abilities": ["fire", "armed", "speed"],
+		"picture": "",
+		"description": "The four-winged Sharp-class flier can turn its head as far as it can see behind it. Flying on four wings, the Stormcutter carves spirals in the sky and unleashes fiery arcs of destruction at enemies."
+	},
+	{
+		"name": "Seashocker",
+		"classes": ["tidal"],
+		"rarity": "epic",
+		"size": { "type": "sky/sea", "number": 3 },
+		"fireType": "Electric charges",
+		"abilities": ["electric", "water", "armed"],
+		"picture": "",
+		"description": "The Seashocker is capable of emitting underwater sonar, and these dragons travel in schools or pods, similar to fish and dolphins."
+	},
+	{
+		"name": "Hobblegrunt",
+		"classes": ["stoker"],
+		"rarity": "rare",
+		"size": { "type": "land", "number": 3 },
+		"fireType": "Fluid based fire",
+		"abilities": ["fire", "chromatic", "supersense"],
+		"picture": "",
+		"description": "Hobblegrunts are considered lucky dragons and that they can predict certain things, both good and bad, a split second before they actually happen, and their skin changes color depending on their mood."
+	},
+	{
+		"name": "Scauldron",
+		"classes": ["tidal"],
+		"rarity": "epic",
+		"size": { "type": "sky/sea", "number": 4 },
+		"fireType": "Boiling water",
+		"abilities": ["water", "water", "venom"],
+		"picture": "",
+		"description": "This huge underwater dragon is a speedy and silent swimmer. Instead of breathing fire, Scauldron spits scalding hot water at its prey."
+	},
+	{
 		"name": "Changewing",
 		"classes": ["mystery"],
-		"rarity": "omega",
-		"size": {
-			"type": "land",
-			"number": 3
-		},
+		"rarity": "epic",
+		"size": { "type": "land", "number": 3 },
 		"fireType": "Corrosive acid",
 		"abilities": ["acid", "chromatic", "stealth"],
 		"picture": "",
 		"description": "Unlike other dragons the Changewing spits acid instead of fire. Even newly-hatched Changewings have the ability to spit acid onto any potential threat. They got their name from the changing color of their scales which they use as camouflage."
+	},
+	{
+		"name": "Razorwhip",
+		"classes": ["sharp"],
+		"rarity": "mythical",
+		"size": { "type": "sky/sea", "number": 3 },
+		"fireType": "Bright blue fire",
+		"abilities": ["fire", "armed", "spines", "venom"],
+		"picture": "",
+		"description": "Long, spiny, barbed tail. Very aggressive. Very dangerous. It can use its tail to wrap around a victim and literally squeeze the life out of them. Unless it's in a hurry. Then it just slices you in half."
+	},
+	{
+		"name": "Light Fury",
+		"classes": ["strike"],
+		"rarity": "legendary",
+		"size": { "type": "sky/sea", "number": 3 },
+		"fireType": "Plasma blasts",
+		"abilities": ["fire", "speed", "stealth"],
+		"picture": "",
+		"description": "Temporarily transforms each scale into a reflective surface that mirrors the Light Fury’s surroundings, essentially rendering her invisible."
+	},
+	{
+		"name": "Crimson Goregutter",
+		"rarity": "mythical",
+		"classes": ["boulder"],
+		"size": { "type": "land", "number": 4 },
+		"fireType": "Molten spew",
+		"abilities": ["fire", "armed", "sound"],
+		"picture": "",
+		"description": "Despite their imposing horns and axe-shaped tails, goreguthers are softer than they appear. In battle, however, they can spew molten lava onto their horns and then ram their foes with fiery force."
+	},
+	{
+		"name": "Hobgobbler",
+		"classes": ["mystery", "stoker"],
+		"rarity": "rare",
+		"size": { "type": "land", "number": 1 },
+		"fireType": "Incendiary slobber",
+		"abilities": ["fire", "substance"],
+		"picture": "",
+		"description": "Hobgobblers will literally eat anything. When they team up in a pack, they can tear through warships, Viking houses, Gobber, and anything else that crosses their path."
+	},
+	{
+		"name": "Triple Stryke",
+		"classes": ["strike"],
+		"rarity": "legendary",
+		"size": { "type": "land", "number": 3 },
+		"fireType": "Blinding fire",
+		"abilities": ["fire", "armed", "venom", "speed"],
+		"picture": "",
+		"description": "Vicious. Aggressive. Belligerent. These are only three of the words that describe the Triple Stryke in battle and the incredible fury it unleashes with its trio of braided tails."
+	},
+	{
+		"name": "Cavern Crasher",
+		"classes": ["mystery"],
+		"rarity": "legendary",
+		"size": { "type": "land", "number": 4 },
+		"fireType": "Bright green fire",
+		"abilities": ["fire", "substance", "burrow", "stealth"],
+		"picture": "",
+		"description": "With their flammable ooze and collapsible skeleton, the Cavern Crasher will push any rival Dragon out of their home and take it over."
+	},
+	{
+		"name": "Timberjack",
+		"classes": ["sharp"],
+		"rarity": "rare",
+		"size": { "type": "sky/sea", "number": 4 },
+		"fireType": "Oil based fire",
+		"abilities": ["fire", "armed", "substance"],
+		"picture": "",
+		"description": "This sleek glider from the sharp class can pierce huge trees with its wide and sharp wings. Timberjack's wings can take a huge load as he prepares for a fire nova attack!"
+	},
+	{
+		"name": "Deadly Nadder",
+		"classes": ["tracker"],
+		"rarity": "common",
+		"size": { "type": "sky/sea", "number": 3 },
+		"fireType": "Magnesium fire",
+		"abilities": ["fire", "spines", "supersense", "speed"],
+		"picture": "",
+		"description": "A vain and aggressive, spine-shooting Pathfinder-class dragon. A keen sense of smell compensates for the blind spot in front of its nose. Deadly Nadder attacks from afar, always staying at a distance"
+	},
+	{
+		"name": "Gronckle",
+		"rarity": "common",
+		"classes": ["boulder"],
+		"size": { "type": "land", "number": 2 },
+		"fireType": "Lava blasts",
+		"abilities": ["fire", "substance", "armed"],
+		"picture": "",
+		"description": "This Boulder-class dragon lacks speed, but it can fly like a hummingbird and shoot lava rocks. Gronckle's tough hide can take more hits than almost any other dragon."
 	}
 ]
