@@ -140,7 +140,7 @@ const CardModal = ({ dragon }, ref) => {
 				<CardOutline
 					outline={getCardOutline(classes)}
 					onClick={() => setIsFlipped((x) => !x)}
-					style={{ transform: 'scaleX(-1)' }}
+					// style={{ transform: 'scaleX(-1)' }}
 				>
 					<CardBackWrapper countClasses={classes.length}>
 						<CardBackClassIconWrapper>

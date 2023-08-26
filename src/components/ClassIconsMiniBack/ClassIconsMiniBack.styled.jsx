@@ -16,7 +16,7 @@ export const Icon = styled.img`
 
 	filter: saturate(0) brightness(0);
 	opacity: 30%;
-	transform: scaleX(-1);
+	/* transform: scaleX(-1); */
 
 	:nth-child(1) {
 		top: 40px;
