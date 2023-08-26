@@ -278,7 +278,6 @@ Error generating stack: `+o.message+`
 	width: ${e=>e.countClasses<2?"43%":"37%"};
 
 	opacity: 70%;
-	transform: scaleX(-1);
 	filter: saturate(70%);
 `,UP=({dragonClass:e,countClasses:t})=>F(BP,{src:`./images/icons/classes/${e}.png`,countClasses:t}),Ov=e=>`./images/dragons/${e.toLowerCase().split(" ").join("_")}.png`,ic=e=>e.length>1?`${e[0]}_${e[1]}`:e,WP=le.div`
 	position: absolute;
