@@ -9,7 +9,7 @@ export const CardOutline = styled.div`
 	border-radius: 30px;
 	padding: 13px;
 
-	background-image: url(${(props) => `./images/overlays/${props.classes}.png`});
+	background-image: url(${(props) => `./images/overlays/${props.outline}.png`});
 	background-color: #d7ae73;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;

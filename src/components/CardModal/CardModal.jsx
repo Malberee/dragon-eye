@@ -65,7 +65,7 @@ const CardModal = ({ dragon }, ref) => {
 				}}
 			>
 				<CardOutline
-					classes={getCardOutline(classes)}
+					outline={getCardOutline(classes)}
 					onClick={() => setIsFlipped((x) => !x)}
 				>
 					<CardWrapper>
@@ -130,7 +130,7 @@ const CardModal = ({ dragon }, ref) => {
 						<TooltipLink
 							data-tooltip-id="my-tooltip"
 							data-tooltip-content={`Rarity: ${rarity}`}
-							className='sticker'
+							className="sticker"
 						>
 							<RaritySticker rarity={rarity} />
 						</TooltipLink>
@@ -138,7 +138,7 @@ const CardModal = ({ dragon }, ref) => {
 				</CardOutline>
 
 				<CardOutline
-					classes={getCardOutline(classes)}
+					outline={getCardOutline(classes)}
 					onClick={() => setIsFlipped((x) => !x)}
 					style={{ transform: 'scaleX(-1)' }}
 				>

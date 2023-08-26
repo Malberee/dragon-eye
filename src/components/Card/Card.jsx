@@ -23,8 +23,16 @@ import { getDragonPicture } from '../../utils/getDragonPicture'
 import { getCardOutline } from '../../utils/getCardOutline'
 
 const Card = ({ dragon, toggleModal, setDragon, modal }) => {
-	const { name, classes, size, fireType, abilities, picture, description, rarity } =
-		dragon
+	const {
+		name,
+		classes,
+		size,
+		fireType,
+		abilities,
+		picture,
+		description,
+		rarity,
+	} = dragon
 
 	return (
 		<motion.div
@@ -42,7 +50,7 @@ const Card = ({ dragon, toggleModal, setDragon, modal }) => {
 					setDragon(dragon)
 				}}
 			>
-				<CardOutline classes={getCardOutline(classes)}>
+				<CardOutline outline={getCardOutline(classes)}>
 					<CardWrapper>
 						<CardHeader>
 							<SizeIcon type={size.type} number={size.number} />
