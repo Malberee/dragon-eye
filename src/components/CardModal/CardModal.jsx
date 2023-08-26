@@ -27,8 +27,8 @@ import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'
 import AbilityIcon from '../AbilityIcon'
 import ClassIcon from '../ClassIcon'
-import { getDragonPicture } from '../../helpers/getDragonPicture'
-import { getCardOutline } from '../../helpers/getCardOutline'
+import { getDragonPicture } from '../../utils/getDragonPicture'
+import { getCardOutline } from '../../utils/getCardOutline'
 import ClassIconsMiniBack from '../ClassIconsMiniBack/ClassIconsMiniBack'
 
 const CardModal = ({ dragon }, ref) => {

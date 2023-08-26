@@ -3,5 +3,5 @@ export const getCardOutline = (classes) => {
 		return `${classes[0]}_${classes[1]}`
 	}
 
-	return classes
+	return classes[0]
 }

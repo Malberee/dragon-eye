@@ -19,8 +19,8 @@ import RaritySticker from '../RaritySticker'
 import SizeIcon from '../SizeIcon'
 import ClassIconsMini from '../ClassIconsMini'
 import AbilityIcon from '../AbilityIcon'
-import { getDragonPicture } from '../../helpers/getDragonPicture'
-import { getCardOutline } from '../../helpers/getCardOutline'
+import { getDragonPicture } from '../../utils/getDragonPicture'
+import { getCardOutline } from '../../utils/getCardOutline'
 
 const Card = ({ dragon, toggleModal, setDragon, modal }) => {
 	const { name, classes, size, fireType, abilities, picture, description, rarity } =
