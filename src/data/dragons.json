@@ -251,7 +251,7 @@
 	},
 	{
 		"name": "Hobgobbler",
-		"classes": ["mystery", "stoker"],
+		"classes": ["stoker", "mystery"],
 		"rarity": "rare",
 		"size": { "type": "land", "number": 1 },
 		"fireType": "Incendiary slobber",
