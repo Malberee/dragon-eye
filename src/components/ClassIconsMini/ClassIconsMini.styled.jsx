@@ -1,8 +1,6 @@
 import styled, { css } from 'styled-components'
 
 export const IconsWrapper = styled.div`
-	position: relative;
-
 	width: 40px;
 	height: 40px;
 	display: flex;
