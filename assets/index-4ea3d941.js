@@ -279,7 +279,7 @@ Error generating stack: `+o.message+`
 
 	opacity: 70%;
 	filter: saturate(70%);
-`,UP=({dragonClass:e,countClasses:t})=>F(BP,{src:`./images/icons/classes/${e}.png`,countClasses:t}),Ov=e=>`./images/dragons/${e.toLowerCase().split(" ").join("_")}.png`,ic=e=>e.length>1?`${e[0]}_${e[1]}`:e,WP=le.div`
+`,UP=({dragonClass:e,countClasses:t})=>F(BP,{src:`./images/icons/classes/${e}.png`,countClasses:t}),Ov=e=>`./images/dragons/${e.toLowerCase().split(" ").join("_")}.png`,ic=e=>e.length>1?`${e[0]}_${e[1]}`:e[0],WP=le.div`
 	position: absolute;
 	top: 0;
 	left: 0;
