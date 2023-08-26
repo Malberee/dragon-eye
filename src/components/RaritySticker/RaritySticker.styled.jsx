@@ -12,7 +12,7 @@ export const RarityStickerWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	background-image: url('/images/overlays/sticker.png');
+	background-image: url('./images/overlays/sticker.png');
 	background-size: cover;
 	box-shadow: 3px 3px 10px -7px rgba(0, 0, 0, 0.75);
 
