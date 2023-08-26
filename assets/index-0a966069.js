@@ -237,14 +237,14 @@ Error generating stack: `+o.message+`
 	justify-content: center;
 	align-items: center;
 
-	background-image: url('/images/overlays/sticker.png');
+	background-image: url('./images/overlays/sticker.png');
 	background-size: cover;
 	box-shadow: 3px 3px 10px -7px rgba(0, 0, 0, 0.75);
 
 	transform: rotate(-10deg);
 `,NP=le.img`
 	width: 40px;
-`,Gl=({rarity:e})=>F(IP,{children:F(NP,{src:`/images/icons/rarities/${e}.png`})});Gl.propTypes={};Gl.defaultProps={};const zP=le.img`
+`,Gl=({rarity:e})=>F(IP,{children:F(NP,{src:`./images/icons/rarities/${e}.png`})});Gl.propTypes={};Gl.defaultProps={};const zP=le.img`
 	width: 40px;
 	height: 40px;
 `,Xl=({type:e,number:t})=>F(zP,{src:`./images/icons/sizes/${((r,i)=>{if(r==="sea")return`Land${i}`;if(r==="sky/sea")return`Sky${i}`;if(r==="land")return`Land${i}`})(e,t)}.png`});Xl.propTypes={};Xl.defaultProps={};const $P=le.div`
