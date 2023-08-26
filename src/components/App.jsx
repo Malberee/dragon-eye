@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { useSelector } from 'react-redux'
+
+import Authors from './Authors'
 import Header from './Header'
 import Container from './Container'
 import Modal from './Modal'
 import CardList from './CardList'
+
 import './App.scss'
 
 function App() {
-	const dragons = useSelector(state => state.dragons.dragons)
+	const dragons = useSelector((state) => state.dragons.dragons)
 
 	const [modalIsOpen, setModalIsOpen] = useState(false)
 	const [query, setQuery] = useState('')
@@ -26,6 +29,7 @@ function App() {
 
 	return (
 		<>
+			<Authors />
 			<Header setQuery={setQuery} />
 			<Container>
 				<CardList
