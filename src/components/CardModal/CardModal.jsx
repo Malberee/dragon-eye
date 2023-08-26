@@ -50,6 +50,8 @@ const CardModal = ({ dragon }, ref) => {
 		rarity,
 	} = dragon
 
+	console.log('text', classes)
+
 	return (
 		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
 			<ReactCardFlip
@@ -140,7 +142,7 @@ const CardModal = ({ dragon }, ref) => {
 				<CardOutline
 					outline={getCardOutline(classes)}
 					onClick={() => setIsFlipped((x) => !x)}
-					// style={{ transform: 'scaleX(-1)' }}
+					style={{ transform: 'scaleX(-1)' }}
 				>
 					<CardBackWrapper countClasses={classes.length}>
 						<CardBackClassIconWrapper>
