@@ -1,20 +1,21 @@
 import React from 'react'
-import { nanoid } from 'nanoid'
 import { IconsWrapper, Icon } from './ClassIconsMiniBack.styled'
+import { uid } from 'uid'
 
 const ClassIconsMiniBack = ({ classes }) => {
 	const getClassesArray = () => {
 		if (classes.length > 1) {
-			return [...classes, ...classes.reverse()]
+			return [...classes, ...[...classes].reverse()]
 		}
-		return [...classes, ...classes, ...classes, ...classes]
+
+		return Array(4).fill(classes).flat()
 	}
 
 	return (
 		<IconsWrapper>
 			{getClassesArray().map((dragonClass) => (
 				<Icon
-					key={nanoid()}
+					key={uid()}
 					src={`./images/icons/classesMini/${dragonClass}.png`}
 				/>
 			))}

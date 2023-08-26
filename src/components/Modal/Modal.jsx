@@ -1,12 +1,17 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { createPortal } from 'react-dom'
-import { ModalOverlay } from './Modal.styled'
+import { useSelector } from 'react-redux'
+
 import CardModal from '../CardModal'
+
+import { ModalOverlay } from './Modal.styled'
 
 const modalRoot = document.getElementById('modal-root')
 
-const Modal = ({ dragon, toggleModal }) => {
+const Modal = ({ toggleModal }) => {
+	const dragon = useSelector((state) => state.dragons.selectedDragon)
+
 	const childRef = useRef(null)
 
 	let screenWidth = window.innerWidth
@@ -40,7 +45,7 @@ const Modal = ({ dragon, toggleModal }) => {
 				layoutId={dragon.name}
 				animate={{ scale: [null, null, null, screenWidth > 720 ? 1.5 : 1.1] }}
 			>
-				<CardModal dragon={dragon} ref={childRef} />
+				<CardModal ref={childRef} />
 			</motion.div>
 		</ModalOverlay>,
 		modalRoot,

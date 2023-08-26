@@ -1,8 +1,20 @@
 import React, { forwardRef, useState, useImperativeHandle } from 'react'
-import { nanoid } from 'nanoid'
+import { useSelector } from 'react-redux/es/hooks/useSelector'
 import { Tooltip } from 'react-tooltip'
 import Tilt from 'react-parallax-tilt'
 import ReactCardFlip from 'react-card-flip'
+import { uid } from 'uid'
+
+import { getDragonPicture } from '../../utils/getDragonPicture'
+import { getCardOutline } from '../../utils/getCardOutline'
+
+import RaritySticker from '../RaritySticker'
+import SizeIcon from '../SizeIcon'
+import ClassIconsMini from '../ClassIconsMini'
+import AbilityIcon from '../AbilityIcon'
+import ClassIcon from '../ClassIcon'
+import ClassIconsMiniBack from '../ClassIconsMiniBack/ClassIconsMiniBack'
+
 import {
 	CardOutline,
 	CardWrapper,
@@ -22,16 +34,10 @@ import {
 	CardBackClassIconWrapper,
 	TooltipLink,
 } from './CardModal.styled'
-import RaritySticker from '../RaritySticker'
-import SizeIcon from '../SizeIcon'
-import ClassIconsMini from '../ClassIconsMini'
-import AbilityIcon from '../AbilityIcon'
-import ClassIcon from '../ClassIcon'
-import { getDragonPicture } from '../../utils/getDragonPicture'
-import { getCardOutline } from '../../utils/getCardOutline'
-import ClassIconsMiniBack from '../ClassIconsMiniBack/ClassIconsMiniBack'
 
-const CardModal = ({ dragon }, ref) => {
+const CardModal = (props, ref) => {
+	const dragon = useSelector((state) => state.dragons.selectedDragon)
+
 	const [isFlipped, setIsFlipped] = useState(false)
 
 	useImperativeHandle(ref, () => ({
@@ -49,8 +55,6 @@ const CardModal = ({ dragon }, ref) => {
 		description,
 		rarity,
 	} = dragon
-
-	console.log('text', classes)
 
 	return (
 		<Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
@@ -112,11 +116,11 @@ const CardModal = ({ dragon }, ref) => {
 							<Abilities>
 								{abilities.map((ability) => (
 									<TooltipLink
-										key={nanoid()}
+										key={uid()}
 										data-tooltip-id="my-tooltip"
 										data-tooltip-content={ability}
 									>
-										<AbilityIcon key={nanoid()} ability={ability} />
+										<AbilityIcon key={uid()} ability={ability} />
 									</TooltipLink>
 								))}
 							</Abilities>
@@ -148,7 +152,7 @@ const CardModal = ({ dragon }, ref) => {
 						<CardBackClassIconWrapper>
 							{classes.map((dragonClass) => (
 								<ClassIcon
-									key={nanoid()}
+									key={uid()}
 									dragonClass={dragonClass}
 									countClasses={classes.length}
 								/>

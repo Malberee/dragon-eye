@@ -1,5 +1,17 @@
-import { nanoid } from 'nanoid'
+import { uid } from 'uid'
 import { motion } from 'framer-motion'
+import { useDispatch } from 'react-redux'
+
+import { getDragonPicture } from '../../utils/getDragonPicture'
+import { getCardOutline } from '../../utils/getCardOutline'
+
+import { selectDragon } from '../../store/dragonsSlice'
+
+import RaritySticker from '../RaritySticker'
+import SizeIcon from '../SizeIcon'
+import ClassIconsMini from '../ClassIconsMini'
+import AbilityIcon from '../AbilityIcon'
+
 import {
 	CardLink,
 	CardOutline,
@@ -15,15 +27,12 @@ import {
 	DragonDescriptionWrapper,
 	DragonDescription,
 } from './Card.styled'
-import RaritySticker from '../RaritySticker'
-import SizeIcon from '../SizeIcon'
-import ClassIconsMini from '../ClassIconsMini'
-import AbilityIcon from '../AbilityIcon'
-import { getDragonPicture } from '../../utils/getDragonPicture'
-import { getCardOutline } from '../../utils/getCardOutline'
 
-const Card = ({ dragon, toggleModal, setDragon, modal }) => {
+const Card = ({ dragon, toggleModal }) => {
+	const dispatch = useDispatch()
+
 	const {
+		id,
 		name,
 		classes,
 		size,
@@ -33,6 +42,11 @@ const Card = ({ dragon, toggleModal, setDragon, modal }) => {
 		description,
 		rarity,
 	} = dragon
+
+	const setSelectedDragon = () => {
+		toggleModal()
+		dispatch(selectDragon({ id }))
+	}
 
 	return (
 		<motion.div
@@ -44,12 +58,7 @@ const Card = ({ dragon, toggleModal, setDragon, modal }) => {
 				scale: 0.97,
 			}}
 		>
-			<CardLink
-				onClick={() => {
-					toggleModal()
-					setDragon(dragon)
-				}}
-			>
+			<CardLink onClick={setSelectedDragon}>
 				<CardOutline outline={getCardOutline(classes)}>
 					<CardWrapper>
 						<CardHeader>
@@ -68,7 +77,7 @@ const Card = ({ dragon, toggleModal, setDragon, modal }) => {
 
 							<Abilities>
 								{abilities.map((ability) => (
-									<AbilityIcon key={nanoid()} ability={ability} />
+									<AbilityIcon key={uid()} ability={ability} />
 								))}
 							</Abilities>
 						</CardInner>

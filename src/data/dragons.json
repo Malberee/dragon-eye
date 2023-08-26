@@ -1,5 +1,6 @@
 [
 	{
+		"id": "5ba95b086ab",
 		"name": "Skrill",
 		"classes": ["strike"],
 		"rarity": "legendary",
@@ -10,6 +11,7 @@
 		"description": "This elusive creature is highly secretive and is known to ride lightning bolts. Found only during electrical storms, it can shoot bursts of white fire."
 	},
 	{
+		"id": "ba95b086abf",
 		"name": "Raincutter",
 		"classes": ["sharp"],
 		"rarity": "rare",
@@ -20,6 +22,7 @@
 		"description": "The Raincutter can breathe fire, and its flames are capable of staying alive in wet and damp air during a rain or a storm."
 	},
 	{
+		"id": "a95b086abff",
 		"name": "Bewilderbeast",
 		"classes": ["tidal"],
 		"rarity": "godly",
@@ -30,6 +33,7 @@
 		"description": "Colossal leviathan known as the king of the dragons. Spews water that freezes into ice spikes. Huge help spar with other individuals for alpha status."
 	},
 	{
+		"id": "95b086abff8",
 		"name": "Hideous Zippleback",
 		"classes": ["mystery"],
 		"rarity": "common",
@@ -40,6 +44,7 @@
 		"description": "With two heads, the Zippleback is twice the trouble of other dragons. One head releases a flammable gas while the other head lights it on fire."
 	},
 	{
+		"id": "5b086abff89",
 		"name": "Red Death",
 		"rarity": "godly",
 		"classes": ["stoker"],
@@ -50,6 +55,7 @@
 		"description": "Enormous dragon queen able to bend other dragons to its will. Crushing jaws and clubbed tail. Lives in volcanoes where it awaits food from its subjects."
 	},
 	{
+		"id": "b086abff89a",
 		"name": "Thunderdrum",
 		"classes": ["tidal"],
 		"rarity": "rare",
@@ -60,6 +66,7 @@
 		"description": "Instead of breathing fire, the Thunderdrum produces a strong, concussive sound that can kill a human at close range. The blast is so powerful that the dragon is said to get its power from Thor himself"
 	},
 	{
+		"id": "086abff89aa",
 		"name": "Snaptrapper",
 		"classes": ["mystery"],
 		"rarity": "epic",
@@ -70,6 +77,7 @@
 		"description": "With triple jaws on each of its four heads, this dragon looks like a Venusian flycatcher. Only not as friendly. Snappers smell sweet, but their acid attacks have a powerful sting that can melt metal!"
 	},
 	{
+		"id": "86abff89aa5",
 		"name": "Rumblehorn",
 		"classes": ["tracker"],
 		"rarity": "epic",
@@ -80,6 +88,7 @@
 		"description": "Rumblehorns shoot long-ranged fire missiles which explode on impact. They can find anything on scent for miles away, even with just a weak scent from a helmet."
 	},
 	{
+		"id": "6abff89aa5c",
 		"name": "Death Song",
 		"rarity": "mythical",
 		"classes": ["mystery"],
@@ -90,6 +99,7 @@
 		"description": "This Dragon uses his melodic call to lure his targets into the dense jungles of Melody Island. There, he can watch as they search for the source of the song."
 	},
 	{
+		"id": "abff89aa5cb",
 		"name": "Deathgripper",
 		"classes": ["strike"],
 		"rarity": "legendary",
@@ -100,6 +110,7 @@
 		"description": "Deathgrippers are a monstrous species with their protruding tusks, foreclaw pincers, and poisonous clubbed tails. Traveling in packs like wild dogs, Deathgrippers enjoy hunting for prey and should be avoided at all costs."
 	},
 	{
+		"id": "bff89aa5cb7",
 		"name": "Hotburple",
 		"classes": ["boulder"],
 		"rarity": "common",
@@ -110,6 +121,7 @@
 		"description": "The Hotburple can be a hot mess. Literally! A louder, fussier and lazier Boulder Class cousin to the Gronckle. A nap is never too far away."
 	},
 	{
+		"id": "ff89aa5cb7a",
 		"name": "Snow Wraith",
 		"classes": ["strike"],
 		"rarity": "legendary",
@@ -120,6 +132,7 @@
 		"description": "This dragon has notoriously poor eyesight and uses thermal sensors to locate its prey. It camouflages itself in the snow because if it can't see you, it doesn't want you to see it!"
 	},
 	{
+		"id": "f89aa5cb7ad",
 		"name": "Whispering Death",
 		"classes": ["boulder"],
 		"rarity": "epic",
@@ -130,6 +143,7 @@
 		"description": "Using its grinding teeth, this deadly Boulder Class Dragon burrows underground to attack from below. Very intelligent, with a long memory."
 	},
 	{
+		"id": "89aa5cb7ad2",
 		"name": "Terrible Terror",
 		"classes": ["stoker"],
 		"rarity": "common",
@@ -140,6 +154,7 @@
 		"description": "The Terrible Terror. Smallest of the dragons, but no less ferocious. You know it's about to breathe fire when you hear a small hissing sound. By taming it start with a shiny object."
 	},
 	{
+		"id": "9aa5cb7ad25",
 		"name": "Night Fury",
 		"classes": ["strike"],
 		"rarity": "unique",
@@ -150,6 +165,7 @@
 		"description": "The unholy offspring of lightning and death itself. Never engage this dragon. Your only chance: Hide and pray it does not find you."
 	},
 	{
+		"id": "aa5cb7ad252",
 		"name": "Eruptodon",
 		"classes": ["boulder"],
 		"rarity": "legendary",
@@ -160,6 +176,7 @@
 		"description": "Insatiable dragon that feeds off lava in active volcanoes. Covered in impenatrable igneous rock armor and has heat resitant eye lenses."
 	},
 	{
+		"id": "a5cb7ad2521",
 		"name": "Monstrous Nightmare",
 		"rarity": "common",
 		"classes": ["stoker"],
@@ -170,6 +187,7 @@
 		"description": "Monstrous Nightmares are known for setting their entire body on fire. These dragons are incredibly fearsome and can also fly at a high speed."
 	},
 	{
+		"id": "5cb7ad25218",
 		"name": "Stormcutter",
 		"classes": ["sharp"],
 		"rarity": "legendary",
@@ -180,6 +198,7 @@
 		"description": "The four-winged Sharp-class flier can turn its head as far as it can see behind it. Flying on four wings, the Stormcutter carves spirals in the sky and unleashes fiery arcs of destruction at enemies."
 	},
 	{
+		"id": "cb7ad252188",
 		"name": "Seashocker",
 		"classes": ["tidal"],
 		"rarity": "epic",
@@ -190,6 +209,7 @@
 		"description": "The Seashocker is capable of emitting underwater sonar, and these dragons travel in schools or pods, similar to fish and dolphins."
 	},
 	{
+		"id": "b7ad2521888",
 		"name": "Hobblegrunt",
 		"classes": ["stoker"],
 		"rarity": "rare",
@@ -200,6 +220,7 @@
 		"description": "Hobblegrunts are considered lucky dragons and that they can predict certain things, both good and bad, a split second before they actually happen, and their skin changes color depending on their mood."
 	},
 	{
+		"id": "7ad25218880",
 		"name": "Scauldron",
 		"classes": ["tidal"],
 		"rarity": "epic",
@@ -210,6 +231,7 @@
 		"description": "This huge underwater dragon is a speedy and silent swimmer. Instead of breathing fire, Scauldron spits scalding hot water at its prey."
 	},
 	{
+		"id": "ad252188808",
 		"name": "Changewing",
 		"classes": ["mystery"],
 		"rarity": "epic",
@@ -220,6 +242,7 @@
 		"description": "Unlike other dragons the Changewing spits acid instead of fire. Even newly-hatched Changewings have the ability to spit acid onto any potential threat. They got their name from the changing color of their scales which they use as camouflage."
 	},
 	{
+		"id": "d2521888086",
 		"name": "Razorwhip",
 		"classes": ["sharp"],
 		"rarity": "mythical",
@@ -230,6 +253,7 @@
 		"description": "Long, spiny, barbed tail. Very aggressive. Very dangerous. It can use its tail to wrap around a victim and literally squeeze the life out of them. Unless it's in a hurry. Then it just slices you in half."
 	},
 	{
+		"id": "25218880861",
 		"name": "Light Fury",
 		"classes": ["strike"],
 		"rarity": "legendary",
@@ -240,6 +264,7 @@
 		"description": "Temporarily transforms each scale into a reflective surface that mirrors the Light Fury’s surroundings, essentially rendering her invisible."
 	},
 	{
+		"id": "52188808618",
 		"name": "Crimson Goregutter",
 		"rarity": "mythical",
 		"classes": ["boulder"],
@@ -250,6 +275,7 @@
 		"description": "Despite their imposing horns and axe-shaped tails, goregguters are softer than they appear. In battle, however, they can spew molten lava onto their horns and then ram their foes with fiery force."
 	},
 	{
+		"id": "21888086183",
 		"name": "Hobgobbler",
 		"classes": ["stoker", "mystery"],
 		"rarity": "rare",
@@ -260,6 +286,7 @@
 		"description": "Hobgobblers will literally eat anything. When they team up in a pack, they can tear through warships, Viking houses and anything else that crosses their path."
 	},
 	{
+		"id": "1888086183c",
 		"name": "Triple Stryke",
 		"classes": ["strike"],
 		"rarity": "legendary",
@@ -270,6 +297,7 @@
 		"description": "Vicious. Aggressive. Belligerent. These are only three of the words that describe the Triple Stryke in battle and the incredible fury it unleashes with its trio of braided tails."
 	},
 	{
+		"id": "888086183c1",
 		"name": "Cavern Crasher",
 		"classes": ["mystery"],
 		"rarity": "legendary",
@@ -280,6 +308,7 @@
 		"description": "With their flammable ooze and collapsible skeleton, the Cavern Crasher will push any rival Dragon out of their home and take it over."
 	},
 	{
+		"id": "88086183c15",
 		"name": "Timberjack",
 		"classes": ["sharp"],
 		"rarity": "rare",
@@ -290,6 +319,7 @@
 		"description": "This sleek glider from the sharp class can pierce huge trees with its wide and sharp wings. Timberjack's wings can take a huge load as he prepares for a fire nova attack!"
 	},
 	{
+		"id": "8086183c15a",
 		"name": "Deadly Nadder",
 		"classes": ["tracker"],
 		"rarity": "common",
@@ -300,6 +330,7 @@
 		"description": "A vain and aggressive, spine-shooting Pathfinder-class dragon. A keen sense of smell compensates for the blind spot in front of its nose. Deadly Nadder attacks from afar, always staying at a distance"
 	},
 	{
+		"id": "086183c15a7",
 		"name": "Gronckle",
 		"rarity": "common",
 		"classes": ["boulder"],

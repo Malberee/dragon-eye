@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
+import { useSelector } from 'react-redux'
 import Header from './Header'
 import Container from './Container'
 import Modal from './Modal'
 import CardList from './CardList'
-import dragons from '../data/dragons.json'
 import './App.scss'
 
 function App() {
+	const dragons = useSelector(state => state.dragons.dragons)
+
 	const [modalIsOpen, setModalIsOpen] = useState(false)
-	const [dragon, setDragon] = useState(null)
 	const [query, setQuery] = useState('')
 
 	const toggleModal = () => {
@@ -29,17 +30,13 @@ function App() {
 			<Container>
 				<CardList
 					dragons={dragons.filter((dragon) =>
-						dragon.name.toLowerCase().includes(query)
+						dragon.name.toLowerCase().includes(query),
 					)}
 					toggleModal={toggleModal}
-					setDragon={setDragon}
-					modalIsOpen={modalIsOpen}
 				/>
 			</Container>
 			<AnimatePresence>
-				{modalIsOpen && (
-					<Modal dragon={dragon} toggleModal={toggleModal} />
-				)}
+				{modalIsOpen && <Modal toggleModal={toggleModal} />}
 			</AnimatePresence>
 		</>
 	)
