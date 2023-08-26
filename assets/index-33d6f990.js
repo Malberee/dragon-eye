@@ -176,8 +176,6 @@ Error generating stack: `+o.message+`
 	width: 40px;
 	height: 40px;
 `,Pl=({type:e,number:t})=>N(Qb,{src:`./images/icons/sizes/${((r,i)=>{if(r==="sea")return`Land${i}`;if(r==="sky/sea")return`Sky${i}`;if(r==="land")return`Land${i}`})(e,t)}.png`});Pl.propTypes={};Pl.defaultProps={};const Zb=oe.div`
-	position: relative;
-
 	width: 40px;
 	height: 40px;
 	display: flex;
