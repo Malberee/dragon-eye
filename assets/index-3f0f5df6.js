@@ -360,7 +360,7 @@ Error generating stack: `+o.message+`
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
-`,L2=({dragons:e,toggleModal:t})=>_(O2,{children:e.map(n=>_(Ud,{dragon:n,toggleModal:t},n.name))});function _2(e){const[t,n]=k.useState(e),r=k.useRef(null),i=o=>{r.current&&!r.current.contains(o.target)&&n(!1)};return k.useEffect(()=>(document.addEventListener("click",i,!0),()=>{document.removeEventListener("click",i,!0)}),[]),{ref:r,isComponentVisible:t,setIsComponentVisible:n}}const M2=J.div`
+`,L2=({dragons:e,toggleModal:t})=>_(O2,{children:e.length>0?e.map(n=>_(Ud,{dragon:n,toggleModal:t},n.name)):_("p",{children:"There are no known dragon species for your query at this time"})});function _2(e){const[t,n]=k.useState(e),r=k.useRef(null),i=o=>{r.current&&!r.current.contains(o.target)&&n(!1)};return k.useEffect(()=>(document.addEventListener("click",i,!0),()=>{document.removeEventListener("click",i,!0)}),[]),{ref:r,isComponentVisible:t,setIsComponentVisible:n}}const M2=J.div`
 	position: fixed;
 	top: ${e=>e.isOpen?"0":"-60%"};
 	left: 10px;
