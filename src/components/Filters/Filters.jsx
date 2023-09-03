@@ -79,7 +79,7 @@ const Filters = () => {
 			<FiltersList>
 				<FiltersItem>
 					{classes.map((classItem) => (
-						<Label>
+						<Label key={classItem}>
 							<CustomCheckbox
 								type="checkbox"
 								onChange={handleFilter}
@@ -93,7 +93,7 @@ const Filters = () => {
 				</FiltersItem>
 				<FiltersItem>
 					{rarity.map((rarityItem) => (
-						<Label>
+						<Label key={rarityItem}>
 							<CustomCheckbox
 								type="checkbox"
 								onChange={handleFilter}
@@ -107,7 +107,7 @@ const Filters = () => {
 				</FiltersItem>
 				<FiltersItem>
 					{abilities.map((abilityItem) => (
-						<Label>
+						<Label key={abilityItem}>
 							<CustomCheckbox
 								type="checkbox"
 								onChange={handleFilter}
