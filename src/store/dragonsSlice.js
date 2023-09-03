@@ -1,12 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit'
 import dragons from '../data/dragons.json'
 
+const initialState = {
+	selectedDragon: null,
+	dragons,
+}
+
 const dragonsSlice = createSlice({
 	name: 'dragons',
-	initialState: {
-		selectedDragon: null,
-		dragons,
-	},
+	initialState,
 	reducers: {
 		selectDragon(state, action) {
 			state.selectedDragon = dragons.find(

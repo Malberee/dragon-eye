@@ -26,7 +26,11 @@ body {
 	min-width: 320px;
 	min-height: 100vh;
 	text-transform: uppercase;
-	background-image: url('/images/bg.jpg');
+	background-image: url('/images/overlays/texturePaper.png');
+	background-size: contain;
+	background-repeat: repeat;
+	background-position: center;
+
 }
 
 p,

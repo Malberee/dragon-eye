@@ -77,7 +77,7 @@ const Card = ({ dragon, toggleModal }) => {
 
 							<Abilities>
 								{abilities.map((ability) => (
-									<AbilityIcon key={uid()} ability={ability} />
+									<AbilityIcon key={uid()} ability={ability} width={18} />
 								))}
 							</Abilities>
 						</CardInner>

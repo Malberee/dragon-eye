@@ -7,11 +7,14 @@ import Header from './Header'
 import Container from './Container'
 import Modal from './Modal'
 import CardList from './CardList'
+import Filters from './Filters'
+
+import { selectDragonsByFilter } from '../store/selectors'
 
 import './App.scss'
 
 function App() {
-	const dragons = useSelector((state) => state.dragons.dragons)
+	const dragons = useSelector(selectDragonsByFilter)
 
 	const [modalIsOpen, setModalIsOpen] = useState(false)
 	const [query, setQuery] = useState('')
@@ -31,6 +34,7 @@ function App() {
 		<>
 			<Authors />
 			<Header setQuery={setQuery} />
+			<Filters />
 			<Container>
 				<CardList
 					dragons={dragons.filter((dragon) =>

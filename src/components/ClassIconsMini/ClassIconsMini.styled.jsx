@@ -3,9 +3,9 @@ import styled, { css } from 'styled-components'
 export const IconsWrapper = styled.div`
 	position: relative;
 
-	width: 40px;
-	height: 40px;
-	
+	width: ${(props) => props.Width ? props.Width + 'px' : '40px'};
+	height: ${(props) => props.Width ? props.Width + 'px' : '40px'};
+
 	display: flex;
 	flex-direction: column;
 `
@@ -29,6 +29,6 @@ export const Icon = styled.img`
 					width: 25px;
 			  `
 			: css`
-					width: 40px;
+					min-width: ${(props) => props.Width + 'px' || '40px'};
 			  `}
 `

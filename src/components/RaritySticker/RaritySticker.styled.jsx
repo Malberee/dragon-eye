@@ -18,7 +18,3 @@ export const RarityStickerWrapper = styled.div`
 
 	transform: rotate(-10deg);
 `
-
-export const RarityIcon = styled.img`
-	width: 40px;
-`

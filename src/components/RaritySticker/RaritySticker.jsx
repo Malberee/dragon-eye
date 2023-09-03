@@ -1,10 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { RarityStickerWrapper, RarityIcon } from './RaritySticker.styled'
+
+import RarityIcon from '../RarityIcon'
+
+import { RarityStickerWrapper } from './RaritySticker.styled'
 
 const RaritySticker = ({ rarity }) => (
 	<RarityStickerWrapper>
-		<RarityIcon src={`./images/icons/rarities/${rarity}.png`} />
+		<RarityIcon rarity={rarity} width={40}  />
 	</RarityStickerWrapper>
 )
 

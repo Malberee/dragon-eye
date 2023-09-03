@@ -120,7 +120,7 @@ const CardModal = (props, ref) => {
 										data-tooltip-id="my-tooltip"
 										data-tooltip-content={ability}
 									>
-										<AbilityIcon key={uid()} ability={ability} />
+										<AbilityIcon key={uid()} ability={ability} width={18} />
 									</TooltipLink>
 								))}
 							</Abilities>
