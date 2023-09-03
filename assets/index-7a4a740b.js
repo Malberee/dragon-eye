@@ -372,7 +372,7 @@ Error generating stack: `+o.message+`
 	height: 660px;
 	padding: 3px;
 
-	background-image: url('/images/overlays/bookmark.png');
+	background-image: url('./images/overlays/bookmark.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 
