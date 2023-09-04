@@ -13,6 +13,9 @@ export const CardOutline = styled.div`
 	background-color: #d7ae73;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+
+	font-family: 'Runic';
+	text-transform: uppercase;
 `
 
 export const CardWrapper = styled.div`

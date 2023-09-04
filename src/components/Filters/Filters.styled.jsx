@@ -20,7 +20,7 @@ export const FiltersWrapper = styled.div`
 
 	&:hover,
 	&:focus {
-		top: ${(props) => (!props.isOpen && '-58%')};
+		top: ${(props) => !props.isOpen && '-58%'};
 	}
 `
 
@@ -40,8 +40,6 @@ export const FiltersList = styled.ul`
 `
 
 export const FiltersItem = styled.li`
-	max-width: 70px;
-
 	display: flex;
 	flex-direction: column;
 	gap: 2px;
@@ -49,6 +47,7 @@ export const FiltersItem = styled.li`
 	font-size: 13px;
 
 	color: white;
+	/* background-image: url('./images/overlays/texturePaper.png'); */
 `
 
 export const CustomCheckbox = styled.input`
@@ -56,8 +55,11 @@ export const CustomCheckbox = styled.input`
 `
 
 export const Label = styled.label`
+	border-radius: 3px;
+	
 	display: flex;
 	align-items: center;
-
+	
+	overflow: hidden;
 	cursor: pointer;
 `

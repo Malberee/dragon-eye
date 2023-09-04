@@ -13,6 +13,8 @@ export const CardBackWrapper = styled.div`
 			: './images/overlays/backOverlayHybrid.png'});
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+
+	transform: scaleX(-1);
 `
 
 export const CardBackClassIconWrapper = styled.div`
@@ -25,6 +27,7 @@ export const CardBackClassIconWrapper = styled.div`
 `
 
 export const TooltipLink = styled.a`
+	display: block;
 	cursor: pointer;
 
 	&.sticker {

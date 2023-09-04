@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../Card'
-import { CardListWrapper } from './CardList.styled'
+import { CardListWrapper, NotFoundText } from './CardList.styled'
 
 const CardList = ({ dragons, toggleModal }) => (
 	<CardListWrapper>
@@ -9,7 +9,9 @@ const CardList = ({ dragons, toggleModal }) => (
 				<Card key={dragon.name} dragon={dragon} toggleModal={toggleModal} />
 			))
 		) : (
-			<p>There are no known dragon species for your query at this time</p>
+			<NotFoundText>
+				There are no known dragon species for your query at this time
+			</NotFoundText>
 		)}
 	</CardListWrapper>
 )

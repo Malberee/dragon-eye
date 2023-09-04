@@ -17,20 +17,14 @@
 }
 
 :root {
-	background-color: #242424;
+	background-color: #1d1d1d;
 }
 
 body {
 	margin: 0;
-	display: flex;
+	// display: flex;
 	min-width: 320px;
 	min-height: 100vh;
-	text-transform: uppercase;
-	background-image: url('/images/overlays/texturePaper.png');
-	background-size: contain;
-	background-repeat: repeat;
-	background-position: center;
-
 }
 
 p,

@@ -1,22 +1,23 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const SearchbarWrapper = styled.div`
-
-`;
+	width: 100%;
+`
 
 export const Input = styled.input`
-    width: 300px;
-    padding: 10px;
-    border: transparent;
-    border-bottom: 2px solid black;
-    
-    background-color: transparent;
+	width: 300px;
+	padding: 10px;
+	border: transparent;
+	border: 2px solid #242424;
+	border-radius: 20px;
 
-    font-family: 'Runic';
-    font-size: 20px;
-    font-weight: 600;
+	color: white;
+	background-color: transparent;
 
-    :focus {
-        outline: transparent;
-    }
+	font-size: 12px;
+	font-weight: 500;
+
+	:focus {
+		outline: transparent;
+	}
 `

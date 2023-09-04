@@ -5,21 +5,19 @@ const Searchbar = ({ setQuery }) => {
 	const [input, setInput] = useState('')
 
 	const inputChange = (value) => {
-		setInput(value.toUpperCase())
-		setQuery(value)
+		setInput(value)
+		setQuery(value.toLowerCase())
 	}
 
 	return (
-		<Input
-			type="text"
-			onChange={(e) => inputChange(e.target.value.toLowerCase())}
-			value={input}
-		/>
+		<SearchbarWrapper>
+			<Input
+				type="text"
+				onChange={(e) => inputChange(e.target.value)}
+				value={input}
+			/>
+		</SearchbarWrapper>
 	)
 }
-
-Searchbar.propTypes = {}
-
-Searchbar.defaultProps = {}
 
 export default Searchbar

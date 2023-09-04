@@ -76,6 +76,7 @@ const Filters = () => {
 			onClick={setIsComponentVisible}
 			isOpen={isComponentVisible}
 		>
+			{/* <img src="./images/icons/checkmark.svg" alt="" /> */}
 			<FiltersList>
 				<FiltersItem>
 					{classes.map((classItem) => (

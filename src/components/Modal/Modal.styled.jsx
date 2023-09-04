@@ -5,7 +5,7 @@ export const ModalOverlay = styled(motion.div)`
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 4;
+	z-index: 3;
 
 	height: 100%;
 	width: 100%;

@@ -1,9 +1,17 @@
 body {
-	font-family: 'Runic';
+	font-family: 'Roboto';
 	background-size: cover;
 	background-attachment: fixed;
-	padding-top: 120px;
+	// padding-top: 120px;
 	padding-bottom: 43px;
+}
+
+main {
+	grid-area: main;
+
+	padding: 30px 15px; 
+
+	display: flex;
 }
 
 #root {
