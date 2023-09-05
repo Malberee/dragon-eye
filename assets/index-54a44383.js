@@ -401,7 +401,8 @@ Error generating stack: `+o.message+`
 `,MA=document.getElementById("modal-root"),DA=({toggleModal:e})=>{const t=Jf(o=>o.dragons.selectedDragon),n=k.useRef(null);let r=window.innerWidth;const i=()=>{n.current.isFlipped?(n.current.setIsFlipped(!1),setTimeout(()=>{e()},300)):e()};return fo.createPortal(b(_A,{onClick:i,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},children:b(Yo.div,{onClick:o=>o.stopPropagation(),layoutId:t.name,animate:{scale:[null,null,null,r>720?1.5:1.1]},children:b(LA,{ref:n})})}),MA)},Wd=({dragon:e,toggleModal:t})=>{const n=cv(),{id:r,name:i,classes:o,size:s,fireType:a,abilities:l,picture:u,description:c,rarity:f}=e,d=()=>{t(),n(Qk({id:r}))};return b(Yo.div,{layoutId:i,whileHover:{scale:1.03},whileTap:{scale:.97},children:b(bA,{onClick:d,children:b(nf,{outline:tf(o),children:Pe(m1,{children:[Pe(g1,{children:[b(Al,{type:s.type,number:s.number}),b(y1,{children:i}),b(Bd,{classes:o})]}),b(v1,{src:h1(i)}),Pe(w1,{children:[Pe(x1,{children:[b(S1,{src:"./images/icons/salvo.svg"}),b(k1,{children:a})]}),b(C1,{children:l.map(h=>b(Ud,{ability:h,width:18},li()))})]}),b(E1,{children:b(P1,{children:c})}),b(bl,{rarity:f})]})})})})};Wd.propTypes={};Wd.defaultProps={};const $A=Q.div`
 	height: 100%;
 	width: 100%;
-	padding: 30px 0;
+	margin: 20px 0;
+	padding: 10px 0;
 
 	display: flex;
 	justify-content: center;
