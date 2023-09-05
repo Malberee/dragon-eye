@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const CardListWrapper = styled.div`
 	height: 100%;
 	width: 100%;
-	padding: 30px 0;
+	margin: 20px 0;
+	padding: 10px 0;
 
 	display: flex;
 	justify-content: center;
@@ -17,3 +18,4 @@ export const CardListWrapper = styled.div`
 export const NotFoundText = styled.p`
 	color: white;
 `
+

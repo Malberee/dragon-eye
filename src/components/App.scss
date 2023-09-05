@@ -5,7 +5,7 @@ body {
 }
 
 main {
-	padding: 0 15px; 
+	padding: 0 15px;
 	height: calc(100% - 78px);
 
 	display: flex;
@@ -18,23 +18,24 @@ main {
 	text-align: center;
 }
 
+
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+	width: 5px;
+	height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #282828;
-  border-radius: 10px;
+	background: #282828;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #414141;
-  border-radius: 10px;
+	background: #414141;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #414141;
+	background: #414141;
 }
 
 ::-webkit-scrollbar-corner {
