@@ -1,5 +1,13 @@
 import { useState } from 'react'
-import { SearchbarWrapper, Input } from './Searchbar.styled'
+
+import { Search } from '../Icons'
+
+import {
+	SearchbarWrapper,
+	Input,
+	SearchIconWrapper,
+	SearchbarContainer,
+} from './Searchbar.styled'
 
 const Searchbar = ({ setQuery }) => {
 	const [input, setInput] = useState('')
@@ -11,11 +19,16 @@ const Searchbar = ({ setQuery }) => {
 
 	return (
 		<SearchbarWrapper>
-			<Input
-				type="text"
-				onChange={(e) => inputChange(e.target.value)}
-				value={input}
-			/>
+			<SearchbarContainer>
+				<Input
+					type="text"
+					onChange={(e) => inputChange(e.target.value)}
+					value={input}
+				/>
+				<SearchIconWrapper>
+					<Search width="24px" height="24px" />
+				</SearchIconWrapper>
+			</SearchbarContainer>
 		</SearchbarWrapper>
 	)
 }

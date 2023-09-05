@@ -2,41 +2,48 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const Backdrop = styled(motion.div)`
-	display: ${(props) => (props.isOpen ? 'block' : 'none')};
-
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 1;
 
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 
+	opacity: ${(props) => (props.isOpen ? 1 : 0)};
+	pointer-events: ${(props) => (props.isOpen ? 'all' : 'none')};
 	background-color: #0000005c;
+
+	transition: opacity 150ms ease-out;
+
+	@media (width >= 768px) {
+		display: none;
+	}
 `
 
 export const SidebarWrapper = styled(motion.aside)`
-	display: ${(props) => (props.isOpen ? 'block' : 'none')};
-
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: ${(props) => (props.isOpen ? 0 : '-100%')};
 	z-index: 1;
 
 	padding: 10px;
-	height: 100%;
+	height: 100vh;
 	min-width: 150px;
 
-	grid-column: 2 / 3;
+	overflow: auto;
 
 	color: white;
 	background-color: #161616;
+
+	transition: left 150ms ease-out;
 
 	@media (width >= 768px) {
 		display: block;
 		position: relative;
 		top: -30px;
 		left: -15px;
+		height: calc(100% + 60px);
 	}
 `
 
@@ -54,6 +61,10 @@ export const FiltersItem = styled.li`
 	font-size: 15px;
 
 	color: white;
+`
+
+export const FilterTitle = styled.h4`
+	text-align: left;
 `
 
 export const Label = styled.label`
@@ -85,11 +96,18 @@ export const Checkbox = styled.input`
 
 	appearance: none;
 
+	&:focus + ${CustomCheckbox} {
+		border: solid 1px #389ece;
+	}
+
 	&:checked + ${CustomCheckbox} {
 		background-image: url('./images/icons/checkmark.svg');
 		background-size: contain;
 		background-color: #389ece;
 		border: solid 1px #389ece;
-		gap: 10px;
+	}
+
+	&:checked:focus + ${CustomCheckbox} {
+		border: solid 1px white;
 	}
 `

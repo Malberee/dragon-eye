@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const HeaderWrapper = styled.header`
-	grid-area: header;
-
 	width: 100%;
 	padding: 20px 20px;
 
@@ -11,8 +9,6 @@ export const HeaderWrapper = styled.header`
 	align-items: center;
 
 	background-color: #161616;
-
-	/* box-shadow: 0px 10px 28px -14px rgba(0, 0, 0, 0.75); */
 `
 
 export const MenuButton = styled.button`

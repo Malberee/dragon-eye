@@ -15,6 +15,7 @@ import {
 	Label,
 	Checkbox,
 	CustomCheckbox,
+	FilterTitle,
 } from './Sidebar.styled'
 
 const classes = [
@@ -73,46 +74,13 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 		)
 	}
 
-	console.log(isOpen)
-
 	return (
 		<>
-			<Backdrop
-				onClick={closeSidebar}
-				isOpen={isOpen}
-				initial={{
-					opacity: 0,
-				}}
-				animate={{
-					opacity: 1,
-				}}
-				exit={{
-					opacity: 0,
-				}}
-				transition={{
-					duration: 0.2,
-					ease: 'easeOut',
-				}}
-			/>
-			<SidebarWrapper
-				isOpen={isOpen}
-				initial={{
-					translateX: '-100%',
-				}}
-				animate={{
-					translateX: 0,
-				}}
-				exit={{
-					translateX: '-100%',
-				}}
-				transition={{
-					duration: 0.2,
-					ease: 'easeOut',
-				}}
-			>
+			<Backdrop onClick={closeSidebar} isOpen={isOpen} />
+			<SidebarWrapper isOpen={isOpen}>
 				<FiltersList>
 					<FiltersItem>
-						<h4>Classes</h4>
+						<FilterTitle>Classes</FilterTitle>
 						<ul>
 							{classes.map((classItem) => (
 								<li key={classItem}>
@@ -132,7 +100,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 						</ul>
 					</FiltersItem>
 					<FiltersItem>
-						<h4>Rarity</h4>
+						<FilterTitle>Rarity</FilterTitle>
 						<ul>
 							{rarity.map((rarityItem) => (
 								<li key={rarityItem}>
@@ -152,7 +120,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 						</ul>
 					</FiltersItem>
 					<FiltersItem>
-						<h4>Abilities</h4>
+						<FilterTitle>Abilities</FilterTitle>
 						<ul>
 							{abilities.map((abilityItem) => (
 								<li key={abilityItem}>
@@ -164,7 +132,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 											id={abilityItem}
 										/>
 										<CustomCheckbox />
-										<AbilityIcon ability={abilityItem} width={18} />
+										<AbilityIcon ability={abilityItem} width={10} svg={true} />
 										{capitalizeFirstLetter(abilityItem)}
 									</Label>
 								</li>

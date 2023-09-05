@@ -2,20 +2,41 @@ body {
 	font-family: 'Roboto';
 	background-size: cover;
 	background-attachment: fixed;
-	// padding-top: 120px;
-	padding-bottom: 43px;
 }
 
 main {
-	grid-area: main;
-
 	padding: 30px 15px; 
+	height: calc(100% - 78px);
 
 	display: flex;
+	overflow: hidden;
 }
 
 #root {
 	max-width: 1280px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282828;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #414141;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #414141;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
 }

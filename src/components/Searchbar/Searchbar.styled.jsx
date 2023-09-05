@@ -17,7 +17,29 @@ export const Input = styled.input`
 	font-size: 12px;
 	font-weight: 500;
 
-	:focus {
+	transition: border-color 150ms linear;
+
+	&:focus,
+	&:hover {
 		outline: transparent;
+		border-color: #3d3d3d;
 	}
+`
+
+export const SearchIconWrapper = styled.div`
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+
+	width: 24px;
+	height: 24px;
+`
+
+export const SearchbarContainer = styled.div`
+	position: relative;
+	display: inline-block;
+	width: auto;
+
+	color: #242424;
 `

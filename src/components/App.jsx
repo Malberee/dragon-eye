@@ -9,7 +9,6 @@ import Container from './Container'
 import Modal from './Modal'
 import CardList from './CardList'
 import Sidebar from './Sidebar'
-import Filters from './Filters'
 
 import { selectDragonsByFilter } from '../store/selectors'
 
@@ -37,24 +36,14 @@ function App() {
 		setSidebarIsOpen(!sidebarIsOpen)
 	}
 
-	const isDesktop = window.innerWidth >= 768
-
-	console.log(isDesktop)
-
-	console.log(sidebarIsOpen)
-
 	return (
 		<Layout>
 			<Header setQuery={setQuery} openSidebar={toggleSidebar} />
 			<main>
-				<AnimatePresence>
-					{sidebarIsOpen || isDesktop ? (
-						<Sidebar
-							isOpen={isDesktop ? false : sidebarIsOpen}
-							closeSidebar={toggleSidebar}
-						/>
-					) : null}
-				</AnimatePresence>
+				<Sidebar
+					isOpen={sidebarIsOpen}
+					closeSidebar={toggleSidebar}
+				/>
 				<Container>
 					<CardList
 						dragons={dragons.filter((dragon) =>
