@@ -24,6 +24,7 @@ const Searchbar = ({ setQuery }) => {
 					type="text"
 					onChange={(e) => inputChange(e.target.value)}
 					value={input}
+					placeholder='Enter dragon name'
 				/>
 				<SearchIconWrapper>
 					<Search width="24px" height="24px" />

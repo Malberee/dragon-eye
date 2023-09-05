@@ -19,6 +19,10 @@ export const Input = styled.input`
 
 	transition: border-color 150ms linear;
 
+	&::placeholder {
+		color: #242424;
+	}
+
 	&:focus,
 	&:hover {
 		outline: transparent;
