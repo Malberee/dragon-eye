@@ -126,6 +126,10 @@ Error generating stack: `+o.message+`
 
 	transition: border-color 150ms linear;
 
+	&::placeholder {
+		color: #242424;
+	}
+
 	&:focus,
 	&:hover {
 		outline: transparent;
@@ -145,7 +149,7 @@ Error generating stack: `+o.message+`
 	width: auto;
 
 	color: #242424;
-`,cb=({setQuery:e})=>{const[t,n]=k.useState(""),r=i=>{n(i),e(i.toLowerCase())};return b(sb,{children:Pe(ub,{children:[b(ab,{type:"text",onChange:i=>r(i.target.value),value:t}),b(lb,{children:b(ob,{width:"24px",height:"24px"})})]})})},fb=Q.header`
+`,cb=({setQuery:e})=>{const[t,n]=k.useState(""),r=i=>{n(i),e(i.toLowerCase())};return b(sb,{children:Pe(ub,{children:[b(ab,{type:"text",onChange:i=>r(i.target.value),value:t,placeholder:"Enter dragon name"}),b(lb,{children:b(ob,{width:"24px",height:"24px"})})]})})},fb=Q.header`
 	width: 100%;
 	padding: 20px 20px;
 
