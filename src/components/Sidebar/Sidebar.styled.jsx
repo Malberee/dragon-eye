@@ -41,7 +41,6 @@ export const SidebarWrapper = styled(motion.aside)`
 	@media (width >= 768px) {
 		display: block;
 		position: relative;
-		top: -30px;
 		left: -15px;
 		height: calc(100% + 60px);
 	}
