@@ -92,7 +92,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 											id={classItem}
 										/>
 										<CustomCheckbox />
-										<ClassIconsMini classes={[classItem]} Width={18} />
+										<ClassIconsMini classes={[classItem]} Width={18} svg />
 										{capitalizeFirstLetter(classItem)}
 									</Label>
 								</li>
@@ -112,7 +112,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 											id={rarityItem}
 										/>
 										<CustomCheckbox />
-										<RarityIcon rarity={rarityItem} width={18} />
+										<RarityIcon rarity={rarityItem} width={18} svg />
 										{capitalizeFirstLetter(rarityItem)}
 									</Label>
 								</li>
