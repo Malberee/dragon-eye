@@ -38,12 +38,10 @@ function App() {
 
 	return (
 		<Layout>
+			<Authors />
 			<Header setQuery={setQuery} openSidebar={toggleSidebar} />
 			<main>
-				<Sidebar
-					isOpen={sidebarIsOpen}
-					closeSidebar={toggleSidebar}
-				/>
+				<Sidebar isOpen={sidebarIsOpen} closeSidebar={toggleSidebar} />
 				<Container>
 					<CardList
 						dragons={dragons.filter((dragon) =>
