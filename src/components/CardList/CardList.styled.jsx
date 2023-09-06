@@ -3,7 +3,7 @@ import SimpleBar from 'simplebar-react'
 import 'simplebar-react/dist/simplebar.min.css'
 
 export const SimplebarStyles = styled(SimpleBar)`
-	max-height: 100%;
+	height: 100%;
 
 	.simplebar-scrollbar {
 		background: #414141;
