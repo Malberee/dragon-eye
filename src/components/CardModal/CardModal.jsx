@@ -133,13 +133,8 @@ const CardModal = (props, ref) => {
 								<DragonDescription>{description}</DragonDescription>
 							</DragonDescriptionWrapper>
 						</TooltipLink>
-						<TooltipLink
-							data-tooltip-id="my-tooltip"
-							data-tooltip-content={`Rarity: ${rarity}`}
-							className="sticker"
-						>
-							<RaritySticker rarity={rarity} />
-						</TooltipLink>
+
+						<RaritySticker rarity={rarity} />
 					</CardWrapper>
 				</CardOutline>
 
