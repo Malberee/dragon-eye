@@ -435,7 +435,7 @@ Error generating stack: `+o.message+`
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 
 	height: 100vh;
 	width: 100%;
@@ -453,7 +453,7 @@ Error generating stack: `+o.message+`
 	position: absolute;
 	top: 0;
 	left: ${e=>e.isOpen?0:"-100%"};
-	z-index: 1;
+	z-index: 2;
 
 	padding: 10px;
 	height: 100vh;
