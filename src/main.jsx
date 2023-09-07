@@ -6,6 +6,18 @@ import store from './store'
 import { setFavicon } from './utils/setFavicon'
 setFavicon('🐲')
 
+console.log(
+	`%c                                 
+ _____     _ _                   
+|     |___| | |_ ___ ___ ___ ___ 
+| | | | .'| | . | -_|  _| -_| -_|
+|_|_|_|__,|_|___|___|_| |___|___|
+                                
+`,
+	'background: #222; color: #bada55',
+)
+console.log('%c Thanks to Statikin ❤️', 'background: #222; color: #bada55')
+
 import App from './components/App'
 
 import './index.scss'

@@ -13,7 +13,7 @@ const CardList = ({ dragons, toggleModal }) => (
 		<CardListWrapper>
 			{dragons.length > 0 ? (
 				dragons.map((dragon) => (
-					<Card key={dragon.name} dragon={dragon} toggleModal={toggleModal} />
+					<Card key={dragon.id} dragon={dragon} toggleModal={toggleModal} />
 				))
 			) : (
 				<NotFoundText>

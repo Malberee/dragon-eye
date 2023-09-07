@@ -30,6 +30,12 @@ export const TooltipLink = styled.a`
 	display: block;
 	cursor: pointer;
 
+	/* &:has(div) {
+		position: absolute;
+		right: 10px;
+		bottom: 15px;
+	} */
+
 	&.sticker {
 		width: 50px;
 		height: 30px;
