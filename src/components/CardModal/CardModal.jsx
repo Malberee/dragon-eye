@@ -133,11 +133,10 @@ const CardModal = (props, ref) => {
 								<DragonDescription>{description}</DragonDescription>
 							</DragonDescriptionWrapper>
 						</TooltipLink>
-
 						<RaritySticker rarity={rarity} />
 					</CardWrapper>
 				</CardOutline>
-
+				
 				<CardOutline
 					outline={getCardOutline(classes)}
 					onClick={() => setIsFlipped((x) => !x)}
