@@ -52,10 +52,7 @@ const Card = ({ dragon, toggleModal }) => {
 		<motion.div
 			layoutId={name}
 			whileHover={{
-				scale: 1.03,
-			}}
-			whileTap={{
-				scale: 0.97,
+				scale: 1.015,
 			}}
 		>
 			<CardLink onClick={setSelectedDragon}>
