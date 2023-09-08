@@ -45,7 +45,10 @@ function App() {
 				<Container>
 					<CardList
 						dragons={dragons.filter((dragon) =>
-							dragon.name.toLowerCase().includes(query),
+							dragon.name
+								.toLowerCase()
+								.replace(/\s+/g, '')
+								.startsWith(query.replace(/\s+/g, '')),
 						)}
 						toggleModal={toggleModal}
 					/>
