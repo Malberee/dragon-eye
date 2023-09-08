@@ -114,6 +114,7 @@ Error generating stack: `+o.message+`
 `,BA=Q.input`
 	width: 300px;
 	padding: 10px;
+	padding-right: 48px;
 	border: transparent;
 	border: 2px solid #242424;
 	border-radius: 20px;
