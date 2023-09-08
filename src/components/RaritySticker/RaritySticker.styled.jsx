@@ -1,9 +1,14 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const RarityStickerWrapper = styled.div`
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
+	${(props) =>
+		!props.withLink &&
+		css`
+			position: absolute;
+			right: 10px;
+			bottom: 15px;
+			transform: rotate(-10deg);
+		`}
 
 	width: 50px;
 	height: 30px;
@@ -15,6 +20,4 @@ export const RarityStickerWrapper = styled.div`
 	background-image: url('./images/overlays/sticker.png');
 	background-size: cover;
 	box-shadow: 3px 3px 10px -7px rgba(0, 0, 0, 0.75);
-
-	transform: rotate(-10deg);
 `

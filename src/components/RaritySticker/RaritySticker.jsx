@@ -4,8 +4,8 @@ import RarityIcon from '../RarityIcon'
 
 import { RarityStickerWrapper } from './RaritySticker.styled'
 
-const RaritySticker = ({ rarity }) => (
-	<RarityStickerWrapper>
+const RaritySticker = ({ rarity, withLink }) => (
+	<RarityStickerWrapper className="sticker" withLink={withLink}>
 		<RarityIcon rarity={rarity} width={40} />
 	</RarityStickerWrapper>
 )
