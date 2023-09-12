@@ -492,6 +492,12 @@ Error generating stack: `+o.message+`
 	font-size: 15px;
 
 	color: white;
+
+	& ul {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+	}
 `,Fu=Q.h4`
 	text-align: left;
 `,Bu=Q.label`
