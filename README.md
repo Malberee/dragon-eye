@@ -1,4 +1,4 @@
-![banner](./public/images/banner.png)
+![banner](./public/images/cover.png)
 
 <div align="center">
 
