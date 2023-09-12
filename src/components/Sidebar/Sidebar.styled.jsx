@@ -60,6 +60,12 @@ export const FiltersItem = styled.li`
 	font-size: 15px;
 
 	color: white;
+
+	& ul {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+	}
 `
 
 export const FilterTitle = styled.h4`
