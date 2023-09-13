@@ -40,7 +40,7 @@ function App() {
 		<Layout>
 			<Authors />
 			<Header setQuery={setQuery} openSidebar={toggleSidebar} />
-			<main>
+			<main className="dark">
 				<Sidebar isOpen={sidebarIsOpen} closeSidebar={toggleSidebar} />
 				<Container>
 					<CardList

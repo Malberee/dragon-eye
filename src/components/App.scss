@@ -1,12 +1,11 @@
 body {
 	font-family: 'Roboto';
-	background-size: cover;
-	background-attachment: fixed;
+	background-color: #222225;
 }
 
 main {
 	padding: 0 15px;
-	height: calc(100% - 78px);
+	height: calc(100% - 72px);
 
 	display: flex;
 	overflow: hidden;

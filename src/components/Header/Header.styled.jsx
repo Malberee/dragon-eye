@@ -2,13 +2,11 @@ import styled from 'styled-components'
 
 export const HeaderWrapper = styled.header`
 	width: 100%;
-	padding: 20px 20px;
+	padding: 20px;
 
-	display: flex;
+	/* display: flex;
 	justify-content: center;
-	align-items: center;
-
-	background-color: #161616;
+	align-items: center; */
 `
 
 export const MenuButton = styled.button`

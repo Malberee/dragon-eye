@@ -3,7 +3,7 @@
 @font-face {
 	font-family: 'Runic';
 	src: url('./fonts/Runic-Regular.woff2') format('woff2'),
-		url('./fonts/Runic-Regular.woff') format('woff');
+	url('./fonts/Runic-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -11,14 +11,14 @@
 @font-face {
 	font-family: 'Roboto';
 	src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
-		url('./fonts/Roboto-Regular.woff') format('woff');
+	url('./fonts/Roboto-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
-:root {
-	background-color: #1d1d1d;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
 	margin: 0;
@@ -60,3 +60,4 @@ img {
 .list {
 	list-style: none;
 }
+
