@@ -10,7 +10,7 @@ import {
 
 const CardList = ({ dragons, toggleModal }) => (
 	<SimplebarStyles>
-		<div className="py-4 flex flex-wrap justify-center items-center gap-4">
+		<div className="py-4 flex flex-wrap justify-center items-center gap-7">
 				{dragons.length > 0 ? (
 					dragons.map((dragon) => (
 						<Card key={dragon.id} dragon={dragon} toggleModal={toggleModal} />
