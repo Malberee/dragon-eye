@@ -99,6 +99,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
             >
               {classes.map((classItem) => (
                 <CheckboxNextUI
+                  key={classItem}
                   value={classItem}
                   className="flex"
                   size="sm"
@@ -128,6 +129,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
             >
               {rarities.map((rarityItem) => (
                 <CheckboxNextUI
+                  key={rarityItem}
                   value={rarityItem}
                   className="flex"
                   size="sm"
@@ -157,6 +159,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
             >
               {abilities.map((abilityItem) => (
                 <CheckboxNextUI
+                  key={abilityItem}
                   value={abilityItem}
                   className="flex"
                   size="sm"

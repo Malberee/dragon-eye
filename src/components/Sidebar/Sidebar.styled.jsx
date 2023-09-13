@@ -2,30 +2,30 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const Backdrop = styled(motion.div)`
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
 
-	height: 100vh;
-	width: 100%;
+  height: 100vh;
+  width: 100%;
 
-	opacity: ${(props) => (props.isOpen ? 1 : 0)};
-	pointer-events: ${(props) => (props.isOpen ? 'all' : 'none')};
-	background-color: #0000005c;
+  opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  pointer-events: ${(props) => (props.isOpen ? 'all' : 'none')};
+  background-color: #0000005c;
 
-	transition: opacity 150ms ease-out;
+  transition: opacity 150ms ease-out;
 
-	@media (width >= 768px) {
-		display: none;
-	}
+  @media (width >= 768px) {
+    display: none;
+  }
 `
 
 export const SidebarWrapper = styled(motion.aside)`
 	position: absolute;
 	top: 0;
 	left: ${(props) => (props.isOpen ? 0 : '-100%')};
-	z-index: 2;
+	z-index: 11;
 
 	padding: 10px;
 	height: 100vh;
