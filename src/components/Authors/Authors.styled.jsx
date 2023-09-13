@@ -24,9 +24,17 @@ export const AuthorsWrapper = styled.div`
     display: block;
     top: 1rem;
     right: 1rem;
+
     width: auto;
+    height: 56px;
     background-color: transparent;
+
     text-align: right;
+    font-size: 10px;
+  }
+
+  @media (width >= 992px) {
+    font-size: 12px;
   }
 `
 
