@@ -1,37 +1,52 @@
 import styled from 'styled-components'
 
 export const AuthorsWrapper = styled.div`
-	position: fixed;
-	bottom: 0;
-	right: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 
-	padding: 10px;
-	z-index: 4;
+  width: 100%;
 
-	font-family: 'Roboto';
-	font-size: 12px;
-	text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  padding: 5px;
+  z-index: 4;
+
+  font-family: 'Roboto';
+  font-size: 12px;
+
+  background-color: #18181bca;
+
+  @media (width >= 768px) {
+    display: block;
+    top: 1rem;
+    right: 1rem;
+    width: auto;
+    background-color: transparent;
+    text-align: right;
+  }
 `
 
-export const MadeBy = styled.p`
-	margin-bottom: 8px;
-	color: white;
-	text-shadow: 0px 1px 4px #000000;
-`
+export const Text = styled.p`
+  color: white;
+  text-shadow: 0px 1px 4px #000000;
 
-export const Thanks = styled.p`
-	color: white;
-	text-shadow: 0px 1px 4px #000000;
+  @media (width >= 768px) {
+    text-shadow: none;
+  }
 `
 
 export const Link = styled.a`
-	color: #f6c06a;
-	text-decoration: none;
+  color: #f6c06a;
+  text-decoration: none;
 
-    transition: color 100ms linear;
+  transition: color 100ms linear;
 
-	&:hover,
-	&:focus {
-		color: #5dbbcc;
-	}
+  &:hover,
+  &:focus {
+    color: #5dbbcc;
+  }
 `
