@@ -239,7 +239,7 @@
 		"fireType": "Corrosive acid",
 		"abilities": ["acid", "chromatic", "stealth"],
 		"picture": "",
-		"description": "Unlike other dragons the Changewing spits acid instead of fire. Even newly-hatched Changewings have the ability to spit acid onto any potential threat. They got their name from the changing color of their scales which they use as camouflage."
+		"description": "Unlike other dragons, a changewing spits acid rather than fire. Even newly hatched changewings can spew acid at any potential threat. They also have color-changing scales that they use as camouflage."
 	},
 	{
 		"id": "d2521888086",

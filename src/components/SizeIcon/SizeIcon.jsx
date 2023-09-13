@@ -21,8 +21,4 @@ const SizeIcon = ({ type, number }) => {
 	)
 }
 
-SizeIcon.propTypes = {}
-
-SizeIcon.defaultProps = {}
-
 export default SizeIcon

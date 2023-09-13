@@ -14,16 +14,17 @@ const Searchbar = ({ setQuery }) => {
 	}
 
 	return (
-		<div className="w-full flex justify-center">
-			<Input
-				className="max-w-xs"
-				type="text"
-				placeholder="Enter dragon name"
-				value={input}
-				onChange={(e) => inputChange(e.target.value)}
-			/>
-		</div>
-	)
+    <div className="w-full flex justify-center">
+      <Input
+        className="max-w-xs"
+        type="text"
+        placeholder="Enter dragon name"
+        endContent={<Search width={20} height={20} />}
+        value={input}
+        onChange={(e) => inputChange(e.target.value)}
+      />
+    </div>
+  )
 }
 
 export default Searchbar

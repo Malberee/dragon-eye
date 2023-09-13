@@ -42,7 +42,7 @@ export const SidebarWrapper = styled(motion.aside)`
 		display: block;
 		position: relative;
 		left: -15px;
-		height: calc(100% + 60px);
+		height: 100%;
 	}
 `
 
