@@ -6,12 +6,12 @@ import { Burger } from '../Icons'
 import { HeaderWrapper, MenuButton } from './Header.styled'
 
 const Header = ({ setQuery, openSidebar }) => (
-	<HeaderWrapper>
+	<div className="bg-default-50 flex justify-center items-center p-4">
 		<MenuButton onClick={openSidebar}>
 			<Burger width="30px" height="30px" />
 		</MenuButton>
 		<Searchbar setQuery={setQuery} />
-	</HeaderWrapper>
+	</div>
 )
 
 export default Header

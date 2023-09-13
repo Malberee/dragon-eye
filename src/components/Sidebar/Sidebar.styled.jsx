@@ -34,7 +34,7 @@ export const SidebarWrapper = styled(motion.aside)`
 	overflow: auto;
 
 	color: white;
-	background-color: #161616;
+	/* background-color: #161616; */
 
 	transition: left 150ms ease-out;
 
