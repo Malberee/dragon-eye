@@ -21,17 +21,13 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-	background: #282828;
+	background: #27272a;
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #414141;
+	background: #333336;
 	border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: #414141;
 }
 
 ::-webkit-scrollbar-corner {
