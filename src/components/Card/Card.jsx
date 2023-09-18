@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import { getDragonPicture } from '../../utils/getDragonPicture'
 import { getCardOutline } from '../../utils/getCardOutline'
 
-import { selectDragon } from '../../store/dragonsSlice'
+// import { selectDragon } from '../../store/dragonsSlice'
 
 import RaritySticker from '../RaritySticker'
 import SizeIcon from '../SizeIcon'
