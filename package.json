@@ -19,6 +19,7 @@
 		"react-card-flip": "^1.2.0",
 		"react-dom": "^18.2.0",
 		"react-is": "^18.2.0",
+		"react-loader-spinner": "^5.4.5",
 		"react-parallax-tilt": "^1.7.156",
 		"react-redux": "^8.1.2",
 		"react-tooltip": "^5.20.0",

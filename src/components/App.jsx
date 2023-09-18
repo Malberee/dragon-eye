@@ -9,6 +9,7 @@ import Container from './Container'
 import Modal from './Modal'
 import CardList from './CardList'
 import Sidebar from './Sidebar'
+import Loader from './Loader'
 
 import { fetchDragons } from '../redux/dragons/slice'
 import {
@@ -66,7 +67,7 @@ function App() {
         <Sidebar isOpen={sidebarIsOpen} closeSidebar={toggleSidebar} />
         <Container>
           {status === 'loading' ? (
-            <p>Loading...</p>
+            <Loader />
           ) : error ? (
             <p>{error}</p>
           ) : (
