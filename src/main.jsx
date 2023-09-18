@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { NextUIProvider } from '@nextui-org/react'
-import { store } from './redux'
+import store from './redux/store'
 
 import { setFavicon } from './utils/setFavicon'
 setFavicon('🐲')

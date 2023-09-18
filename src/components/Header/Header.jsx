@@ -4,7 +4,7 @@ import { Badge } from '@nextui-org/react'
 import Searchbar from '../Searchbar'
 import { Burger } from '../Icons'
 
-// import { selectFilters } from '../../store/selectors'
+import { selectFilters } from '../../redux/filters/selectors'
 
 import { HeaderWrapper, MenuButton } from './Header.styled'
 import { useSelector } from 'react-redux'

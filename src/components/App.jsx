@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { AnimatePresence } from 'framer-motion'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import Layout from './Layout'
 import Authors from './Authors'
@@ -10,19 +10,23 @@ import Modal from './Modal'
 import CardList from './CardList'
 import Sidebar from './Sidebar'
 
-// import { selectDragonsByFilter } from '../store/selectors'
-import { useGetDragonsQuery } from '../redux'
+import { fetchDragons } from '../redux/dragons/slice'
+import {
+  selectDragonsByFilter,
+  selectAllDragons,
+} from '../redux/dragons/selectors'
 
 import './App.scss'
 
 function App() {
-  // const dragons = useSelector(selectDragonsByFilter)
-  const { data = [], isLoading } = useGetDragonsQuery()
-  console.log(data)
-
   const [modalIsOpen, setModalIsOpen] = useState(false)
   const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
   const [query, setQuery] = useState('')
+
+  const dispatch = useDispatch()
+
+  const dragons = useSelector(selectDragonsByFilter)
+  const { status, error } = useSelector(selectAllDragons)
 
   const toggleModal = () => {
     if (modalIsOpen) {
@@ -37,36 +41,44 @@ function App() {
 
   const toggleSidebar = () => {
     setSidebarIsOpen(!sidebarIsOpen)
-	}
-	if (!isLoading) {
-		console.log(data)
-	}
+  }
+
+  const filterDragonsByName = () => {
+    const filteredDragons = dragons.filter((dragon) =>
+      dragon.name
+        .toLowerCase()
+        .replace(/\s+/g, '')
+        .startsWith(query.replace(/\s+/g, '')),
+    )
+
+    return filteredDragons
+  }
+
+  useEffect(() => {
+    dispatch(fetchDragons())
+  }, [dispatch])
 
   return (
     <Layout>
-      {/* <Authors />
-      <Header setQuery={setQuery} openSidebar={toggleSidebar} /> */}
+      <Authors />
+      <Header setQuery={setQuery} openSidebar={toggleSidebar} />
       <main className="dark">
-        {/* <Sidebar isOpen={sidebarIsOpen} closeSidebar={toggleSidebar} /> */}
+        <Sidebar isOpen={sidebarIsOpen} closeSidebar={toggleSidebar} />
         <Container>
-          {isLoading ? (
+          {status === 'loading' ? (
             <p>Loading...</p>
+          ) : error ? (
+            <p>{error}</p>
           ) : (
             <CardList
-              //   dragons={dragons.filter((dragon) =>
-              //     dragon.name
-              //       .toLowerCase()
-              //       .replace(/\s+/g, '')
-              //       .startsWith(query.replace(/\s+/g, '')),
-              //   )}
-              dragons={data}
+              dragons={filterDragonsByName()}
               toggleModal={toggleModal}
             />
           )}
         </Container>
-        {/* <AnimatePresence>
+        <AnimatePresence>
           {modalIsOpen && <Modal toggleModal={toggleModal} />}
-        </AnimatePresence> */}
+        </AnimatePresence>
       </main>
     </Layout>
   )

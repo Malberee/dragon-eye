@@ -1,12 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { dragonsApi } from './dragonsApi'
-import filtersReducer from './filtersSlice'
+import dragonsReducer from './dragons/slice'
+import filtersReducer from './filters/slice'
 
-export const store = configureStore({
+export default configureStore({
   reducer: {
-    [dragonsApi.reducerPath]: dragonsApi.reducer,
+    dragons: dragonsReducer,
     filters: filtersReducer,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(dragonsApi.middleware),
 })

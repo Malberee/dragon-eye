@@ -5,7 +5,6 @@ import Tilt from 'react-parallax-tilt'
 import ReactCardFlip from 'react-card-flip'
 import { uid } from 'uid'
 
-import { getDragonPicture } from '../../utils/getDragonPicture'
 import { getCardOutline } from '../../utils/getCardOutline'
 
 import RaritySticker from '../RaritySticker'
@@ -103,7 +102,7 @@ const CardModal = (props, ref) => {
               </TooltipLink>
             </CardHeader>
 
-            <DragonPicture src={getDragonPicture(name)} />
+            <DragonPicture src={picture} />
 
             <CardInner>
               <Salvo>
