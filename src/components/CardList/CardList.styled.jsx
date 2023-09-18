@@ -35,7 +35,3 @@ export const CardListWrapper = styled.div`
 	flex-wrap: wrap;
 	gap: 16px;
 `
-
-export const NotFoundText = styled.p`
-	color: white;
-`

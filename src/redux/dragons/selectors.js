@@ -1,7 +1,9 @@
-import { createSelector } from '@reduxjs/toolkit'
+import { createSelector } from "@reduxjs/toolkit"
 
-export const selectAllDragons = (state) => state.dragons.dragons
-export const selectFilters = (state) => state.filters
+import { selectFilters } from "../filters/selectors"
+
+export const selectAllDragons = (state) => state.dragons
+
 export const selectDragon = (state, id) =>
   state.dragons.dragons.find((dragon) => dragon.id === id)
 
@@ -10,7 +12,7 @@ export const selectDragonsByFilter = createSelector(
   (allDragons, filters) => {
     const { classes, rarities, abilities } = filters
 
-    return allDragons.filter((dragon) => {
+    return allDragons.dragons.filter((dragon) => {
       if (
         classes.length &&
         !dragon.classes.some((item) => filters.classes.includes(item))
@@ -30,3 +32,4 @@ export const selectDragonsByFilter = createSelector(
     })
   },
 )
+

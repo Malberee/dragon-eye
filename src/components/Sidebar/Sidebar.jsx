@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { CheckboxGroup, Checkbox as CheckboxNextUI } from '@nextui-org/react'
 
-import { addFilter } from '../../store/filtersSlice'
+import { addFilter } from '../../redux/filters/slice'
 
 import ClassIconsMini from '../ClassIconsMini'
 import RarityIcon from '../RarityIcon'
