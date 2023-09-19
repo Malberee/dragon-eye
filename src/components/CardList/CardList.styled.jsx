@@ -27,7 +27,7 @@ export const SimplebarStyles = styled(SimpleBar)`
 export const CardListWrapper = styled.div`
 	height: 100%;
 	width: 100%;
-	padding: 20px 0;
+	padding: 20px 40px;
 
 	display: flex;
 	justify-content: center;
