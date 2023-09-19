@@ -1,6 +1,7 @@
 import { uid } from 'uid'
 import { motion } from 'framer-motion'
 import { useDispatch } from 'react-redux'
+import ScaleText from 'react-scale-text'
 
 import { getCardOutline } from '../../utils/getCardOutline'
 
@@ -16,6 +17,7 @@ import {
   CardOutline,
   CardWrapper,
   CardHeader,
+  DragonNameWrapper,
   DragonName,
   DragonPicture,
   CardInner,
@@ -44,7 +46,7 @@ const Card = ({ dragon, toggleModal }) => {
 
   const setSelectedDragon = () => {
     toggleModal()
-    dispatch(selectDragon( { id }))
+    dispatch(selectDragon({ id }))
   }
 
   return (
@@ -59,7 +61,11 @@ const Card = ({ dragon, toggleModal }) => {
           <CardWrapper>
             <CardHeader>
               <SizeIcon type={size.type} number={size.number} />
-              <DragonName>{name}</DragonName>
+              <DragonNameWrapper>
+                <ScaleText minFontSize={24} maxFontSize={32}>
+                  <DragonName nameLength={name.length}>{name}</DragonName>
+                </ScaleText>
+              </DragonNameWrapper>
               <ClassIconsMini classes={classes} />
             </CardHeader>
 

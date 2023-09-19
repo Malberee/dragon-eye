@@ -4,6 +4,7 @@ import { Tooltip } from 'react-tooltip'
 import Tilt from 'react-parallax-tilt'
 import ReactCardFlip from 'react-card-flip'
 import { uid } from 'uid'
+import ScaleText from 'react-scale-text'
 
 import { getCardOutline } from '../../utils/getCardOutline'
 
@@ -18,6 +19,7 @@ import {
   CardOutline,
   CardWrapper,
   CardHeader,
+  DragonNameWrapper,
   DragonName,
   DragonPicture,
   CardInner,
@@ -87,7 +89,11 @@ const CardModal = (props, ref) => {
                 data-tooltip-id="my-tooltip"
                 data-tooltip-content={name}
               >
-                <DragonName>{name}</DragonName>
+                <DragonNameWrapper>
+                  <ScaleText minFontSize={24} maxFontSize={32}>
+                    <DragonName nameLength={name.length}>{name}</DragonName>
+                  </ScaleText>
+                </DragonNameWrapper>
               </TooltipLink>
               <TooltipLink
                 onClick={(e) => e.stopPropagation()}

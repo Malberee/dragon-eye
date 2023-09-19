@@ -43,9 +43,22 @@ export const CardHeader = styled.div`
   align-items: center;
 `
 
+export const DragonNameWrapper = styled.div`
+  height: 42px;
+  width: 180px;
+
+  .scaletext-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`
+
 export const DragonName = styled.h2`
-  font-size: 24px;
+  line-height: 0.7;
+  font-weight: 700;
   text-align: center;
+  word-spacing: ${(props) => (props.nameLength >= 12 ? '100px' : 'normal')};
 `
 
 export const DragonPicture = styled.img`
@@ -79,6 +92,7 @@ export const SalvoIcon = styled.img`
 
 export const SalvoType = styled.p`
   font-size: 12px;
+  font-weight: 700;
 `
 
 export const Abilities = styled.div`
@@ -93,19 +107,15 @@ export const Abilities = styled.div`
 export const DragonDescriptionWrapper = styled.div`
   display: table-cell;
 
-  height: 70px;
   padding: 4px;
+  height: 70px;
   border-radius: 0 0 27px 27px;
 
-  text-align: center;
   vertical-align: middle;
 `
 
 export const DragonDescription = styled.p`
+  text-align: center;
   font-size: 14px;
   line-height: 13px;
-`
-
-export const TooltipLink = styled.a`
-  cursor: pointer;
 `
