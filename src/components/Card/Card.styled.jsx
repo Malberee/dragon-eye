@@ -24,7 +24,7 @@ export const CardWrapper = styled.div`
 
   width: 301px;
   height: 418px;
-  padding: 10px 8px 7px 9px;
+  padding: 10px 9px 7px 10px;
   border-radius: 37px;
 
   background-image: url('./images/overlays/overlay.png');
@@ -68,17 +68,17 @@ export const DragonPicture = styled.img`
 `
 
 export const CardInner = styled.div`
-  height: 39px;
+  height: 41px;
   padding: 10px 0;
 
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 9.5px;
 `
 
 export const Salvo = styled.div`
-  width: 100%;
-  padding: 0px 2px;
+  width: calc(100% - 10px);
+  padding: 0px 4px;
 
   display: flex;
   align-items: center;
@@ -87,7 +87,6 @@ export const Salvo = styled.div`
 
 export const SalvoIcon = styled.img`
   width: 13px;
-  margin-left: 5px;
 `
 
 export const SalvoType = styled.p`
@@ -96,12 +95,13 @@ export const SalvoType = styled.p`
 `
 
 export const Abilities = styled.div`
-  width: 100%;
-  padding: 0px 2px;
+  width: calc(100% - 5px);
+  height: 100%;
+  padding: 0px 2.5px;
 
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 2.5px;
 `
 
 export const DragonDescriptionWrapper = styled.div`

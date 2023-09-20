@@ -132,7 +132,7 @@ const CardModal = (props, ref) => {
                       ability.charAt(0).toUpperCase() + ability.slice(1)
                     }
                   >
-                    <AbilityIcon key={uid()} ability={ability} width={18} />
+                    <AbilityIcon key={uid()} ability={ability} width={20} />
                   </TooltipLink>
                 ))}
               </Abilities>
