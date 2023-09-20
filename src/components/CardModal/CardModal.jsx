@@ -108,7 +108,7 @@ const CardModal = (props, ref) => {
               </TooltipLink>
             </CardHeader>
 
-            <DragonPicture src={picture} />
+            <DragonPicture src={picture || './images/unknown.png'} />
 
             <CardInner>
               <Salvo>

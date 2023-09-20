@@ -69,7 +69,7 @@ const Card = ({ dragon, toggleModal }) => {
               <ClassIconsMini classes={classes} />
             </CardHeader>
 
-            <DragonPicture src={picture} />
+            <DragonPicture src={picture || './images/unknown.png'} />
 
             <CardInner>
               <Salvo>
