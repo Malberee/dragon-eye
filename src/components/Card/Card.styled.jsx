@@ -86,12 +86,12 @@ export const Salvo = styled.div`
 `
 
 export const SalvoIcon = styled.img`
-  width: 10px;
-  margin-left: 2px;
+  width: 13px;
+  margin-left: 5px;
 `
 
 export const SalvoType = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 `
 
