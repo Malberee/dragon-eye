@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, memo } from 'react'
 import { useDispatch } from 'react-redux'
 import { CheckboxGroup, Checkbox as CheckboxNextUI } from '@nextui-org/react'
 
@@ -13,10 +13,6 @@ import {
   SidebarWrapper,
   FiltersList,
   FiltersItem,
-  Label,
-  Checkbox,
-  CustomCheckbox,
-  FilterTitle,
 } from './Sidebar.styled'
 
 const classes = [
@@ -58,7 +54,7 @@ const rarities = [
   'unique',
 ]
 
-const Sidebar = ({ isOpen, closeSidebar }) => {
+const Sidebar = memo(function Sidebar({ isOpen, closeSidebar }) {
   const [selectedClasses, setSelectedClasses] = useState([])
   const [selectedRarities, setSelectedRarities] = useState([])
   const [selectedAbilities, setSelectedAbilities] = useState([])
@@ -177,6 +173,6 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
       </SidebarWrapper>
     </>
   )
-}
+})
 
 export default Sidebar

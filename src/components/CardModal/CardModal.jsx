@@ -36,7 +36,7 @@ import {
   TooltipLink,
 } from './CardModal.styled'
 
-const CardModal = (props, ref) => {
+const CardModal = (_, ref) => {
   const dragon = useSelector((state) => state.dragons.selectedDragon)
 
   const [isFlipped, setIsFlipped] = useState(false)

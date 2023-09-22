@@ -29,7 +29,7 @@ import {
   DragonDescription,
 } from './Card.styled'
 
-const Card = ({ dragon, toggleModal }) => {
+const Card = ({ dragon, openModal }) => {
   const dispatch = useDispatch()
 
   const {
@@ -45,7 +45,7 @@ const Card = ({ dragon, toggleModal }) => {
   } = dragon
 
   const setSelectedDragon = () => {
-    toggleModal()
+    openModal()
     dispatch(selectDragon({ id }))
   }
 
@@ -95,9 +95,5 @@ const Card = ({ dragon, toggleModal }) => {
     </motion.div>
   )
 }
-
-Card.propTypes = {}
-
-Card.defaultProps = {}
 
 export default Card

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -12,10 +12,7 @@ import Sidebar from './Sidebar'
 import Loader from './Loader'
 
 import { fetchDragons } from '../redux/dragons/slice'
-import {
-  selectDragonsByFilter,
-  selectAllDragons,
-} from '../redux/dragons/selectors'
+import { selectAllDragons } from '../redux/dragons/selectors'
 
 import './App.scss'
 
@@ -26,34 +23,21 @@ function App() {
 
   const dispatch = useDispatch()
 
-  const dragons = useSelector(selectDragonsByFilter)
   const { status, error } = useSelector(selectAllDragons)
 
-  const toggleModal = () => {
-    if (modalIsOpen) {
-      setModalIsOpen(false)
-      document.body.style.overflow = 'unset'
-    }
-    if (!modalIsOpen) {
-      setModalIsOpen(true)
-      document.body.style.overflow = 'hidden'
-    }
-  }
+  const closeModal = useCallback(() => {
+    setModalIsOpen(false)
+    document.body.style.overflow = 'unset'
+  }, [])
 
-  const toggleSidebar = () => {
+  const openModal = useCallback(() => {
+    setModalIsOpen(true)
+    document.body.style.overflow = 'hidden'
+  }, [])
+
+  const toggleSidebar = useCallback(() => {
     setSidebarIsOpen(!sidebarIsOpen)
-  }
-
-  const filterDragonsByName = () => {
-    const filteredDragons = dragons.filter((dragon) =>
-      dragon.name
-        .toLowerCase()
-        .replace(/\s+/g, '')
-        .startsWith(query.replace(/\s+/g, '')),
-    )
-
-    return filteredDragons
-  }
+  }, [])
 
   useEffect(() => {
     dispatch(fetchDragons())
@@ -71,14 +55,11 @@ function App() {
           ) : error ? (
             <p>{error}</p>
           ) : (
-            <CardList
-              dragons={filterDragonsByName()}
-              toggleModal={toggleModal}
-            />
+            <CardList query={query} openModal={openModal} />
           )}
         </Container>
         <AnimatePresence>
-          {modalIsOpen && <Modal toggleModal={toggleModal} />}
+          {modalIsOpen && <Modal closeModal={closeModal} />}
         </AnimatePresence>
       </main>
     </Layout>
