@@ -6,7 +6,7 @@ import ReactCardFlip from 'react-card-flip'
 import { uid } from 'uid'
 import ScaleText from 'react-scale-text'
 
-import { getCardOutline } from '../../utils/getCardOutline'
+import { useCardColor } from '../../hooks/useCardColor'
 
 import RaritySticker from '../RaritySticker'
 import SizeIcon from '../SizeIcon'
@@ -57,6 +57,8 @@ const CardModal = (_, ref) => {
     rarity,
   } = dragon
 
+  const cardColor = useCardColor(classes)
+
   return (
     <Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
       <ReactCardFlip
@@ -71,10 +73,7 @@ const CardModal = (_, ref) => {
           },
         }}
       >
-        <CardOutline
-          outline={getCardOutline(classes)}
-          onClick={() => setIsFlipped((x) => !x)}
-        >
+        <CardOutline color={cardColor} onClick={() => setIsFlipped((x) => !x)}>
           <CardWrapper>
             <CardHeader>
               <TooltipLink
@@ -158,7 +157,7 @@ const CardModal = (_, ref) => {
         </CardOutline>
 
         <CardOutline
-          outline={getCardOutline(classes)}
+          color={cardColor}
           onClick={() => setIsFlipped((x) => !x)}
           style={{ transform: 'scaleX(-1)' }}
         >

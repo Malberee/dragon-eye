@@ -10,7 +10,7 @@ export const CardOutline = styled.div`
   padding: 13px;
 
   color: black;
-  background-image: url(${(props) => `./images/overlays/${props.outline}.png`});
+  background-image: url(${(props) => `./images/overlays/${props.color}.png`});
   background-color: #d7ae73;
   background-size: 100% 100%;
   background-repeat: no-repeat;

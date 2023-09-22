@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { CheckboxGroup, Checkbox as CheckboxNextUI } from '@nextui-org/react'
 
 import { addFilter } from '../../redux/filters/slice'
+import { useFilters } from '../../hooks/useFilters'
 
 import ClassIconsMini from '../ClassIconsMini'
 import RarityIcon from '../RarityIcon'
@@ -15,45 +16,6 @@ import {
   FiltersItem,
 } from './Sidebar.styled'
 
-const classes = [
-  'stoker',
-  'boulder',
-  'sharp',
-  'tracker',
-  'tidal',
-  'strike',
-  'mystery',
-]
-
-const abilities = [
-  'electric',
-  'speed',
-  'stealth',
-  'fire',
-  'water',
-  'ice',
-  'armed',
-  'supersense',
-  'alpha',
-  'substance',
-  'sound',
-  'venom',
-  'acid',
-  'burrow',
-  'spines',
-  'chromatic',
-]
-
-const rarities = [
-  'common',
-  'rare',
-  'epic',
-  'mythical',
-  'legendary',
-  'godly',
-  'unique',
-]
-
 const Sidebar = memo(function Sidebar({ isOpen, closeSidebar }) {
   const [selectedClasses, setSelectedClasses] = useState([])
   const [selectedRarities, setSelectedRarities] = useState([])
@@ -64,6 +26,8 @@ const Sidebar = memo(function Sidebar({ isOpen, closeSidebar }) {
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
+
+  const { classes, abilities, rarities } = useFilters()
 
   const handleFilter = (e) => {
     dispatch(

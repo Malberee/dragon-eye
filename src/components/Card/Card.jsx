@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useDispatch } from 'react-redux'
 import ScaleText from 'react-scale-text'
 
-import { getCardOutline } from '../../utils/getCardOutline'
+import { useCardColor } from '../../hooks/useCardColor'
 
 import { selectDragon } from '../../redux/dragons/slice'
 
@@ -44,6 +44,8 @@ const Card = ({ dragon, openModal }) => {
     rarity,
   } = dragon
 
+  const cardColor = useCardColor(classes)
+
   const setSelectedDragon = () => {
     openModal()
     dispatch(selectDragon({ id }))
@@ -57,7 +59,7 @@ const Card = ({ dragon, openModal }) => {
       }}
     >
       <CardLink onClick={setSelectedDragon}>
-        <CardOutline outline={getCardOutline(classes)}>
+        <CardOutline color={cardColor}>
           <CardWrapper>
             <CardHeader>
               <SizeIcon type={size.type} number={size.number} />
