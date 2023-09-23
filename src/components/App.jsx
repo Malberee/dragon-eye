@@ -37,7 +37,7 @@ function App() {
 
   const toggleSidebar = useCallback(() => {
     setSidebarIsOpen(!sidebarIsOpen)
-  }, [])
+  }, [sidebarIsOpen])
 
   useEffect(() => {
     dispatch(fetchDragons())

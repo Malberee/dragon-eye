@@ -6,6 +6,7 @@ const AbilityIcon = ({ ability, width, svg }) => (
 			svg ? 'svg' : 'png'
 		}`}
 		width={width}
+		alt="ability icon"
 	/>
 )
 

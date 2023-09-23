@@ -12,7 +12,7 @@ const SizeIcon = ({ type, number }) => {
     }
   }
 
-  return <Icon src={`./images/icons/sizes/${getSizeIcon(type, number)}.png`} />
+  return <Icon src={`./images/icons/sizes/${getSizeIcon(type, number)}.png`} alt="size icon" />
 }
 
 export default SizeIcon

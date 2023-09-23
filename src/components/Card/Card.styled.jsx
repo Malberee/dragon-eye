@@ -1,23 +1,60 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { Skeleton } from '@nextui-org/react'
+
+export const CardSkeleton = styled(Skeleton)`
+  width: 327px;
+  height: 444px;
+  border-radius: 37px;
+`
 
 export const CardLink = styled.a`
   cursor: pointer;
 `
 
-export const CardOutline = styled.div`
-  display: inline-block;
-  border-radius: 30px;
-  padding: 13px;
+export const CardOutline = styled.div(({ color }) => {
+  let bgColor = ''
 
-  color: black;
-  background-image: url(${(props) => `./images/overlays/${props.color}.png`});
-  background-color: #d7ae73;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  console.log(color);
 
-  font-family: 'Runic';
-  text-transform: uppercase;
-`
+  switch (color) {
+    case 'stoker':
+      bgColor = '#8b4f1b'
+      break
+    case 'boulder':
+      bgColor = '#5e5b14'
+      break
+    case 'tracker':
+      bgColor = '#275e1b'
+      break
+    case 'sharp':
+      bgColor = '#0a6061'
+      break
+    case 'tidal':
+      bgColor = '#415175'
+      break
+    case 'mystery':
+      bgColor = '#634976'
+      break
+    default:
+      bgColor = '#902831'
+      break
+  }
+
+  return css`
+    display: inline-block;
+    border-radius: 30px;
+    padding: 13px;
+
+    color: black;
+    background-image: url(${(props) => `./images/overlays/${color}.png`});
+    background-color: ${bgColor};
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    font-family: 'Runic';
+    text-transform: uppercase;
+  `
+})
 
 export const CardWrapper = styled.div`
   position: relative;
@@ -64,6 +101,7 @@ export const DragonName = styled.h2`
 export const DragonPicture = styled.img`
   display: block;
   width: 100%;
+  height: 236.25px;
   padding: 7.5px 0;
 `
 

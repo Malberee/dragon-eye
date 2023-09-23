@@ -107,11 +107,11 @@ const CardModal = (_, ref) => {
               </TooltipLink>
             </CardHeader>
 
-            <DragonPicture src={picture || './images/unknown.png'} />
+            <DragonPicture src={picture || './images/unknown.png'} alt="dragon picture" />
 
             <CardInner>
               <Salvo>
-                <SalvoIcon src="./images/icons/salvo.svg" />
+                <SalvoIcon src="./images/icons/salvo.svg" alt="salvo icon" />
                 <TooltipLink
                   onClick={(e) => e.stopPropagation()}
                   data-tooltip-id="my-tooltip"
