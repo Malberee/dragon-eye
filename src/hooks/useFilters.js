@@ -9,7 +9,8 @@ export const useFilters = () => {
   const abilities = [
     ...new Set(dragons.map((dragon) => dragon.abilities).flat()),
   ]
-  const rarities = [...new Set(dragons.map((dragon) => dragon.rarity).flat())]
+  // const rarities = [...new Set(dragons.map((dragon) => dragon.rarity).flat())]
+  const rarities = ['common', 'rare', 'epic', 'mythical', 'legendary', 'godly', 'unique']
 
   return { classes, abilities, rarities }
 }

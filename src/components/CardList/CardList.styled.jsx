@@ -24,7 +24,7 @@ export const SimplebarStyles = styled(SimpleBar)`
   }
 `
 
-export const CardListWrapper = styled.div`
+export const CardListWrapper = styled.ul`
 	height: 100%;
 	width: 100%;
 	padding: 20px 40px;

@@ -52,7 +52,7 @@ const Card = ({ dragon, openModal }) => {
   }
 
   return (
-    <motion.div
+    <motion.li
       layoutId={name}
       whileHover={{
         scale: 1.015,
@@ -94,7 +94,7 @@ const Card = ({ dragon, openModal }) => {
           </CardWrapper>
         </CardOutline>
       </CardLink>
-    </motion.div>
+    </motion.li>
   )
 }
 

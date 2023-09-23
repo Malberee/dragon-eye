@@ -68,7 +68,7 @@ export const DragonPicture = styled.img`
 `
 
 export const CardInner = styled.div`
-  height: 41px;
+  height: 42px;
   padding: 10px 0;
 
   display: flex;
@@ -78,6 +78,7 @@ export const CardInner = styled.div`
 
 export const Salvo = styled.div`
   width: calc(100% - 10px);
+  height: 100%;
   padding: 0px 4px;
 
   display: flex;
@@ -92,6 +93,7 @@ export const SalvoIcon = styled.img`
 export const SalvoType = styled.p`
   font-size: 14px;
   font-weight: 700;
+  line-height: 0.9;
 `
 
 export const Abilities = styled.div`
