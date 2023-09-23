@@ -67,18 +67,18 @@ const CardModal = (_, ref) => {
 
   const cardColor = useCardColor(classes)
 
-  let backOverlayImg =
+  const backOverlayImgPath =
     classes.length > 1
       ? './images/overlays/backOverlayHybrid.jpg'
       : './images/overlays/backOverlay.jpg'
-  let backOverlayImgLow =
+  const backOverlayImgLowPath =
     classes.length > 1
       ? './images/overlays/low/backOverlayHybrid.jpg'
       : './images/overlays/low/backOverlay.jpg'
 
   useEffect(() => {
     const classImg = new Image()
-    classImg.src = picture
+    classImg.src = `./images/overlays/${cardColor}.jpg`
     classImg.onload = () => setClassOverlayIsLoaded(true)
 
     const overlayImg = new Image()
@@ -86,9 +86,9 @@ const CardModal = (_, ref) => {
     overlayImg.onload = () => setOverlayIsLoaded(true)
 
     const backOverlayImg = new Image()
-    backOverlayImg.src = backOverlayImg
+    backOverlayImg.src = backOverlayImgPath
     backOverlayImg.onload = () => setBackOverlayIsLoaded(true)
-  }, [cardColor])
+  }, [])
 
   return (
     <Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
@@ -153,8 +153,12 @@ const CardModal = (_, ref) => {
             </CardHeader>
 
             <DragonPicture
-              src={picture || './images/unknown.png'}
+              src={picture}
               alt="dragon picture"
+              onError={({ currentTarget }) => {
+                currentTarget.onerror = null
+                currentTarget.src = './images/unknown.png'
+              }}
             />
 
             <CardInner>
@@ -215,11 +219,10 @@ const CardModal = (_, ref) => {
           }}
         >
           <CardBackWrapper
-            countClasses={classes.length}
             style={{
               backgroundImage: backOverlayIsLoaded
-                ? `url(${backOverlayImg})`
-                : `url(${backOverlayImgLow})`,
+                ? `url(${backOverlayImgPath})`
+                : `url(${backOverlayImgLowPath})`,
             }}
           >
             <CardBackClassIconWrapper>

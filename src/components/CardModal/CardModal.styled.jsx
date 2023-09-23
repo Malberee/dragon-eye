@@ -1,26 +1,16 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
-export const CardBackWrapper = styled.div((props) => {
-	let overlay = './images/overlays/backOverlay.jpg'
+export const CardBackWrapper = styled.div`
+  position: relative;
 
-	if(props.countClasses > 1) {
-		overlay = './images/overlays/backOverlayHybrid.jpg'
-	}
+  width: 301px;
+  height: 418px;
+  border-radius: 37px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 
-  return css`
-    position: relative;
-
-    width: 301px;
-    height: 418px;
-    border-radius: 37px;
-
-    background-image: url(${overlay});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    transform: scaleX(-1);
-  `
-})
+  transform: scaleX(-1);
+`
 
 export const CardBackClassIconWrapper = styled.div`
   height: 100%;

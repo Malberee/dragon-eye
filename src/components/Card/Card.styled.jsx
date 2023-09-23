@@ -44,7 +44,6 @@ export const CardOutline = styled.div(({ color }) => {
     padding: 13px;
 
     color: black;
-    /* background-image: url(${(props) => `./images/overlays/${color}.jpg`}); */
     background-color: ${bgColor};
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -62,7 +61,6 @@ export const CardWrapper = styled.div`
   padding: 10px 9px 7px 10px;
   border-radius: 37px;
 
-  /* background-image: url('./images/overlays/overlay.jpg'); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 `
@@ -99,7 +97,6 @@ export const DragonName = styled.h2`
 export const DragonPicture = styled.img`
   display: block;
   width: 100%;
-  height: 236.25px;
   padding: 7.5px 0;
 `
 

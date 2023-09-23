@@ -63,13 +63,13 @@ const Card = ({ dragon, openModal }) => {
 
   useEffect(() => {
     const classImg = new Image()
-    classImg.src = picture
+    classImg.src = `./images/overlays/${cardColor}.jpg`
     classImg.onload = () => setClassOverlayIsLoaded(true)
 
     const overlayImg = new Image()
-    overlayImg.src = `./images/overlays/${cardColor}.jpg`
+    overlayImg.src = './images/overlays/overlay.jpg'
     overlayImg.onload = () => setOverlayIsLoaded(true)
-  }, [cardColor])
+  }, [])
 
   return (
     <li ref={ref}>
@@ -109,6 +109,10 @@ const Card = ({ dragon, openModal }) => {
                 <DragonPicture
                   src={picture || './images/unknown.png'}
                   alt="dragon picture"
+                  onError={({ currentTarget }) => {
+                    currentTarget.onerror = null
+                    currentTarget.src = './images/unknown.png'
+                  }}
                 />
 
                 <CardInner>
