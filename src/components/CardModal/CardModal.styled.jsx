@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components'
 
 export const CardBackWrapper = styled.div((props) => {
-	let overlay = './images/overlays/backOverlay.png'
+	let overlay = './images/overlays/backOverlay.jpg'
 
 	if(props.countClasses > 1) {
-		overlay = './images/overlays/backOverlayHybrid.png'
+		overlay = './images/overlays/backOverlayHybrid.jpg'
 	}
 
   return css`

@@ -14,8 +14,6 @@ export const CardLink = styled.a`
 export const CardOutline = styled.div(({ color }) => {
   let bgColor = ''
 
-  console.log(color);
-
   switch (color) {
     case 'stoker':
       bgColor = '#8b4f1b'
@@ -46,7 +44,7 @@ export const CardOutline = styled.div(({ color }) => {
     padding: 13px;
 
     color: black;
-    background-image: url(${(props) => `./images/overlays/${color}.png`});
+    background-image: url(${(props) => `./images/overlays/${color}.jpg`});
     background-color: ${bgColor};
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -64,7 +62,7 @@ export const CardWrapper = styled.div`
   padding: 10px 9px 7px 10px;
   border-radius: 37px;
 
-  background-image: url('./images/overlays/overlay.png');
+  background-image: url('./images/overlays/overlay.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 `
