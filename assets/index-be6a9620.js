@@ -306,13 +306,13 @@ Error generating stack: `+o.message+`
   border-radius: 37px;
 `,vD=ne.a`
   cursor: pointer;
-`,Qf=ne.div(({color:e})=>{let t="";switch(console.log(e),e){case"stoker":t="#8b4f1b";break;case"boulder":t="#5e5b14";break;case"tracker":t="#275e1b";break;case"sharp":t="#0a6061";break;case"tidal":t="#415175";break;case"mystery":t="#634976";break;default:t="#902831";break}return Zr`
+`,Qf=ne.div(({color:e})=>{let t="";switch(e){case"stoker":t="#8b4f1b";break;case"boulder":t="#5e5b14";break;case"tracker":t="#275e1b";break;case"sharp":t="#0a6061";break;case"tidal":t="#415175";break;case"mystery":t="#634976";break;default:t="#902831";break}return Zr`
     display: inline-block;
     border-radius: 30px;
     padding: 13px;
 
     color: black;
-    background-image: url(${n=>`./images/overlays/${e}.png`});
+    background-image: url(${n=>`./images/overlays/${e}.jpg`});
     background-color: ${t};
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -327,7 +327,7 @@ Error generating stack: `+o.message+`
   padding: 10px 9px 7px 10px;
   border-radius: 37px;
 
-  background-image: url('./images/overlays/overlay.png');
+  background-image: url('./images/overlays/overlay.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 `,fP=ne.div`
@@ -399,7 +399,7 @@ Error generating stack: `+o.message+`
   text-align: center;
   font-size: 14px;
   line-height: 13px;
-`,yD=ne.div(e=>{let t="./images/overlays/backOverlay.png";return e.countClasses>1&&(t="./images/overlays/backOverlayHybrid.png"),Zr`
+`,yD=ne.div(e=>{let t="./images/overlays/backOverlay.jpg";return e.countClasses>1&&(t="./images/overlays/backOverlayHybrid.jpg"),Zr`
     position: relative;
 
     width: 301px;
