@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { uid } from 'uid'
 import { motion } from 'framer-motion'
 import { useDispatch } from 'react-redux'
@@ -32,6 +33,8 @@ import {
 } from './Card.styled'
 
 const Card = ({ dragon, openModal }) => {
+  const [overlayIsLoaded, setOverlayIsLoaded] = useState(false)
+  const [classOverlayIsLoaded, setClassOverlayIsLoaded] = useState(false)
   const dispatch = useDispatch()
 
   const { ref, inView } = useInView({
@@ -58,6 +61,16 @@ const Card = ({ dragon, openModal }) => {
     dispatch(selectDragon({ id }))
   }
 
+  useEffect(() => {
+    const classImg = new Image()
+    classImg.src = picture
+    classImg.onload = () => setOverlayIsLoaded(true)
+
+    const overlayImg = new Image()
+    overlayImg.src = `./images/overlays/${cardColor}.jpg`
+    overlayImg.onload = () => setClassOverlayIsLoaded(true)
+  }, [cardColor])
+
   return (
     <li ref={ref}>
       {inView ? (
@@ -68,8 +81,21 @@ const Card = ({ dragon, openModal }) => {
           }}
         >
           <CardLink onClick={setSelectedDragon}>
-            <CardOutline color={cardColor}>
-              <CardWrapper>
+            <CardOutline
+              color={cardColor}
+              style={{
+                backgroundImage: classOverlayIsLoaded
+                  ? `url(./images/overlays/${cardColor}.jpg)`
+                  : `url(./images/overlays/low/${cardColor}.jpg)`,
+              }}
+            >
+              <CardWrapper
+                style={{
+                  backgroundImage: overlayIsLoaded
+                    ? 'url(./images/overlays/overlay.jpg)'
+                    : 'url(./images/overlays/low/overlay.jpg)',
+                }}
+              >
                 <CardHeader>
                   <SizeIcon type={size.type} number={size.number} />
                   <DragonNameWrapper>
@@ -80,11 +106,17 @@ const Card = ({ dragon, openModal }) => {
                   <ClassIconsMini classes={classes} />
                 </CardHeader>
 
-                <DragonPicture src={picture || './images/unknown.png'} alt="dragon picture" />
+                <DragonPicture
+                  src={picture || './images/unknown.png'}
+                  alt="dragon picture"
+                />
 
                 <CardInner>
                   <Salvo>
-                    <SalvoIcon src="./images/icons/salvo.svg" alt="salvo icon" />
+                    <SalvoIcon
+                      src="./images/icons/salvo.svg"
+                      alt="salvo icon"
+                    />
                     <SalvoType>{fireType}</SalvoType>
                   </Salvo>
 
