@@ -1,4 +1,9 @@
-import React, { forwardRef, useState, useImperativeHandle } from 'react'
+import React, {
+  forwardRef,
+  useState,
+  useImperativeHandle,
+  useEffect,
+} from 'react'
 import { useSelector } from 'react-redux/es/hooks/useSelector'
 import { Tooltip } from 'react-tooltip'
 import Tilt from 'react-parallax-tilt'
@@ -37,9 +42,12 @@ import {
 } from './CardModal.styled'
 
 const CardModal = (_, ref) => {
-  const dragon = useSelector((state) => state.dragons.selectedDragon)
-
+  const [overlayIsLoaded, setOverlayIsLoaded] = useState(false)
+  const [backOverlayIsLoaded, setBackOverlayIsLoaded] = useState(false)
+  const [classOverlayIsLoaded, setClassOverlayIsLoaded] = useState(false)
   const [isFlipped, setIsFlipped] = useState(false)
+
+  const dragon = useSelector((state) => state.dragons.selectedDragon)
 
   useImperativeHandle(ref, () => ({
     setIsFlipped: (value) => setIsFlipped(value),
@@ -59,6 +67,29 @@ const CardModal = (_, ref) => {
 
   const cardColor = useCardColor(classes)
 
+  let backOverlayImg =
+    classes.length > 1
+      ? './images/overlays/backOverlayHybrid.jpg'
+      : './images/overlays/backOverlay.jpg'
+  let backOverlayImgLow =
+    classes.length > 1
+      ? './images/overlays/low/backOverlayHybrid.jpg'
+      : './images/overlays/low/backOverlay.jpg'
+
+  useEffect(() => {
+    const classImg = new Image()
+    classImg.src = picture
+    classImg.onload = () => setClassOverlayIsLoaded(true)
+
+    const overlayImg = new Image()
+    overlayImg.src = `./images/overlays/overlay.jpg`
+    overlayImg.onload = () => setOverlayIsLoaded(true)
+
+    const backOverlayImg = new Image()
+    backOverlayImg.src = backOverlayImg
+    backOverlayImg.onload = () => setBackOverlayIsLoaded(true)
+  }, [cardColor])
+
   return (
     <Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} tiltReverse={true}>
       <ReactCardFlip
@@ -73,8 +104,22 @@ const CardModal = (_, ref) => {
           },
         }}
       >
-        <CardOutline color={cardColor} onClick={() => setIsFlipped((x) => !x)}>
-          <CardWrapper>
+        <CardOutline
+          color={cardColor}
+          onClick={() => setIsFlipped((x) => !x)}
+          style={{
+            backgroundImage: classOverlayIsLoaded
+              ? `url(./images/overlays/${cardColor}.jpg)`
+              : `url(./images/overlays/low/${cardColor}.jpg)`,
+          }}
+        >
+          <CardWrapper
+            style={{
+              backgroundImage: overlayIsLoaded
+                ? 'url(./images/overlays/overlay.jpg)'
+                : 'url(./images/overlays/low/overlay.jpg)',
+            }}
+          >
             <CardHeader>
               <TooltipLink
                 onClick={(e) => e.stopPropagation()}
@@ -107,7 +152,10 @@ const CardModal = (_, ref) => {
               </TooltipLink>
             </CardHeader>
 
-            <DragonPicture src={picture || './images/unknown.png'} alt="dragon picture" />
+            <DragonPicture
+              src={picture || './images/unknown.png'}
+              alt="dragon picture"
+            />
 
             <CardInner>
               <Salvo>
@@ -159,9 +207,21 @@ const CardModal = (_, ref) => {
         <CardOutline
           color={cardColor}
           onClick={() => setIsFlipped((x) => !x)}
-          style={{ transform: 'scaleX(-1)' }}
+          style={{
+            transform: 'scaleX(-1)',
+            backgroundImage: classOverlayIsLoaded
+              ? `url(./images/overlays/${cardColor}.jpg)`
+              : `url(./images/overlays/low/${cardColor}.jpg)`,
+          }}
         >
-          <CardBackWrapper countClasses={classes.length}>
+          <CardBackWrapper
+            countClasses={classes.length}
+            style={{
+              backgroundImage: backOverlayIsLoaded
+                ? `url(${backOverlayImg})`
+                : `url(${backOverlayImgLow})`,
+            }}
+          >
             <CardBackClassIconWrapper>
               {classes.map((dragonClass) => (
                 <ClassIcon

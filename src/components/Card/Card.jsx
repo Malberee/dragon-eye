@@ -64,11 +64,11 @@ const Card = ({ dragon, openModal }) => {
   useEffect(() => {
     const classImg = new Image()
     classImg.src = picture
-    classImg.onload = () => setOverlayIsLoaded(true)
+    classImg.onload = () => setClassOverlayIsLoaded(true)
 
     const overlayImg = new Image()
     overlayImg.src = `./images/overlays/${cardColor}.jpg`
-    overlayImg.onload = () => setClassOverlayIsLoaded(true)
+    overlayImg.onload = () => setOverlayIsLoaded(true)
   }, [cardColor])
 
   return (
