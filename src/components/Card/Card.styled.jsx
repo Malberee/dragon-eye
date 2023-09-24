@@ -68,7 +68,7 @@ export const CardWrapper = styled.div`
 export const CardHeader = styled.div`
   width: 100%;
   height: 42px;
-  padding: 0px 4px;
+  padding: 0px 2px;
   margin-bottom: 8px;
 
   display: flex;
